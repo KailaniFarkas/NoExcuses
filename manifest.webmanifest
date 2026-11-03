@@ -1,0 +1,21 @@
+{
+  "name": "No Excuses",
+  "short_name": "No Excuses",
+  "description": "Sabé cuánta gente hay en tu gimnasio antes de salir, armá tu rutina y registrá tus pesos.",
+  "lang": "es-AR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07070d",
+  "theme_color": "#07070d",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Ocupación futura", "url": "./#futuro" },
+    { "name": "Mi rutina", "url": "./#rutina" }
+  ]
+}
