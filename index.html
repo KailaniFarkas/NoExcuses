@@ -825,7 +825,34 @@ input,select,textarea{font-size:16px!important}
   #share-pdf{position:fixed;left:0;top:0;width:100%;background:#fff;color:#000}
   .phone,.screen{position:static!important;overflow:visible!important;background:#fff!important}
 }
-.gym-row.res>span:first-child{min-width:0;flex:1}.gym-row.res .zs-plus{flex-shrink:0;white-space:nowrap}</style>
+.gym-row.res>span:first-child{min-width:0;flex:1}.gym-row.res .zs-plus{flex-shrink:0;white-space:nowrap}
+#v-home .gate{display:none}
+#v-home.gated .gate{display:flex;flex-direction:column;gap:12px;padding:28px 2px 8px}
+#v-home.gated .body>:not(.gate),#v-home.gated .ctas{display:none!important}
+.gate h2{font-family:var(--display);font-size:2.2rem;line-height:1;text-transform:uppercase;margin:0}
+.gate p{color:var(--app-dim);margin:0;font-size:.95rem;line-height:1.4}
+.gate ul{margin:4px 0 10px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.gate li{background:var(--app-surf);border-radius:12px;padding:11px 14px;font-size:.88rem;font-weight:600}
+.gate li::before{content:"✓";color:#a78bfa;font-weight:800;margin-right:8px}
+.row .sub{line-height:1.4}.brand{color:#c4b5fd;font-weight:700}
+.goal-l{display:block;margin-bottom:4px}
+.sp-list{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.sp-row{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;background:var(--app-surf);border:1.5px solid transparent;border-radius:12px;padding:10px 12px;text-align:left;color:var(--app-ink)}
+.sp-row[aria-pressed="true"]{border-color:var(--violet);background:var(--app-surf2)}
+.sp-row>span{display:flex;flex-direction:column;gap:1px;min-width:0}.sp-row b{font-size:.95rem}
+.sp-row small{font-size:.74rem;color:var(--app-dim)}.sp-row .sp-br{color:#c4b5fd;font-weight:700}.sp-row .sp-h{font-size:.7rem}
+.sp-ck{flex-shrink:0;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.8rem;border:1.5px solid var(--app-line)}
+.sp-row[aria-pressed="true"] .sp-ck{background:var(--violet);border-color:var(--violet);color:#fff}
+.goal{display:flex;flex-direction:column;gap:6px;margin:6px 0 12px}
+.goal-d{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.goal-d button{height:44px;border-radius:12px;border:1.5px solid var(--app-line);background:var(--app-surf);color:var(--app-ink);font-weight:800;font-size:1rem}
+.goal-d button[aria-pressed="true"]{background:linear-gradient(135deg,var(--blue),var(--violet));border-color:transparent;color:#fff}
+.prog.onb i:first-child{display:none}
+#zsheet .search{margin-bottom:10px}
+.ts-type{display:flex;align-items:center;justify-content:center;gap:10px;margin:2px 0 8px;font-size:.8rem;color:var(--app-dim)}
+.ts-type input{width:96px;text-align:center;font-size:1.1rem;font-weight:700;padding:8px;border-radius:10px;border:1.5px solid var(--app-line);background:var(--app-bg);color:var(--app-ink)}
+.ts-type input.bad{border-color:#ef4444}
+.map{z-index:0}#zsheet .zs-list{max-height:50dvh;overflow-y:auto}</style>
 
 <div class="wrap">
   <header>
@@ -852,6 +879,9 @@ input,select,textarea{font-size:16px!important}
       <div class="view" id="v-home">
         <div class="top"><div class="wordmark">No excuses<span>.</span></div><button class="login" data-go="login">Ingresar</button></div>
         <div class="body">
+          <div class="gate" id="home-gate"><h2>Sabé cuándo ir al gym.</h2><p>Creá tu cuenta, elegí tu gimnasio y tu sede, y te mostramos cuánta gente hay a cada hora.</p>
+            <ul><li>Ocupación de tu sede, ahora y en la semana</li><li>Tu rutina y tus pesos, siempre a mano</li><li>Avisos para ir cuando está tranquilo</li></ul>
+            <button class="btn pri" data-go="reg">Crear cuenta</button><button class="btn sec" data-go="login">Ya tengo cuenta</button></div>
           <div class="head"><h2>¿Cuánta gente hay?</h2><button class="helpbtn" data-help aria-label="Cómo se calcula la ocupación">Estimado <svg width="13" height="13" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5.5" fill="none" stroke="currentColor"/><path d="M6 5v4M6 3v.5" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
           <div class="map" id="map"><div id="lmap" aria-label="Mapa de sedes"></div>
             <span class="maphint" id="maphint">Tocá un punto gris para sumar esa zona</span>
@@ -932,14 +962,15 @@ input,select,textarea{font-size:16px!important}
             </div>
           </section>
           <section class="step" data-step="2" hidden>
-            <h2 class="auth-h">¿Dónde entrenás?</h2>
-            <div class="group"><span class="glabel">Tu gimnasio</span><div id="r-chain"></div></div>
-            <div class="group"><span class="glabel">Tus zonas</span><div class="chips" id="r-zones"></div></div>
-            <div class="group"><span class="glabel">Tu sede</span><div class="opts" id="r-sedes"></div></div>
+            <h2 class="auth-h">¿A qué gimnasio vas?</h2>
+            <div class="group"><div id="r-chain"></div></div>
+            <div class="group" id="r-sedes"></div>
           </section>
           <section class="step" data-step="3" hidden>
-            <h2 class="auth-h">¿Cuándo podés entrenar?</h2>
-            <p class="cu-note">Poné todos tus ratos libres, con la hora exacta. Podés cargar varios por día.</p>
+            <h2 class="auth-h">Tu semana</h2>
+            <div id="r-goal"></div>
+            <span class="glabel">¿Cuándo podés entrenar?</span>
+            <p class="cu-note">Poné tus ratos libres, con la hora exacta. Podés cargar varios por día.</p>
             <div id="r-days"></div>
           </section>
           <p class="err" id="r-err" hidden></p>
@@ -1017,7 +1048,7 @@ input,select,textarea{font-size:16px!important}
         <button class="btn pri" id="help-ok">Entendido</button></div></div>
 
       <div class="sheet-bg" id="zsheet" hidden><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="zs-t">
-        <h2 id="zs-t" class="auth-h">Agregar zona</h2><p class="dim">Zonas donde el gimnasio tiene sede.</p>
+        <h2 id="zs-t" class="auth-h">Agregar zona</h2><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="zs-q" type="search" placeholder="Escribí la zona, el barrio o la sede" aria-label="Buscar zona" autocomplete="off"></div>
         <div class="zs-list" id="zs-list"></div><button class="btn sec" id="zs-close">Cancelar</button></div></div>
 
       <nav class="tabbar" id="tabbar" aria-label="Menú"><button data-go="home" data-tab2="home"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inicio</span></button><button data-go="futuro" data-tab2="futuro" data-lock><svg class="lk" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.6"/></svg><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ocupación</span></button><button data-go="rutina" data-tab2="rutina" data-lock><svg class="lk" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.6"/></svg><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mi rutina</span></button><button data-go="alertas" data-tab2="alertas" data-lock><svg class="lk" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.6"/></svg><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z M10 21a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Alertas</span></button><button data-go="cuenta" data-tab2="cuenta"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M4 21a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cuenta</span></button></nav>
@@ -1127,6 +1158,15 @@ MEGA.forEach(s=>{s.pct=0;s.closed=true});
 ZONES.push({id:"mio",name:"Mis gimnasios"});
 const CHAINS=[["sportclub","SportClub","186 sedes"],["megatlon","Megatlon","29 sedes"],["otro","Otro gimnasio","Buscalo por nombre"]];
 const SEDES_ALL={sportclub:SEDES.slice(),megatlon:MEGA,otro:[]};
+const CABA_Z=["caba-norte","palermo","caba-centro","caba-oeste","caba-sur"];
+[SEDES_ALL.sportclub,MEGA].forEach(l=>l.forEach(s=>{if(CABA_Z.includes(s.zone)){s.z0=s.zone;s.zone="caba"}}));
+ZONES.splice(0,ZONES.length,...[{id:"caba",name:"CABA"},...ZONES.filter(z=>!CABA_Z.includes(z.id))].sort((a,b)=>a.id==="mio"?1:b.id==="mio"?-1:a.name.localeCompare(b.name,"es")));
+const CHAIN_N={sportclub:"SportClub",megatlon:"Megatlon",otro:""};
+const nrm=x=>String(x||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const htClean=t=>String(t||"–").replace(/\s*hs\.?$/i,"").replace(/\.$/,"").replace(/^Cerrado$/i,"cerrado");
+const hoursTxt=s=>s.ht?`L a V ${htClean(s.ht[0])} · Sáb ${htClean(s.ht[1])} · Dom ${htClean(s.ht[2])}`:"";
+const todayHt=s=>{if(!s.ht)return "";const w=_T0.getDay(),t=htClean(s.ht[w===0?2:w===6?1:0]);return t==="cerrado"?"Hoy cerrado":`Hoy de ${t} hs`};
+const brandOf=s=>[CHAIN_N[s.chain||"sportclub"],s.cat&&s.cat!=="Tu gimnasio"?s.cat:""].filter(Boolean).join(" ")||"Tu gimnasio";
 const css=getComputedStyle(document.documentElement);
 const LV={
   low:{name:"Baja",c:css.getPropertyValue("--low").trim(),msg:"tranquilo, máquinas libres"},
@@ -1138,8 +1178,10 @@ const lvl=p=>p<TH.low?"low":p<=TH.high?"mid":"high";
 const TH_P=[["solo","Bien tranquila","Me gusta entrenar casi sola",20,40],["normal","Normal","Lo estándar de la app",35,65],["igual","No me molesta la gente","Solo me importa si está explotado",50,80]];
 const people=p=>Math.round(p*1.4);
 const sedeById=id=>SEDES.find(s=>s.id===id);
+const kmTo=(a,b)=>a&&b?Math.hypot((a.lat-b.lat)*111,(a.lng-b.lng)*92):0;
+const nearMain=s=>kmTo(s,sedeById(state.main));
 
-const state={zones:new Set(["norte","caba-norte"]),sede:"martinez",view:"home",day:0,hour:null,user:null,after:null,
+const state={zones:new Set(["caba"]),sede:"martinez",view:"home",day:0,hour:null,user:null,after:null,
   routineSaved:false};
 const app=document.getElementById("app");
 const $=id=>document.getElementById(id);
@@ -1152,6 +1194,7 @@ const VIEWS=["home","futuro","login","reg","rutina","dia","rut","log","share","a
 const NOTE_OF={dia:"rutina",rut:"rutina",log:"rutina",share:"rutina",cuenta:"login",intro:"home"};
 const TAB_OF={home:"home",futuro:"futuro",rutina:"rutina",rut:"rutina",alertas:"alertas",login:"cuenta",cuenta:"cuenta"};
 function go(v){
+  if(v==="home"&&state.user&&!state.gymPicked)v="reg";
   if(!state.user&&LOCKED.includes(v)){state.after=v;state.lockFor=LOCK_NAME[v]||"seguir";v="login"}
   else if(v!=="login")state.lockFor=null;
   const outside=v==="panel"||v==="check";
@@ -1250,13 +1293,14 @@ function renderMap(){
   setTimeout(()=>LMAP.invalidateSize(),50);
 }
 function renderHome(){
+  const gated=!state.user||!state.gymPicked;$("v-home").classList.toggle("gated",gated);if(gated)return;
   $("chips").innerHTML=`<span class="lbl">Mis zonas:</span>`+state.zoneList.map(id=>`<button class="chip" data-z="${id}" aria-pressed="${state.zones.has(id)}">${zoneName(id)}</button>`).join("")+addZoneChip();
   renderMap();
 
   const list=$("list");list.innerHTML="";
   const ord=(a,b)=>(a.closed||a.soon)-(b.closed||b.soon)||a.pct-b.pct;
   const favs=SEDES.filter(s=>state.favs.has(s.id)).sort((a,b)=>(b.id===state.main)-(a.id===state.main)||ord(a,b));
-  const rest=SEDES.filter(s=>state.zones.has(s.zone)&&!state.favs.has(s.id)).sort((a,b)=>(b.id===state.sede)-(a.id===state.sede)||ord(a,b));
+  const rest=SEDES.filter(s=>state.zones.has(s.zone)&&!state.favs.has(s.id)).sort((a,b)=>(b.id===state.sede)-(a.id===state.sede)||nearMain(a)-nearMain(b));
   const mine=favs.concat(rest);
   if(!mine.length)list.innerHTML=`<div class="empty">Elegí al menos una zona para ver la ocupación.</div>`;
   const restShown=state.listAll?rest:rest.slice(0,Math.max(3,6-favs.length));
@@ -1264,7 +1308,7 @@ function renderHome(){
     const l=LV[lvl(s.pct)],b=document.createElement("button"),sel=s.id===state.sede,off=s.closed||s.soon,fav=state.favs.has(s.id),main=s.id===state.main;
     b.className="row"+(fav?" fav":"");b.setAttribute("aria-pressed",sel);
     b.innerHTML=`<span class="name"><span class="star" role="button" tabindex="0" data-star aria-pressed="${fav}" aria-label="${fav?"Sacar de mis sedes":"Guardar en mis sedes"}">${fav?"★":"☆"}</span>${s.name}${main?'<span class="tag">Principal</span>':""}</span>
-      <span class="sub">${esc(s.barrio||zoneName(s.zone))} · ${s.cat}${sel&&!main?` · <span class="mkmain" role="button" tabindex="0" data-mkmain>Hacer principal</span>`:""}</span>
+      <span class="sub"><b class="brand">${esc(brandOf(s))}</b> · ${esc(s.barrio||zoneName(s.zone))}<br>${esc(s.dir||"")} · ${esc(todayHt(s))}${sel&&!main?` · <span class="mkmain" role="button" tabindex="0" data-mkmain>Hacer principal</span>`:""}</span>
       <span class="val">${off?`<b style="color:var(--app-dim);font-size:1.1rem">${s.soon?"Pronto":"Cerrada"}</b><span style="color:var(--app-dim)">${s.soon?"Próximamente":"ahora"}</span>`:`<b style="color:${l.c}">${s.pct}%</b><span style="color:${l.c}">${l.name}</span>`}</span>
       <span class="track"><i style="width:${off?0:s.pct}%;background:${l.c}"></i></span>`;
     b.onclick=e=>{
@@ -1276,7 +1320,7 @@ function renderHome(){
   };
   const head=t=>{const p=document.createElement("p");p.className="lhead";p.textContent=t;list.append(p)};
   if(favs.length){head(favs.length>1?"Mis sedes":"Mi sede");favs.forEach(row)}
-  if(restShown.length){head(favs.length?"Otras de tus zonas":"En tus zonas");restShown.forEach(row)}
+  if(restShown.length){head(favs.length?"Cerca de tu sede":"En tus zonas");restShown.forEach(row)}
   if(rest.length>Math.max(3,6-favs.length)){const m=document.createElement("button");m.className="addbtn";m.textContent=state.listAll?"Ver menos":`Ver las ${rest.length} sedes de tus zonas`;m.onclick=()=>{state.listAll=!state.listAll;renderHome()};list.append(m)}
   if(favs.length<2&&mine.length>1)head("Tocá ☆ para guardar varias sedes y compararlas.");
 
@@ -1289,7 +1333,7 @@ function renderHome(){
     else if(k==="high")tip=`<b>Está llena.</b> Probá otra franja.`;
     else tip=`<b>${k==="low"?"Andá ahora":"Dale, hay lugar"}.</b> Sin excusas.`;
   }
-  $("tip").innerHTML=tip;
+  $("tip").innerHTML=(state.goal?`<span class="goal-l">${goalLine()}</span>`:"")+tip;
 }
 
 /* ---------- Datos de predicción (ejemplo) ---------- */
@@ -1321,7 +1365,7 @@ function hist(sede,dow,h){
   const k=.78+hash01(s.id)*.4;
   if(s.chain==="otro"&&s.peaks&&s.peaks.length){const P={m:[7,12],md:[12,15],t:[15,18],n:[18,23]};const pk=s.peaks.some(id=>P[id]&&h>=P[id][0]&&h<P[id][1]);const base=(dow===0||dow===6)?22:30;return clamp((pk?base+48:base)+noise(dow,h,s.id.length)*14)}
   if(dow===0||dow===6){const i=Math.max(0,Math.min(10,h-9));return clamp(WEEKEND[i]*(h<9||h>19?.7:1)*k*.9*DOW_F[dow])}
-  const prof=OFICINA.has(s.zone)?WEEKDAY.palermo:(hash01(s.id+"p")<.5?WEEKDAY.martinez:WEEKDAY.belgrano);
+  const prof=OFICINA.has(s.z0||s.zone)?WEEKDAY.palermo:(hash01(s.id+"p")<.5?WEEKDAY.martinez:WEEKDAY.belgrano);
   return clamp(prof[Math.max(0,Math.min(15,h-7))]*k*DOW_F[dow]);
 }
 /* Ocupación de ahora según la hora real; si la sede está cerrada queda marcada */
@@ -1349,7 +1393,7 @@ function bestWindow(sede,di){
 
 /* ---------- Ocupación futura ---------- */
 function renderF(){
-  const mine=SEDES.filter(s=>state.zones.has(s.zone)||state.favs.has(s.id));
+  const fv=SEDES.filter(s=>state.favs.has(s.id)||s.id===state.sede),mine=fv.concat(SEDES.filter(s=>state.zones.has(s.zone)&&!fv.includes(s)).sort((a,b)=>nearMain(a)-nearMain(b)).slice(0,Math.max(0,5-fv.length)));
   if(!sedeById(state.sede)||!mine.includes(sedeById(state.sede)))state.sede=state.main&&sedeById(state.main)?state.main:mine[0]?mine[0].id:SEDES[0].id;
   const sede=state.sede,di=state.day,dow=DAYS[di].getDay();
 
@@ -1375,7 +1419,7 @@ function renderF(){
   // Título
   const dname=di===0?"Hoy":`${DOW_N[dow][0].toUpperCase()+DOW_N[dow].slice(1)} ${DAYS[di].getDate()}`;
   $("f-title").innerHTML=`Por hora <span>${dname} · ${sedeById(sede).name}</span>`;
-  {const S=sedeById(sede);$("f-info").innerHTML=`<span>${esc(S.dir)}${S.barrio?" · "+esc(S.barrio):""}</span><span>L a V ${esc(S.ht[0]||"–")} · Sáb ${esc(S.ht[1]||"–")} · Dom ${esc(S.ht[2]||"–")}</span>${S.chain==="otro"?`<span class="gym-note">Estimación general: no tenemos datos de este gimnasio. Ajustala en Cuenta → Mi gimnasio.</span>`:""}<span class="sacts"><a href="https://www.google.com/maps/dir/?api=1&destination=${S.lat},${S.lng}" target="_blank" rel="noopener">Cómo llegar</a>${S.chain==="otro"?`<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(S.name+" "+S.dir)}" target="_blank" rel="noopener">Ver en Google Maps</a>`:""}<button class="link" data-fstar>${state.favs.has(S.id)?"★ Guardada":"☆ Guardar"}</button>${S.id===state.main?`<span class="dim">Principal</span>`:`<button class="link" data-fmain>Hacer principal</button>`}</span>`}
+  {const S=sedeById(sede);$("f-info").innerHTML=`<span><b class="brand">${esc(brandOf(S))}</b> · ${esc(S.dir)}${S.barrio?" · "+esc(S.barrio):""}</span><span>${esc(hoursTxt(S))}</span>${S.chain==="otro"?`<span class="gym-note">Estimación general: no tenemos datos de este gimnasio. Ajustala en Cuenta → Mi gimnasio.</span>`:""}<span class="sacts"><a href="https://www.google.com/maps/dir/?api=1&destination=${S.lat},${S.lng}" target="_blank" rel="noopener">Cómo llegar</a><button class="link" data-fstar>${state.favs.has(S.id)?"★ Guardada":"☆ Guardar"}</button>${S.id===state.main?`<span class="dim">Principal</span>`:`<button class="link" data-fmain>Hacer principal</button>`}</span>`}
 
   // Gráfico
   const W=300,H=140,x0=4,x1=296,yT=14,yB=118,slot=(x1-x0)/HOURS.length,bw=slot-6;
@@ -1470,7 +1514,7 @@ $("login-form").addEventListener("submit",e=>{
   const pass=$("l-pass").value,err=$("l-err"),bad=checkVia("l");
   if(bad)err.textContent=bad;
   else if(!pass)err.textContent="Escribí tu contraseña.";
-  else{const btn=e.submitter||$("login-form").querySelector("[type=submit]");busy(btn,"Ingresando…",()=>{const mail=$("l-id").value.trim();state.user={name:(state.lastUser&&state.lastUser.contact===mail&&state.lastUser.name)||nameFromMail(mail),contact:mail};const to=state.after||"home";state.after=null;go(to);toast(`Hola, ${state.user.name}. Sin excusas.`)});return}
+  else{const btn=e.submitter||$("login-form").querySelector("[type=submit]");busy(btn,"Ingresando…",()=>{const mail=$("l-id").value.trim();state.user={name:(state.lastUser&&state.lastUser.contact===mail&&state.lastUser.name)||nameFromMail(mail),contact:mail};if(!state.gymPicked){go("reg");toast(`Hola, ${state.user.name}. Primero, ¿a qué gimnasio vas?`);return}const to=state.after||"home";state.after=null;go(to);toast(`Hola, ${state.user.name}. Sin excusas.`)});return}
   err.hidden=false;
 });
 
@@ -1509,12 +1553,15 @@ function tsInit(){
   app.insertAdjacentHTML("beforeend",`<div class="sheet-bg" id="tsheet" hidden><div class="sheet tsh" role="dialog" aria-modal="true" aria-labelledby="ts-t">
     <div class="ts-top"><button type="button" class="ts-x" id="ts-cancel" aria-label="Cancelar">✕</button><b id="ts-t"></b><button type="button" class="ts-ok" id="ts-ok" aria-label="Guardar horario">✓</button></div>
     <div class="ts-seg" role="group" aria-label="Qué hora cambiar"><button type="button" data-tsf="0"><small>Desde</small><b id="ts-f"></b></button><button type="button" data-tsf="1"><small>Hasta</small><b id="ts-to"></b></button></div>
+    <label class="ts-type"><span>O escribila</span><input id="ts-in" inputmode="numeric" placeholder="19:30" maxlength="5" autocomplete="off" enterkeyhint="done" aria-label="Escribir la hora"></label>
     <div class="ts-cols"><div class="ts-col" id="ts-h" aria-label="Hora">${TH_H.map(h=>`<div data-v="${h}">${p2(h)}</div>`).join("")}</div><span class="ts-colon">:</span><div class="ts-col" id="ts-m" aria-label="Minutos">${TH_M.map(m=>`<div data-v="${m}">${p2(m)}</div>`).join("")}</div></div>
     <p class="ts-hint" id="ts-hint"></p></div></div>`);
   const col=(id,list,unit)=>{const el=$(id);let tm;
-    el.addEventListener("scroll",()=>{clearTimeout(tm);tm=setTimeout(()=>{const ix=Math.max(0,Math.min(list.length-1,Math.round(el.scrollTop/ITEM)));setPart(unit,list[ix])},90)},{passive:true});
+    el.addEventListener("scroll",()=>{clearTimeout(tm);tm=setTimeout(()=>{if(Date.now()-(TS.typing||0)<600)return;const ix=Math.max(0,Math.min(list.length-1,Math.round(el.scrollTop/ITEM)));setPart(unit,list[ix])},90)},{passive:true});
     el.addEventListener("click",e=>{const d=e.target.closest("[data-v]");if(!d)return;const ix=list.indexOf(+d.dataset.v);el.scrollTo({top:ix*ITEM,behavior:"smooth"})});};
   col("ts-h",TH_H,"h");col("ts-m",TH_M,"m");
+  $("ts-in").addEventListener("input",e=>tsTyped(e.target));
+  $("ts-in").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();e.target.blur();if(!$("ts-ok").disabled)closeTime(true)}});
   $("tsheet").addEventListener("click",e=>{
     if(e.target.id==="tsheet"||e.target.closest("#ts-cancel")){closeTime(false);return}
     if(e.target.closest("#ts-ok")){closeTime(true);return}
@@ -1525,6 +1572,7 @@ function setPart(unit,v){const [h,m]=TS.draft[TS.k].split(":").map(Number);TS.dr
 function paintTime(scroll){
   const [f,t]=TS.draft,bad=toMin(t)<=toMin(f);
   $("ts-t").textContent=dayFull(TS.w);$("ts-f").textContent=f;$("ts-to").textContent=t;
+  {const ti=$("ts-in");if(ti&&document.activeElement!==ti){ti.value=TS.draft[TS.k];ti.classList.remove("bad")}}
   $("tsheet").querySelectorAll("[data-tsf]").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.tsf===TS.k));
   $("ts-ok").disabled=bad;
   $("ts-hint").innerHTML=bad?`<span class="bad">La hora de fin tiene que ser después de la de inicio.</span>`:(avBest(TS.w,f,t)||"Mové la rueda las veces que quieras. Se guarda con ✓.");
@@ -1577,24 +1625,24 @@ function bindAvail(el,get,rerender){
 
 const reg={step:1};
 function startReg(){
-  Object.assign(reg,{step:1,zones:new Set(state.zones),sede:state.sede,avail:avClone(state.avail&&state.avail.r||avDefault())});AV.copy=null;
+  Object.assign(reg,{step:state.user?2:1,onb:!!state.user,chain:state.user&&state.gymPicked?state.chain:null,goal:state.goal||null,zones:new Set(state.zones),sede:state.user&&state.gymPicked?state.main:null,avail:avClone(state.avail&&state.avail.r||avDefault())});AV.copy=null;
   renderReg();
 }
 function renderReg(){
   const n=reg.step;
   document.querySelectorAll("#v-reg .step").forEach(s=>s.hidden=+s.dataset.step!==n);
-  $("r-steps").textContent=`Paso ${n} de 3`;
+  $("r-steps").textContent=reg.onb?`Paso ${n-1} de 2`:`Paso ${n} de 3`;
+  $("r-prog").classList.toggle("onb",!!reg.onb);
   $("r-prog").querySelectorAll("i").forEach((i,k)=>i.classList.toggle("on",k<n));
-  $("r-backtxt").textContent=n===1?"Inicio":"Atrás";
-  $("r-next").textContent=n===3?"Crear cuenta":"Seguir";
+  $("r-backtxt").textContent=n===1?"Inicio":reg.onb&&n===2?"Salir":"Atrás";
+  $("r-next").textContent=n===3?(reg.onb?"Listo":"Crear cuenta"):"Seguir";
   $("r-err").hidden=true;
 
   // Paso 2: zonas y sede
-  $("r-chain").innerHTML=chainHtml();
-  $("r-zones").innerHTML=state.zoneList.map(id=>`<button class="chip" data-z="${id}" aria-pressed="${reg.zones.has(id)}">${zoneName(id)}</button>`).join("")+addZoneChip();
-  const opts=SEDES.filter(s=>reg.zones.has(s.zone));
-  if(!opts.some(s=>s.id===reg.sede))reg.sede=opts[0]?opts[0].id:null;
-  $("r-sedes").innerHTML=opts.length?`<div class="chips">${opts.map(s=>`<button class="chip" data-s="${s.id}" aria-pressed="${s.id===reg.sede}">${s.id===reg.sede?"★ ":""}${esc(s.name)}</button>`).join("")}</div>`:`<div class="empty">Marcá al menos una zona.</div>`;
+  $("r-chain").innerHTML=chainHtml(reg.chain);
+  if(reg.sede&&!sedeById(reg.sede))reg.sede=null;
+  $("r-sedes").innerHTML=reg.chain&&reg.chain!=="otro"?sedePickHtml(reg.sede,`Tu sede de ${CHAIN_N[reg.chain]}`):"";
+  $("r-goal").innerHTML=goalHtml(reg.goal);
 
   // Paso 3: días y horarios
   $("r-days").innerHTML=avWeekHtml(reg.avail)+availHtml(reg.avail);
@@ -1608,22 +1656,25 @@ $("v-reg").addEventListener("click",e=>{
   else if(sl){flip(reg.slots,sl.dataset.sl);renderReg()}
 });
 bindAvail($("r-days"),()=>reg.avail,renderReg);
-$("r-back").addEventListener("click",()=>{if(reg.step===1)go("home");else{reg.step--;renderReg();app.querySelector("#v-reg .body").scrollTop=0}});
+$("r-back").addEventListener("click",()=>{if(reg.step===1)go("home");else if(reg.onb&&reg.step===2){state.lastUser=state.user;state.user=null;go("login")}else{reg.step--;renderReg();app.querySelector("#v-reg .body").scrollTop=0}});
 $("r-next").addEventListener("click",()=>{
   const err=$("r-err");let msg="";
   if(reg.step===1){
     msg=checkVia("r");
     if(!msg&&$("r-pass").value.length<6)msg="La contraseña necesita al menos 6 caracteres.";
   }else if(reg.step===2){
-    if(!reg.sede)msg="Elegí una zona y tu sede para seguir.";
-  }else if(!avCount(reg.avail))msg="Agregá al menos un horario libre.";
+    if(!reg.chain)msg="Elegí a qué gimnasio vas.";
+    else if(!reg.sede)msg=reg.chain==="otro"?"Buscá tu gimnasio y tocá “Elegir”.":"Escribí y elegí tu sede.";
+  }else if(!reg.goal)msg="Elegí cuántas veces por semana pensás ir.";
+  else if(!avCount(reg.avail))msg="Agregá al menos un horario libre.";
   else if(AV_ORDER.some(w=>reg.avail[w].some(([f,t])=>toMin(t)<=toMin(f))))msg="Revisá los horarios: la hora de fin tiene que ser después de la de inicio.";
   if(msg){err.textContent=msg;err.hidden=false;return}
   if(reg.step<3){reg.step++;renderReg();app.querySelector("#v-reg .body").scrollTop=0;return}
-  state.zones=new Set(reg.zones);state.sede=reg.sede;state.main=reg.sede;state.favs.add(reg.sede);state.avail={r:avClone(reg.avail)};
-  state.user={name:nameFromMail($("r-id").value.trim()),contact:$("r-id").value.trim()};
-  busy($("r-next"),"Creando cuenta…",()=>{const to=state.after||"home";state.after=null;
-  go(to);toast(`Cuenta creada. Tu sede: ${sedeById(state.sede).name}.`)});
+  {const z=sedeById(reg.sede).zone;state.zones=new Set([z]);state.zoneList=[z]}
+  state.sede=reg.sede;state.main=reg.sede;state.favs=new Set([reg.sede]);state.avail={r:avClone(reg.avail)};state.goal=reg.goal;state.gymPicked=true;_fitKey="";
+  const onb=reg.onb;if(!onb)state.user={name:nameFromMail($("r-id").value.trim()),contact:$("r-id").value.trim()};
+  busy($("r-next"),onb?"Guardando…":"Creando cuenta…",()=>{const to=state.after||"home";state.after=null;
+  go(to);toast(`${onb?"Listo":"Cuenta creada"}. Tu sede: ${sedeById(state.sede).name}.`)});
 });
 
 /* ---------- Mi rutina ---------- */
@@ -1702,7 +1753,7 @@ function renderRutina(){
       return `<button class="wrow ${cls}" data-i="${i}"><span class="wd"><small>${DOW_S[w]}</small><b>${d.getDate()}</b></span>
         <span class="wm"><b>${esc(RUT[s.rid]?RUT[s.rid].name:"Rutina")}</b><small>${dot}${timeTxt(s)}${s.sede&&sedeById(s.sede)?" · "+esc(sedeById(s.sede).name):""}</small></span>${pill}</button>`;
     }).join("");
-    el.innerHTML=`<p class="rt-sum"><span>Semana del ${dmy(WEEK[0])} al ${dmy(WEEK[6])}</span><span><b>${done} de ${total}</b> hechas</span></p><div class="wk-list">${rows}</div><button type="button" class="btn ${Object.keys(R.plan).length?"sec":"pri"} full ap-open" id="rt-auto">Armame la semana</button><p class="ap-sub">Te sugerimos día, hora y sede según tus ratos libres y la ocupación.</p><button type="button" class="btn sec full" id="rt-shareweek">Compartir mi semana en historias</button>`;
+    el.innerHTML=`<p class="rt-sum"><span>Semana del ${dmy(WEEK[0])} al ${dmy(WEEK[6])}</span>${state.goal?`<span>Fuiste <b>${weekDone()} de ${state.goal}</b> días</span>`:`<span><b>${done} de ${total}</b> hechas</span>`}</p><div class="wk-list">${rows}</div><button type="button" class="btn ${Object.keys(R.plan).length?"sec":"pri"} full ap-open" id="rt-auto">Armame la semana</button><p class="ap-sub">Te sugerimos día, hora y sede según tus ratos libres y la ocupación.</p><button type="button" class="btn sec full" id="rt-shareweek">Compartir mi semana en historias</button>`;
     const t=sessionOf(TODAY_I),showCta=t&&!R.done.has(TODAY_I)&&!(R.ovr[TODAY_I]&&R.ovr[TODAY_I].moved!==undefined);
     $("rt-ctas").hidden=!showCta;
     if(showCta)$("rt-cta").textContent=`Registrar ${RUT[t.rid].name} de hoy`;
@@ -2126,8 +2177,10 @@ function monthHtml(){
   const volTxt=s.vol>=1000?`${fmtKg(Math.round(s.vol/100)/10)} t`:`${s.vol} kg`;
   return `<section class="card ms"><h3>Resumen de ${s.name.toLowerCase()} <span>${s.isCur?"hasta hoy":""}</span></h3>
     <div class="chips">${opts.map(o=>`<button type="button" class="chip" data-msm="${o.y}-${o.m}" aria-pressed="${o.y===MS.y&&o.m===MS.m}">${MES_FULL[o.m]}</button>`).join("")}</div>
-    <div class="ms-big"><b>${s.count}</b><span>entrenos<br><small>${s.pct} % de los días${s.isCur?" que van":""}</small></span></div>
-    <div class="ms-grid">${[["Días con entreno",`${s.count} / ${s.daysSoFar}`],["Kilos movidos",s.vol?volTxt:""],["Récords",s.prs.length?String(s.prs.length):""],["Rutina más hecha",s.topRut?esc(s.topRut):""],["Sede",s.topSede?esc(s.topSede):""],["Cómo te sentiste",s.feel?feelTxt:""]].filter(r=>r[1]).map(([a,b])=>`<span><small>${a}</small><b>${b}</b></span>`).join("")}</div>
+    ${(()=>{const g=state.goal,mg=g?Math.round(g*new Date(s.y,s.m+1,0).getDate()/7):0;
+      return `<div class="ms-big"><b>${s.count}</b><span>entrenos<br><small>${g?`de ${mg} que te propusiste${s.isCur?" para el mes":""}`:`${s.pct} % de los días${s.isCur?" que van":""}`}</small></span></div>`+
+      (g?"":goalHtml(null,"¿Cuántas veces por semana querés ir? Así medimos tu meta."))+
+      `<div class="ms-grid">${[...(g&&s.isCur?[["Esta semana",`${weekDone()} de ${g}`]]:[]),...(g?[["Meta del mes",`${s.count} de ${mg}`]]:[]),["Kilos movidos",s.vol?volTxt:""],["Récords",s.prs.length?String(s.prs.length):""],["Rutina más hecha",s.topRut?esc(s.topRut):""],["Sede",s.topSede?esc(s.topSede):""],["Cómo te sentiste",s.feel?feelTxt:""]].filter(r=>r[1]).map(([a,b])=>`<span><small>${a}</small><b>${b}</b></span>`).join("")}</div>`})()}
     ${s.prs.length?`<div class="pr-list">${s.prs.slice(0,3).map(p=>`<button type="button" class="pr-row" data-exd="${esc(p.name)}"><span><b>${esc(p.name)}</b><small>antes ${fmtKg(p.prev)} kg</small></span><b>${fmtKg(p.kg)} kg</b></button>`).join("")}</div>`:""}
     <button type="button" class="btn sec full" id="ms-share">Compartir mi ${s.name.toLowerCase()}</button></section>`;
 }
@@ -2417,7 +2470,7 @@ $("rt-content").addEventListener("click",e=>{
 });
 
 /* ---------- Agregar zona ---------- */
-state.zoneList=["norte","caba-norte","palermo"];
+state.zoneList=["caba"];
 state.main=state.sede;state.favs=new Set([state.sede,"sportclub-belgrano-avant"].filter(id=>SEDES.some(s=>s.id===id)));
 function toggleFav(id){const s=sedeById(id);if(state.favs.has(id)){if(id===state.main){toast("Es tu sede principal. Elegí otra como principal primero.");return}state.favs.delete(id);toast(`Sacaste ${s.name} de tus sedes.`)}else{state.favs.add(id);toast(`★ Guardaste ${s.name} en tus sedes.`)}}
 function setMain(id){state.main=id;state.favs.add(id);state.sede=id;toast(`${sedeById(id).name} es tu sede principal.`)}
@@ -2431,16 +2484,16 @@ function applyChain(ch,quiet){
   const zs=[...new Set(SEDES.map(s=>s.zone))];
   if(ch==="otro"){state.zoneList=["mio"];state.zones=new Set(["mio"])}
   else{state.zoneList=(state.zoneList||[]).filter(z=>zs.includes(z));state.zones=new Set([...(state.zones||[])].filter(z=>zs.includes(z)));
-    if(!state.zones.size){const near=SEDES.find(s=>s.zone==="norte")||SEDES[0];if(near){state.zones.add(near.zone);if(!state.zoneList.includes(near.zone))state.zoneList.unshift(near.zone)}}
-    ["norte","caba-norte","palermo"].forEach(z=>{if(zs.includes(z)&&!state.zoneList.includes(z)&&state.zoneList.length<3)state.zoneList.push(z)})}
+    if(!state.zones.size){const near=sedeById(state.main)||SEDES.find(s=>s.zone==="caba")||SEDES[0];if(near){state.zones.add(near.zone);if(!state.zoneList.includes(near.zone))state.zoneList.unshift(near.zone)}}
+    state.zones.forEach(z=>{if(!state.zoneList.includes(z))state.zoneList.push(z)})}
   state.favs=new Set([...(state.favs||[])].filter(id=>sedeById(id)));
   if(!state.main||!sedeById(state.main)){const f=SEDES.find(s=>state.zones.has(s.zone))||SEDES[0];state.main=f?f.id:null}
   if(state.main)state.favs.add(state.main);state.sede=state.main;_fitKey="";
 }
-const chainHtml=()=>`<div class="gym-ch" role="group" aria-label="Tu gimnasio">${CHAINS.map(([id,n,d])=>`<button type="button" class="gym-c" data-chain="${id}" aria-pressed="${state.chain===id}"><b>${id==="otro"?"Otro":n}</b><small>${id==="otro"?((state.customGyms||[]).length?`${state.customGyms.length} guardado${state.customGyms.length>1?"s":""}`:"Buscalo"):d}</small></button>`).join("")}</div>
-  ${state.chain==="otro"?`<div class="gym-search"><div class="search"><input id="gym-q" type="search" placeholder="Nombre del gimnasio y barrio, ej.: Gym Coliseo Palermo" autocomplete="off" enterkeyhint="search"></div><button type="button" class="btn sec" id="gym-go">Buscar en el mapa</button><div id="gym-res"></div>
+const chainHtml=(sel=state.chain)=>`<div class="gym-ch" role="group" aria-label="Tu gimnasio">${CHAINS.map(([id,n,d])=>`<button type="button" class="gym-c" data-chain="${id}" aria-pressed="${sel===id}"><b>${id==="otro"?"Otro":n}</b><small>${id==="otro"?((state.customGyms||[]).length?`${state.customGyms.length} guardado${state.customGyms.length>1?"s":""}`:"Buscalo"):d}</small></button>`).join("")}</div>
+  ${sel==="otro"?`<div class="gym-search"><div class="search"><input id="gym-q" type="search" placeholder="Nombre del gimnasio y barrio, ej.: Gym Coliseo Palermo" autocomplete="off" enterkeyhint="search"></div><button type="button" class="btn sec" id="gym-go">Buscar en el mapa</button><div id="gym-res"></div>
     ${(state.customGyms||[]).length?`<span class="glabel">Tus gimnasios</span>${state.customGyms.map(g=>`<div class="gym-row"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small></span><button type="button" class="link" data-gdel="${g.id}">Quitar</button></div>
-      <div class="gym-peaks"><small>¿Cuándo se llena? <a href="${g.gurl||`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(g.name+" "+g.dir)}`}" target="_blank" rel="noopener">Miralo en Google Maps</a></small><div class="chips">${SLOTS.map(sl=>`<button type="button" class="chip" data-gpk="${g.id}|${sl.id}" aria-pressed="${(g.peaks||[]).includes(sl.id)}">${sl.name}</button>`).join("")}</div></div>`).join("")}`:""}</div>`:""}`;
+      <div class="gym-peaks"><small>¿Cuándo se llena? Marcá los horarios en que hay más gente.</small><div class="chips">${SLOTS.map(sl=>`<button type="button" class="chip" data-gpk="${g.id}|${sl.id}" aria-pressed="${(g.peaks||[]).includes(sl.id)}">${sl.name}</button>`).join("")}</div></div>`).join("")}`:""}</div>`:""}`;
 async function gymSearch(){
   const q=($("gym-q")||{}).value||"";if(q.trim().length<3){toast("Escribí el nombre del gimnasio.");return}
   const res=$("gym-res");res.innerHTML=`<p class="dim">Buscando…</p>`;
@@ -2529,9 +2582,9 @@ function addGym(g){
   state.customGyms=(state.customGyms||[]).filter(x=>x.id!==n.id).concat(n);
   applyChain("otro");setMain(n.id);toast(`Listo: ${n.name}. Ajustá cuándo se llena para mejorar la estimación.`);
 }
-function rerenderGym(){if(state.view==="reg"){reg.zones=new Set(state.zones);reg.sede=state.main;renderReg()}else if(state.view==="cuenta")renderCuenta();else renderHome();save()}
+function rerenderGym(){if(state.view==="reg"){reg.chain=state.chain;reg.zones=new Set(state.zones);reg.sede=state.chain==="otro"&&(state.customGyms||[]).length?state.main:(reg.sede&&sedeById(reg.sede)?reg.sede:null);renderReg()}else if(state.view==="cuenta")renderCuenta();else renderHome();save()}
 document.addEventListener("click",e=>{const t=e.target;let b;
-  if(b=t.closest("[data-chain]")){applyChain(b.dataset.chain);rerenderGym();if(b.dataset.chain==="otro")setTimeout(()=>$("gym-q")&&$("gym-q").focus(),50);return}
+  if(b=t.closest("[data-chain]")){if(state.view==="reg"&&reg.chain!==b.dataset.chain){reg.sede=null;SP.q=""}applyChain(b.dataset.chain);rerenderGym();if(b.dataset.chain==="otro")setTimeout(()=>$("gym-q")&&$("gym-q").focus(),50);return}
   if(t.closest("#gym-go")){gymSearch();return}
   if(b=t.closest("[data-gadd]")){addGym(GS.list[+b.dataset.gadd]);rerenderGym();return}
   if(t.closest("#gym-manual")){manualGym();return}
@@ -2549,15 +2602,21 @@ function addZoneClick(){
   }
   openZones();
 }
-function openZones(){
-  const left=ZONES.filter(z=>!state.zoneList.includes(z.id));
-  $("zs-list").innerHTML=left.length?left.map(z=>{
-    const zs=SEDES.filter(s=>s.zone===z.id),ss=zs.slice(0,3).map(s=>s.name).join(", ")+(zs.length>3?` y ${zs.length-3} más`:"");
+function openZones(){$("zs-q").value="";zsPaint();$("zsheet").hidden=false;setTimeout(()=>$("zs-q").focus(),60)}
+function zsPaint(){
+  const q=nrm($("zs-q").value).trim(),zs=new Set(SEDES.map(s=>s.zone));
+  const left=ZONES.filter(z=>zs.has(z.id)&&!state.zoneList.includes(z.id)&&(!q||nrm(z.name).includes(q)));
+  const ss=q.length>=3?sedeMatches(q).slice(0,8):[];
+  $("zs-list").innerHTML=(!left.length&&!ss.length)?`<p class="dim">${q?`No encontramos “${esc($("zs-q").value)}”.`:"Ya agregaste todas las zonas."}</p>`:left.map(z=>{
+    const zs=SEDES.filter(s=>s.zone===z.id).sort((a,b)=>a.name.localeCompare(b.name,"es")),ss=zs.slice(0,3).map(s=>s.name).join(", ")+(zs.length>3?` y ${zs.length-3} más`:"");
     return `<button class="zs-row" data-zadd="${z.id}"><span><b>${z.name}</b><small>${zs.length} sede${zs.length>1?"s":""}: ${esc(ss)}</small></span><span class="zs-plus">+ Agregar</span></button>`;
-  }).join(""):`<p class="dim">Ya agregaste todas las zonas donde el gimnasio tiene sede.</p>`;
-  $("zsheet").hidden=false;
+  }).join("")+(ss.length?`<span class="glabel">Sedes</span>`+ss.map(s=>`<button class="zs-row" data-zsede="${s.id}"><span><b>${esc(s.name)}</b><small>${esc(brandOf(s))} · ${esc(s.dir)} · ${esc(zoneName(s.zone))}</small></span><span class="zs-plus">+ Agregar</span></button>`).join(""):"");
 }
+document.addEventListener("input",e=>{if(e.target.id==="zs-q")zsPaint()});
 $("zsheet").addEventListener("click",e=>{
+  const sb=e.target.closest("[data-zsede]");
+  if(sb){const s=sedeById(sb.dataset.zsede);if(!state.zoneList.includes(s.zone))state.zoneList.push(s.zone);state.zones.add(s.zone);state.sede=s.id;state.favs.add(s.id);
+    if(state.view==="cuenta")renderCuenta();else renderHome();$("zsheet").hidden=true;toast(`Guardaste ${s.name}.`);return}
   const b=e.target.closest("[data-zadd]");
   if(b){
     const z=b.dataset.zadd;state.zoneList.push(z);state.zones.add(z);
@@ -2572,6 +2631,51 @@ document.addEventListener("click",e=>{if(e.target.closest("[data-addzone]"))addZ
 $("chips").addEventListener("click",e=>{const b=e.target.closest("[data-z]");if(b)toggleZone(b.dataset.z)});
 $("offmap").addEventListener("click",e=>{const b=e.target.closest("[data-osede]");if(b){state.sede=b.dataset.osede;renderHome()}});
 
+
+/* ---------- Elegir sede escribiendo ---------- */
+const SP={q:""};
+function sedeRow(s,on,attr){
+  return `<button type="button" class="sp-row" ${attr}="${s.id}" aria-pressed="${on}"><span><b>${esc(s.name)}</b><small class="sp-br">${esc(brandOf(s))}${s.barrio?" · "+esc(s.barrio):""}</small><small>${esc(s.dir||"")}</small><small class="sp-h">${esc(hoursTxt(s))}</small></span><i class="sp-ck" aria-hidden="true">${on?"✓":""}</i></button>`;
+}
+function sedeMatches(q){
+  const n=nrm(q).trim();
+  return SEDES.filter(s=>!n||[s.name,s.barrio,s.dir,zoneName(s.zone)].some(x=>nrm(x).includes(n))).sort((a,b)=>(nrm(b.name).includes(n)-nrm(a.name).includes(n))||a.name.localeCompare(b.name,"es"));
+}
+function sedePickList(sel){
+  const L=sedeMatches(SP.q),n=SP.q.trim();
+  if(!n){const s=sedeById(sel);return s?sedeRow(s,true,"data-sp")+`<p class="ap-tip">¿Es otra? Escribí su nombre o el barrio.</p>`:`<p class="ap-tip">Escribí el nombre de la sede o el barrio, por ejemplo <b>Urquiza</b>. Son ${SEDES.length} sedes.</p>`}
+  if(!L.length)return `<p class="dim">No hay sedes con “${esc(SP.q)}”. Probá con el barrio.</p>`;
+  return L.slice(0,30).map(s=>sedeRow(s,s.id===sel,"data-sp")).join("")+(L.length>30?`<p class="ap-tip">Hay ${L.length} sedes. Escribí un poco más.</p>`:"");
+}
+const sedePickHtml=(sel,label)=>`<span class="glabel">${label||"Tu sede"}</span><div class="search"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="sp-q" type="search" placeholder="Escribí tu sede o barrio" aria-label="Buscar sede" autocomplete="off" enterkeyhint="search" value="${esc(SP.q)}"></div><div class="sp-list" id="sp-list">${sedePickList(sel)}</div>`;
+document.addEventListener("input",e=>{if(e.target.id!=="sp-q")return;SP.q=e.target.value;
+  const sel=state.view==="reg"?reg.sede:state.main;$("sp-list").innerHTML=sedePickList(sel)});
+function pickSede(id){
+  const s=sedeById(id);if(!s)return;SP.q="";
+  if(!state.zoneList.includes(s.zone))state.zoneList.push(s.zone);state.zones.add(s.zone);
+  if(state.view==="reg"){reg.sede=id;renderReg();return}
+  setMain(id);renderCuenta();
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-sp]");if(b)pickSede(b.dataset.sp)});
+
+/* ---------- Meta semanal ---------- */
+const goalHtml=(g,lbl)=>`<div class="goal"><span class="glabel">${lbl||"¿Cuántas veces por semana pensás ir?"}</span><div class="goal-d" role="group" aria-label="Veces por semana">${[1,2,3,4,5,6,7].map(n=>`<button type="button" data-goal="${n}" aria-pressed="${g===n}">${n}</button>`).join("")}</div></div>`;
+const weekDone=()=>WEEK.filter((d,i)=>R.done.has(i)||R.logDays[isoD(d)]).length;
+const goalLine=()=>{if(!state.goal)return "";const d=weekDone(),g=state.goal;return d>=g?`Esta semana fuiste <b>${d} de ${g}</b> días. ¡Meta cumplida!`:`Esta semana fuiste <b>${d} de ${g}</b> días.`};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-goal]");if(!b)return;const n=+b.dataset.goal;
+  if(state.view==="reg"){reg.goal=n;renderReg();return}
+  state.goal=n;toast(`Meta: ${n} ${n===1?"vez":"veces"} por semana.`);
+  if(state.view==="cuenta")renderCuenta();else if(state.view==="rutina")renderRutina();save()});
+
+/* ---------- Hora escrita con el teclado ---------- */
+function tsTyped(el){
+  const v=el.value.replace(/\D/g,"").slice(0,4);let h,m;
+  if(v.length>=3){h=+v.slice(0,v.length-2);m=+v.slice(-2);el.value=`${v.slice(0,v.length-2)}:${v.slice(-2)}`}
+  else{h=+v;m=0;el.value=v}
+  const ok=v.length&&h<=23&&m<=59;el.classList.toggle("bad",!!v.length&&!ok);
+  if(!ok)return;TS.typing=Date.now();TS.draft[TS.k]=p2(h)+":"+p2(m);paintTime(true);
+}
+
 /* ---------- Mi cuenta ---------- */
 state.avail={r:avDefault()};
 const thBar=()=>`<i style="width:${TH.low}%;background:var(--low)"></i><i style="width:${TH.high-TH.low}%;background:var(--mid)"></i><i style="flex:1;background:var(--high)"></i>`;
@@ -2583,8 +2687,9 @@ function renderCuenta(){
       <div class="field"><label for="cu-mail">Mail</label><input id="cu-mail" type="email" inputmode="email" value="${esc(u.contact||"")}" autocomplete="email"></div>
       <p class="err" id="cu-err" hidden></p><button class="btn sec" id="cu-save">Guardar datos</button></div></section>
     <section class="card"><h3>Mi gimnasio</h3>${chainHtml()}</section>
-    <section class="card"><h3>Dónde entrenás</h3><span class="glabel">Tus zonas</span><div class="chips">${state.zoneList.map(id=>`<button class="chip" data-cz="${id}" aria-pressed="${state.zones.has(id)}">${zoneName(id)}</button>`).join("")}${addZoneChip()}</div>
-      <span class="glabel">Sede principal</span><div class="chips">${zs.length?zs.map(s=>`<button class="chip" data-cs="${s.id}" aria-pressed="${s.id===state.main}">${s.name}</button>`).join(""):`<span class="dim">Elegí al menos una zona.</span>`}</div></section>
+    <section class="card"><h3>Dónde entrenás</h3><span class="glabel">Zonas que ves en Inicio</span><div class="chips">${state.zoneList.map(id=>`<button class="chip" data-cz="${id}" aria-pressed="${state.zones.has(id)}">${zoneName(id)}</button>`).join("")}${addZoneChip()}</div>
+      ${state.chain==="otro"?"":sedePickHtml(state.main,"Sede principal")}</section>
+    <section class="card"><h3>Mi meta</h3>${goalHtml(state.goal||null)}${state.goal?`<p class="cu-note">${goalLine()}</p>`:""}</section>
     <section class="card"><h3>Cuándo podés entrenar <span>${avCount(A.r)} horario${avCount(A.r)===1?"":"s"}</span></h3><p class="cu-note">Todos tus ratos libres de la semana. Abajo de cada uno te mostramos la hora más tranquila en tu sede principal.</p><div id="cu-av">${avWeekHtml(A.r)}${availHtml(A.r)}</div></section>
     <section class="card"><h3>Cómo te gusta entrenar</h3><p class="cu-note">Vos decidís desde qué % una sede está llena. Cambia los colores de toda la app.</p>
       <div class="opts">${TH_P.map(p=>`<button class="opt" data-thp="${p[0]}" aria-pressed="${TH.low===p[3]&&TH.high===p[4]}"><span class="optx"><b>${p[1]}</b><small>${p[2]} · llena desde ${p[4]}%</small></span><i></i></button>`).join("")}</div>
@@ -2976,12 +3081,14 @@ function load(){
   if(!d||d.v!==1)return;
   Object.assign(state,d.state);
   if(!(state.zones instanceof Set))state.zones=new Set(state.zones||[]);
+  {const fz=z=>CABA_Z.includes(z)||z==="belgrano"?"caba":z;state.zones=new Set([...state.zones].map(fz));state.zoneList=[...new Set((state.zoneList||[]).map(fz))]}
+  if(state.gymPicked===undefined)state.gymPicked=!state.demo&&!!state.main;
   applyChain(state.chain||"sportclub",true);
   if(!(state.zones instanceof Set))state.zones=new Set(state.zones||[]);
-  {const OLD={belgrano:"caba-norte"},ok=id=>ZONES.some(z=>z.id===id),fix=id=>OLD[id]||id;
+  {const OLD={belgrano:"caba"},ok=id=>ZONES.some(z=>z.id===id),fix=id=>OLD[id]||id;
    state.zones=new Set([...state.zones].map(fix).filter(ok));
    state.zoneList=[...new Set((state.zoneList||[]).map(fix).filter(ok))];
-   if(!state.zoneList.length)state.zoneList=["norte","caba-norte","palermo"];
+   if(!state.zoneList.length)state.zoneList=[(sedeById(state.main)||{}).zone||"caba"];
    if(!state.zones.size)state.zones=new Set([state.zoneList[0]]);
    if(!sedeById(state.sede)||!state.zones.has(sedeById(state.sede).zone)){const f=SEDES.find(s=>state.zones.has(s.zone));state.sede=f?f.id:null}
    if(state.alerts&&state.alerts.custom)state.alerts.custom=state.alerts.custom.filter(c=>sedeById(c.sede));}
@@ -3012,6 +3119,8 @@ function freshStart(){
 }
 state.chain=state.chain||"sportclub";state.customGyms=state.customGyms||[];
 load();
+state.gymPicked=!!state.gymPicked;
+if(state.demo&&!state.routineSaved)freshStart();
 ["click","input","change","submit"].forEach(ev=>document.addEventListener(ev,()=>{save();setTimeout(save,900)},true));
 document.addEventListener("visibilitychange",()=>{if(state.view!=="log")keepAwake(false);if(document.visibilityState==="hidden")if(!NOSAVE)try{localStorage.setItem(STORE,toJ(snapshot()))}catch(_){}});
 window.addEventListener("pagehide",()=>{if(!NOSAVE)try{localStorage.setItem(STORE,toJ(snapshot()))}catch(_){}});
