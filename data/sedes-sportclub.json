@@ -1,0 +1,3475 @@
+{
+ "fuente": "sportclub.com.ar/sedes",
+ "zonas": [
+  {
+   "id": "caba-norte",
+   "name": "CABA Norte",
+   "count": 20
+  },
+  {
+   "id": "palermo",
+   "name": "Palermo · Recoleta",
+   "count": 5
+  },
+  {
+   "id": "caba-centro",
+   "name": "CABA Centro",
+   "count": 14
+  },
+  {
+   "id": "caba-oeste",
+   "name": "CABA Oeste",
+   "count": 20
+  },
+  {
+   "id": "caba-sur",
+   "name": "CABA Sur",
+   "count": 4
+  },
+  {
+   "id": "norte",
+   "name": "Zona Norte",
+   "count": 28
+  },
+  {
+   "id": "pilar",
+   "name": "Pilar · Escobar",
+   "count": 10
+  },
+  {
+   "id": "oeste",
+   "name": "Zona Oeste",
+   "count": 17
+  },
+  {
+   "id": "sur",
+   "name": "Zona Sur",
+   "count": 18
+  },
+  {
+   "id": "laplata",
+   "name": "La Plata",
+   "count": 6
+  },
+  {
+   "id": "costa",
+   "name": "Costa Atlántica",
+   "count": 7
+  },
+  {
+   "id": "interior-ba",
+   "name": "Interior de Buenos Aires",
+   "count": 6
+  },
+  {
+   "id": "mendoza",
+   "name": "Mendoza",
+   "count": 5
+  },
+  {
+   "id": "cordoba",
+   "name": "Córdoba",
+   "count": 5
+  },
+  {
+   "id": "rionegro",
+   "name": "Río Negro",
+   "count": 4
+  },
+  {
+   "id": "sanjuan",
+   "name": "San Juan",
+   "count": 3
+  },
+  {
+   "id": "corrientes",
+   "name": "Corrientes",
+   "count": 3
+  },
+  {
+   "id": "entrerios",
+   "name": "Entre Ríos",
+   "count": 3
+  },
+  {
+   "id": "tucuman",
+   "name": "Tucumán",
+   "count": 2
+  },
+  {
+   "id": "santafe",
+   "name": "Santa Fe",
+   "count": 2
+  },
+  {
+   "id": "neuquen",
+   "name": "Neuquén",
+   "count": 1
+  },
+  {
+   "id": "lapampa",
+   "name": "La Pampa",
+   "count": 1
+  },
+  {
+   "id": "sanluis",
+   "name": "San Luis",
+   "count": 1
+  },
+  {
+   "id": "jujuy",
+   "name": "Jujuy",
+   "count": 1
+  }
+ ],
+ "sedes": [
+  {
+   "id": "arribenos",
+   "name": "Arribeños",
+   "fullName": "SportClub Arribeños",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Arribeños 2511",
+   "lat": -34.5536162,
+   "lng": -58.4533638,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/QR6yELjuNxCWNHaLA"
+  },
+  {
+   "id": "belgrano",
+   "name": "Belgrano",
+   "fullName": "SportClub Belgrano",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Moldes 1930",
+   "lat": -34.5652569,
+   "lng": -58.4582615,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20  hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/sxitvtL3pj5BaGXT6"
+  },
+  {
+   "id": "sportclub-belgrano-avant",
+   "name": "Belgrano Avant",
+   "fullName": "SportClub Belgrano Avant",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Cabildo 2160",
+   "lat": -34.5615767,
+   "lng": -58.4575532,
+   "horario": {
+    "lav": "7:00 a 22hs",
+    "sab": "9:00 a 17 hs.",
+    "dom": "Domingo 9 a 17 hs."
+   },
+   "maps": "https://maps.app.goo.gl/vQF32fr8KKZ91FAWA"
+  },
+  {
+   "id": "belgrano-plaza",
+   "name": "Belgrano Plaza",
+   "fullName": "SportClub Belgrano Plaza",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Echeverría 3234",
+   "lat": -34.5678335,
+   "lng": -58.4638964,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/GnxRbRpeWNn5XenY8"
+  },
+  {
+   "id": "belgrano-r",
+   "name": "Belgrano R",
+   "fullName": "SportClub Belgrano R",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Olazabal 2978",
+   "lat": -34.5635072,
+   "lng": -58.4636565,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/Jm6AmgrfL9sSpudP6"
+  },
+  {
+   "id": "cabildo",
+   "name": "Cabildo",
+   "fullName": "SportClub Cabildo",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Cabildo 1644",
+   "lat": -34.565990280469215,
+   "lng": -58.455252284941764,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclubcabildo?share"
+  },
+  {
+   "id": "la-esquina",
+   "name": "La Esquina",
+   "fullName": "SportClub La Esquina",
+   "zone": "caba-norte",
+   "barrio": "Belgrano",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Miñones 1720",
+   "lat": -34.5588967,
+   "lng": -58.4428126,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 16 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/d3NQVhhu8AyjuYoZ6"
+  },
+  {
+   "id": "colegiales",
+   "name": "Colegiales",
+   "fullName": "SportClub Colegiales",
+   "zone": "caba-norte",
+   "barrio": "Colegiales",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Santos Dumont 3453",
+   "lat": -34.5825134,
+   "lng": -58.4474919,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/UHLZNtVYUPxAbaoK6"
+  },
+  {
+   "id": "elcano",
+   "name": "Elcano",
+   "fullName": "SportClub Elcano",
+   "zone": "caba-norte",
+   "barrio": "Colegiales",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Elcano 3353",
+   "lat": -34.57481588046698,
+   "lng": -58.462210584941616,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/SportClubElcano?share"
+  },
+  {
+   "id": "nunez",
+   "name": "Libertador",
+   "fullName": "SportClub Libertador",
+   "zone": "caba-norte",
+   "barrio": "Nuñez",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. del Libertador 7395",
+   "lat": -34.5450563,
+   "lng": -58.458973099999994,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclublibertador?share"
+  },
+  {
+   "id": "sportclub-obras-alcorta",
+   "name": "Obras alcorta",
+   "fullName": "SportClub Obras alcorta",
+   "zone": "caba-norte",
+   "barrio": "Nuñez",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Presidente Figueroa Alcorta 7250",
+   "lat": -34.547703,
+   "lng": -58.4453204,
+   "horario": {
+    "lav": "8 a 22 hs",
+    "sab": "9 a 13 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/fnq6R6XUJ7AUpLh57"
+  },
+  {
+   "id": "sportclub-quesada",
+   "name": "Quesada",
+   "fullName": "SportClub Quesada",
+   "zone": "caba-norte",
+   "barrio": "Nuñez",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Quesada 2161",
+   "lat": -34.5531085,
+   "lng": -58.4615409,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/JkmwYLUriWibJ2Py7"
+  },
+  {
+   "id": "sportclub-vertiz",
+   "name": "Vertiz",
+   "fullName": "SportClub Vertiz",
+   "zone": "caba-norte",
+   "barrio": "Parque Chas",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Andonaegui 1246",
+   "lat": -34.58785112299349,
+   "lng": -58.47906431598087,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/AFyunhV3jdA2nkvB6"
+  },
+  {
+   "id": "dot-baires-shopping",
+   "name": "Dot Baires Shopping",
+   "fullName": "SportClub Dot Baires Shopping",
+   "zone": "caba-norte",
+   "barrio": "Saavedra",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Ingreso peatonal: Vedia 3600, CABA - Ingreso en auto por el acceso de calle norte - PB del Shopping, local 25",
+   "lat": -34.54624123047438,
+   "lng": -58.49022913494225,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "10 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclubdot?share"
+  },
+  {
+   "id": "saavedra",
+   "name": "Saavedra",
+   "fullName": "SportClub Saavedra",
+   "zone": "caba-norte",
+   "barrio": "Saavedra",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Crisólogo Larralde 2847",
+   "lat": -34.5510911,
+   "lng": -58.47237,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs .",
+    "dom": "Cerrado."
+   },
+   "maps": "https://goo.gl/maps/PLhTZWAWDNDJSW8J6"
+  },
+  {
+   "id": "tronador",
+   "name": "Tronador",
+   "fullName": "SportClub Tronador",
+   "zone": "caba-norte",
+   "barrio": "Villa Ortuzar",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Tronador 850",
+   "lat": -34.5834569,
+   "lng": -58.4656759,
+   "horario": {
+    "lav": "7 a 22 h",
+    "sab": "9 a 20 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/pN3HcqFxMQaENyhM9"
+  },
+  {
+   "id": "alvarez-thomas",
+   "name": "Álvarez Thomas",
+   "fullName": "SportClub Álvarez Thomas",
+   "zone": "caba-norte",
+   "barrio": "Villa Ortuzar",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Avenida Álvarez Thomas 1570",
+   "lat": -34.578739,
+   "lng": -58.464189,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/iWJeATyCQc4iqTbh8"
+  },
+  {
+   "id": "sportclub-villa-pueyrredon",
+   "name": "Villa Pueyrredon",
+   "fullName": "SportClub Villa Pueyrredon",
+   "zone": "caba-norte",
+   "barrio": "Villa Pueyrredon",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Salvador María del Carril 2951",
+   "lat": -34.5909416,
+   "lng": -58.4990665,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 16hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com.ar/maps/place/SportClub+Villa+Pueyrred%C3%B3n/@-34.5902379,-58.5038105,15.18z/data=!4m6!3m5!1s0x95bcb7b7c60fd03b:0xbaaa91345b63c93c!8m2!3d-34.5909416!4d-58.4990665!16s%2Fg%2F11txjnrj9g?entry=ttu"
+  },
+  {
+   "id": "constituyentes",
+   "name": "Constituyentes",
+   "fullName": "SportClub Constituyentes",
+   "zone": "caba-norte",
+   "barrio": "Villa Urquiza",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. de los Constituyentes 6020",
+   "lat": -34.5742221,
+   "lng": -58.5069056,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/XpzYRtMHU3SUDkuA9"
+  },
+  {
+   "id": "sportclub-urquiza",
+   "name": "Urquiza",
+   "fullName": "SportClub Urquiza",
+   "zone": "caba-norte",
+   "barrio": "Villa Urquiza",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Monroe 4958",
+   "lat": -34.5735411,
+   "lng": -58.4847657,
+   "horario": {
+    "lav": "7 a 22 Hs",
+    "sab": "9 a 21 Hs",
+    "dom": ""
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+Urquiza/@-34.5735411,-58.4847657,15z/data=!4m2!3m1!1s0x0:0xe0815e6f68e4985a?sa=X&ved=2ahUKEwjioYHPh7L1AhWLrJUCHVIBDXYQ_BJ6BAgSEAU"
+  },
+  {
+   "id": "hipico-aleman",
+   "name": "Hípico Alemán",
+   "fullName": "SportClub Hípico Alemán",
+   "zone": "palermo",
+   "barrio": "Palermo",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av Cnel Manuel Dorrego 4045",
+   "lat": -34.5617645,
+   "lng": -58.4204305,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/dwqbdTVzHasSPQkL8"
+  },
+  {
+   "id": "palermo",
+   "name": "Palermo",
+   "fullName": "SportClub Palermo",
+   "zone": "palermo",
+   "barrio": "Palermo",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Cabrera 4848",
+   "lat": -34.5911846,
+   "lng": -58.4308458,
+   "horario": {
+    "lav": "7 a 23 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/5pgVVeNiGS7Ldf6e8"
+  },
+  {
+   "id": "plaza-italia",
+   "name": "Plaza Italia",
+   "fullName": "SportClub Plaza Italia",
+   "zone": "palermo",
+   "barrio": "Palermo",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Uriarte 2477",
+   "lat": -34.5808808,
+   "lng": -58.42284,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/oySHpfQXrxwxAeby6"
+  },
+  {
+   "id": "soler",
+   "name": "Soler",
+   "fullName": "SportClub Soler",
+   "zone": "palermo",
+   "barrio": "Palermo",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Soler 3231",
+   "lat": -34.5964858,
+   "lng": -58.4105805,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/c6sZQSw6RNmLs1Gn6"
+  },
+  {
+   "id": "obras-paraguay",
+   "name": "Obras Paraguay",
+   "fullName": "SportClub Obras Paraguay",
+   "zone": "palermo",
+   "barrio": "Recoleta",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Paraguay 2044",
+   "lat": -34.598827,
+   "lng": -58.396598,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/DbSJ1EqakkTXoGKu6"
+  },
+  {
+   "id": "sportclub-balvanera",
+   "name": "Balvanera",
+   "fullName": "Sportclub Balvanera",
+   "zone": "caba-centro",
+   "barrio": "Balvanera",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Chile 2286",
+   "lat": -34.61748709999999,
+   "lng": -58.39879989999999,
+   "horario": {
+    "lav": "07 a 22 hs.",
+    "sab": "9 a 20 hs.",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Tp3JJHReVufXst9X8"
+  },
+  {
+   "id": "congreso",
+   "name": "Congreso",
+   "fullName": "SportClub Congreso",
+   "zone": "caba-centro",
+   "barrio": "Balvanera",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Bartolomé Mitre 1625",
+   "lat": -34.6077624,
+   "lng": -58.3897168,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 16 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/thT9Tnm4mrncNSst7"
+  },
+  {
+   "id": "geba",
+   "name": "GEBA",
+   "fullName": "SportClub GEBA",
+   "zone": "caba-centro",
+   "barrio": "Balvanera",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Bartolomé Mitre 1149",
+   "lat": -34.607303,
+   "lng": -58.382741,
+   "horario": {
+    "lav": "7 a 21:45 hs",
+    "sab": "10 a 19.45 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/62NZWqdwmR5dSFxg7"
+  },
+  {
+   "id": "sportclub-agremiados",
+   "name": "Agremiados",
+   "fullName": "SportClub Agremiados",
+   "zone": "caba-centro",
+   "barrio": "Constitución",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "SALTA 1132",
+   "lat": -34.621456,
+   "lng": -58.3827918,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/teukwnkQbj8gXpfD9"
+  },
+  {
+   "id": "diagonal",
+   "name": "Diagonal",
+   "fullName": "SportClub Diagonal",
+   "zone": "caba-centro",
+   "barrio": "Microcentro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Roque Sáenz Peña 647",
+   "lat": -34.6065586,
+   "lng": -58.3758719,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/NdEaqRJ6bkJzmGZe6"
+  },
+  {
+   "id": "le-parc",
+   "name": "Le Parc",
+   "fullName": "SportClub Le Parc",
+   "zone": "caba-centro",
+   "barrio": "Microcentro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "San Martín 645",
+   "lat": -34.60056548046034,
+   "lng": -58.37597788494072,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "10 a 15 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclub-leparc?share"
+  },
+  {
+   "id": "mujer-centro",
+   "name": "Mujer Centro",
+   "fullName": "SportClub Mujer Centro",
+   "zone": "caba-centro",
+   "barrio": "Microcentro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Corrientes 627",
+   "lat": -34.6032066,
+   "lng": -58.3756507,
+   "horario": {
+    "lav": "6:45 a 20:30 hs",
+    "sab": "Cerrado",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/wcQqGQcpK5Labrzu6"
+  },
+  {
+   "id": "sportclub-esmeralda",
+   "name": "Esmeralda",
+   "fullName": "SportClub Esmeralda",
+   "zone": "caba-centro",
+   "barrio": "Monserrat",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Esmeralda 120",
+   "lat": -34.6067505,
+   "lng": -58.3780162,
+   "horario": {
+    "lav": "6:30 a 22 hs",
+    "sab": "cerrado",
+    "dom": ""
+   },
+   "maps": "https://www.google.com/maps/place/Esmeralda+120,+C1035+ABD,+Buenos+Aires/@-34.6053783,-58.3831769,15.55z/data=!4m5!3m4!1s0x95bccad1fb67f1e5:0x90aa9236e6d7eda!8m2!3d-34.6067505!4d-58.3780162"
+  },
+  {
+   "id": "sportclub-hotel-intercontinental",
+   "name": "Hotel Intercontinental",
+   "fullName": "SportClub Hotel Intercontinental",
+   "zone": "caba-centro",
+   "barrio": "Monserrat",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Elite",
+   "direccion": "809 Moreno St, C1091AAQ",
+   "lat": -34.61140629702028,
+   "lng": -58.38097806414377,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 20 hs",
+    "dom": "8 a 20 hs"
+   },
+   "maps": "https://goo.gl/maps/biFoMvoBaMq2aCm66"
+  },
+  {
+   "id": "puerto-madero",
+   "name": "Puerto Madero",
+   "fullName": "SportClub Puerto Madero",
+   "zone": "caba-centro",
+   "barrio": "Puerto Madero",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Juana Manso 295",
+   "lat": -34.600545555519254,
+   "lng": -58.3661906426129,
+   "horario": {
+    "lav": "de lunes a jueves de 6.30 a 21 y viernes  de 6.30 a 20hs",
+    "sab": "cerrado",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclubpuertomadero?share"
+  },
+  {
+   "id": "sportclub-plaza-san-martin",
+   "name": "Plaza San Martin",
+   "fullName": "SportClub Plaza San Martin",
+   "zone": "caba-centro",
+   "barrio": "Retiro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Santa Fe 750",
+   "lat": -34.5959943,
+   "lng": -58.3774791,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 14 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/8Wm6bzjUmiht9fMF7"
+  },
+  {
+   "id": "sportclub-quartier",
+   "name": "Quartier",
+   "fullName": "SportClub Quartier",
+   "zone": "caba-centro",
+   "barrio": "Retiro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Antártida Argentina 1475 - 1° Piso",
+   "lat": -34.5826254,
+   "lng": -58.37305130000001,
+   "horario": {
+    "lav": "06:30 a 21:30 hs",
+    "sab": "09:00 a 17:00 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/2UiYSRMS6jkTXn1B8"
+  },
+  {
+   "id": "sportclub-retiro",
+   "name": "Retiro",
+   "fullName": "SportClub Retiro",
+   "zone": "caba-centro",
+   "barrio": "Retiro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Della Paolera 265",
+   "lat": -34.59479858046174,
+   "lng": -58.37375128494095,
+   "horario": {
+    "lav": "7 a 21hs",
+    "sab": "Cerrado",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/XP1UczAUywCzLo7E6%22,%22map2"
+  },
+  {
+   "id": "tribunales",
+   "name": "Tribunales",
+   "fullName": "SportClub Tribunales",
+   "zone": "caba-centro",
+   "barrio": "Tribunales",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Paraná 466",
+   "lat": -34.6032837,
+   "lng": -58.3880224,
+   "horario": {
+    "lav": "7:00 a 21:00 hs.",
+    "sab": "10:00 a 18:00 hs.",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/ighZ5t6v3k1WTqAj7"
+  },
+  {
+   "id": "almagro",
+   "name": "Almagro",
+   "fullName": "SportClub Almagro",
+   "zone": "caba-oeste",
+   "barrio": "Almagro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Medrano 522",
+   "lat": -34.6044444,
+   "lng": -58.4213889,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/84qH2MtcvwxvDEei6"
+  },
+  {
+   "id": "hacoaj",
+   "name": "HACOAJ",
+   "fullName": "SportClub HACOAJ",
+   "zone": "caba-oeste",
+   "barrio": "Almagro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Estado de Israel 4156",
+   "lat": -34.59798138046094,
+   "lng": -58.42649628494086,
+   "horario": {
+    "lav": "8 a 21 hs",
+    "sab": "cerrado",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclubhacoaj?share"
+  },
+  {
+   "id": "sportclub-jumbo-almagro",
+   "name": "Jumbo Almagro",
+   "fullName": "SportClub Jumbo Almagro",
+   "zone": "caba-oeste",
+   "barrio": "Almagro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Guardia Vieja 4558",
+   "lat": -34.5999611,
+   "lng": -58.4288496,
+   "horario": {
+    "lav": "7hs a 22 hs",
+    "sab": "9hs a 18 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/CsEZuYnFg6YW1pCM7"
+  },
+  {
+   "id": "medrano",
+   "name": "Medrano",
+   "fullName": "SportClub Medrano",
+   "zone": "caba-oeste",
+   "barrio": "Almagro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Medrano 780",
+   "lat": -34.600982,
+   "lng": -58.420769,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/yETQuTbhZTMzdrJTA"
+  },
+  {
+   "id": "sportclub-boedo",
+   "name": "Boedo",
+   "fullName": "SportClub Boedo",
+   "zone": "caba-oeste",
+   "barrio": "Boedo",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Quintino Bocayuva 875",
+   "lat": -34.6226015,
+   "lng": -58.4222162,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/oS8HCjjtBqvXWjwZ7"
+  },
+  {
+   "id": "caballito",
+   "name": "Caballito",
+   "fullName": "SportClub Caballito",
+   "zone": "caba-oeste",
+   "barrio": "Caballito",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Acoyte 702",
+   "lat": -34.61065798045768,
+   "lng": -58.441834284940455,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/sportclub-caballito?share"
+  },
+  {
+   "id": "sportclub-caballito-sur",
+   "name": "Caballito Sur",
+   "fullName": "SportClub Caballito Sur",
+   "zone": "caba-oeste",
+   "barrio": "Caballito",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. José Maria Moreno 354",
+   "lat": -34.6219081,
+   "lng": -58.4347088,
+   "horario": {
+    "lav": "Próximamente",
+    "sab": "Próximamente",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/DXTg6JYLMKVmZzFGA"
+  },
+  {
+   "id": "parque",
+   "name": "Parque",
+   "fullName": "SportClub Parque",
+   "zone": "caba-oeste",
+   "barrio": "Caballito",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Rivadavia 4893",
+   "lat": -34.6170146,
+   "lng": -58.4342358,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/uk6Rq7U8X7fxvpX37"
+  },
+  {
+   "id": "sportclub-devoto",
+   "name": "Devoto",
+   "fullName": "SportClub Devoto",
+   "zone": "caba-oeste",
+   "barrio": "Devoto",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Emilio Lamarca 4654, CABA",
+   "lat": -34.5925575,
+   "lng": -58.5112443,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Lu97kU9LevpMMWB47"
+  },
+  {
+   "id": "sportclub-aca-flores",
+   "name": "ACA Flores",
+   "fullName": "SportClub ACA Flores",
+   "zone": "caba-oeste",
+   "barrio": "Flores",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "José Marti 46",
+   "lat": -34.6320004,
+   "lng": -58.472037,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/trsQwEpZBxhd298E7"
+  },
+  {
+   "id": "flores",
+   "name": "Flores",
+   "fullName": "SportClub Flores",
+   "zone": "caba-oeste",
+   "barrio": "Flores",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Carabobo 68",
+   "lat": -34.6274778,
+   "lng": -58.4561049,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/x7J7mapuMaHqBErD6"
+  },
+  {
+   "id": "sportclub-flores-norte",
+   "name": "Flores Norte",
+   "fullName": "SportClub Flores Norte",
+   "zone": "caba-oeste",
+   "barrio": "Flores",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Juan Bautista Alberdi 2536,",
+   "lat": -34.631906,
+   "lng": -58.46359,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+Flores+Norte/@-34.631906,-58.46359,15z/data=!4m5!3m4!1s0x0:0xdb196c848b9b23ce!8m2!3d-34.631901!4d-58.4635923"
+  },
+  {
+   "id": "sportclub-anexo-flores-norte",
+   "name": "Anexo Flores Norte",
+   "fullName": "SportClub Anexo Flores Norte",
+   "zone": "caba-oeste",
+   "barrio": "Flores Norte",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Pedernera 261",
+   "lat": -34.6323155,
+   "lng": -58.4629126,
+   "horario": {
+    "lav": "Próximamente",
+    "sab": "Próximamente",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/5xF281VGVLMnAE287"
+  },
+  {
+   "id": "sport-club-argentinos-juniors",
+   "name": "Argentinos Juniors",
+   "fullName": "SportClub Argentinos Juniors",
+   "zone": "caba-oeste",
+   "barrio": "Paternal",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Punta Arenas 1271 CABA",
+   "lat": -34.5914096,
+   "lng": -58.4696363,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://goo.gl/maps/EUeTH2WeJeEtjSWD7"
+  },
+  {
+   "id": "sportclub-juan-b-justo-",
+   "name": "Juan B Justo",
+   "fullName": "SportClub Juan B Justo",
+   "zone": "caba-oeste",
+   "barrio": "Paternal",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Juan b justo 4715",
+   "lat": -34.6093436,
+   "lng": -58.4664341,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "10 a 18 hs",
+    "dom": "10 a 18 hs"
+   },
+   "maps": "https://maps.app.goo.gl/aSb9w8WPda3jpD8q6"
+  },
+  {
+   "id": "beiro",
+   "name": "Beiró",
+   "fullName": "SportClub Beiró",
+   "zone": "caba-oeste",
+   "barrio": "Villa Del Parque",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Beiro Francisco Av. 3352",
+   "lat": -34.5988621,
+   "lng": -58.4999387,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/Jw8bsD57FVxjFTxR9"
+  },
+  {
+   "id": "gevp",
+   "name": "GEVP",
+   "fullName": "SportClub GEVP",
+   "zone": "caba-oeste",
+   "barrio": "Villa Del Parque",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Tinogasta 3455 1er piso",
+   "lat": -34.6020933,
+   "lng": -58.4985361,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 14 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/MS84B19ZfiWSFF8r5"
+  },
+  {
+   "id": "villa-del-parque",
+   "name": "Villa del Parque",
+   "fullName": "SportClub Villa del Parque",
+   "zone": "caba-oeste",
+   "barrio": "Villa Del Parque",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Tinogasta 3261",
+   "lat": -34.6010043,
+   "lng": -58.4966626,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/nrHH8xFZu2TxrCY3A"
+  },
+  {
+   "id": "fenix-devoto",
+   "name": "Fenix Devoto",
+   "fullName": "SportClub Fenix Devoto",
+   "zone": "caba-oeste",
+   "barrio": "Villa Devoto",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Andrés Vallejos 4516",
+   "lat": -34.60048558046043,
+   "lng": -58.52318618494072,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": ""
+   },
+   "maps": "https://g.page/clubfenixdevoto?share"
+  },
+  {
+   "id": "sportclub-villa-luro",
+   "name": "Villa Luro",
+   "fullName": "SportClub Villa Luro",
+   "zone": "caba-oeste",
+   "barrio": "Villa Luro",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Avenida Rivadavia 10644",
+   "lat": -34.6394688,
+   "lng": -58.5135295,
+   "horario": {
+    "lav": "7 a 22",
+    "sab": "9 a 18",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/xRH7X2U2ymoxPGmu7"
+  },
+  {
+   "id": "barracas",
+   "name": "Barracas",
+   "fullName": "SportClub Barracas",
+   "zone": "caba-sur",
+   "barrio": "Barracas",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Manuel Montes de Oca 169",
+   "lat": -34.6306198,
+   "lng": -58.3770481,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 18hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://goo.gl/maps/GoN25XMsF3NhiQb58"
+  },
+  {
+   "id": "sportclub-la-barraca",
+   "name": "La Barraca",
+   "fullName": "SportClub La Barraca",
+   "zone": "caba-sur",
+   "barrio": "Barracas",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Isabel la Católica 772",
+   "lat": -34.639224,
+   "lng": -58.373088,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://goo.gl/maps/xzJKHC1LUxDyYtLB7"
+  },
+  {
+   "id": "sportclub-huracan",
+   "name": "Huracán",
+   "fullName": "SportClub Huracán",
+   "zone": "caba-sur",
+   "barrio": "Parque Patricios",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Luna 700",
+   "lat": -34.6441659,
+   "lng": -58.3973254,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/hhkcmSGaR7oGDEYG7"
+  },
+  {
+   "id": "sportclub-parque-olimpico-",
+   "name": "Parque Olímpico",
+   "fullName": "SportClub Parque Olímpico",
+   "zone": "caba-sur",
+   "barrio": "Parque Roca",
+   "provincia": "Ciudad Autónoma de Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Roca 4440",
+   "lat": -34.6758022,
+   "lng": -58.4470397,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 16hs",
+    "dom": "9 a 16hs"
+   },
+   "maps": "https://maps.app.goo.gl/CX3JggoEX23ifUvbA"
+  },
+  {
+   "id": "mitre",
+   "name": "Mitre",
+   "fullName": "SportClub Mitre",
+   "zone": "norte",
+   "barrio": "Barrio Parque General San Martin",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "General N. Manuel Savio 2902 (Club Ferrocarril Mitre)",
+   "lat": -34.576609,
+   "lng": -58.5249323,
+   "horario": {
+    "lav": "7 a 21.30 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/QruDJBowYf6P9Z9W9"
+  },
+  {
+   "id": "champagnat",
+   "name": "Champagnat",
+   "fullName": "SportClub Champagnat",
+   "zone": "norte",
+   "barrio": "Don Torcuato",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "General Pacheco 1416",
+   "lat": -34.4739094,
+   "lng": -58.6333096,
+   "horario": {
+    "lav": "7:30 a 21 hs",
+    "sab": "8 a 14 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/qzumWdNSKDdv8AMA9"
+  },
+  {
+   "id": "caza-y-pesca",
+   "name": "Caza y Pesca",
+   "fullName": "SportClub Caza y Pesca",
+   "zone": "norte",
+   "barrio": "Don Torcuato Oeste",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. ángel T. de Alvear 2100",
+   "lat": -34.4911688,
+   "lng": -58.6256483,
+   "horario": {
+    "lav": "8 a 21 hs",
+    "sab": "9 a 18 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://goo.gl/maps/gjxT5vEYPabJVhdMA"
+  },
+  {
+   "id": "hindu",
+   "name": "Hindú",
+   "fullName": "SportClub Hindú",
+   "zone": "norte",
+   "barrio": "Don Torcuato Oeste",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. del Golf 1475",
+   "lat": -34.500257,
+   "lng": -58.643781,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/KaLADguWvgXMJbmr7"
+  },
+  {
+   "id": "euskal",
+   "name": "Euskal",
+   "fullName": "SportClub Euskal",
+   "zone": "norte",
+   "barrio": "General Pacheco",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Coronel Escalada 1200",
+   "lat": -34.4633039,
+   "lng": -58.6129412,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/yaafzgibKoXimunE7"
+  },
+  {
+   "id": "sportclub-pacheco-",
+   "name": "Pacheco",
+   "fullName": "SportClub Pacheco",
+   "zone": "norte",
+   "barrio": "General Pacheco",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Boulogne Sur Mer 1275",
+   "lat": -34.4683113,
+   "lng": -58.6243064,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Boulogne+Sur+Mer+1275,+Gral.+Pacheco,+Provincia+de+Buenos+Aires/@-34.4682521,-58.6253596,18.46z/data=!4m6!3m5!1s0x95bca4bfc2a8554f:0xda636d1a3b1a42db!8m2!3d-34.4683113!4d-58.6243064!16s%2Fg%2F11dftt9wtf?entry=ttu"
+  },
+  {
+   "id": "al-rio",
+   "name": "Al Río",
+   "fullName": "SportClub Al Río",
+   "zone": "norte",
+   "barrio": "Martinez",
+   "provincia": "Buenos Aires",
+   "categoria": "Elite",
+   "direccion": "Sebastián Elcano 1718",
+   "lat": -34.479249,
+   "lng": -58.4825991,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/KRb9GaFWCsvy78mk8"
+  },
+  {
+   "id": "martinez",
+   "name": "Martinez",
+   "fullName": "SportClub Martinez",
+   "zone": "norte",
+   "barrio": "Martinez",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Cuyo 3513 entre Fondo de la Legua y Cangallo Martínez",
+   "lat": -34.5014819,
+   "lng": -58.5394575,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+Martinez/@-34.5014309,-58.5394936,15z/data=!4m5!3m4!1s0x0:0xd12624fc72311e27!8m2!3d-34.5014819!4d-58.5394575"
+  },
+  {
+   "id": "unicenter",
+   "name": "Unicenter",
+   "fullName": "SportClub Unicenter",
+   "zone": "norte",
+   "barrio": "Martinez",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Paraná 3745 - Unicenter Shopping",
+   "lat": -34.50876688048414,
+   "lng": -58.529255384943355,
+   "horario": {
+    "lav": "7 a 23 hs",
+    "sab": "9 a 19 hs",
+    "dom": "9 a 15 hs"
+   },
+   "maps": "https://g.page/sportclubunicenter?share"
+  },
+  {
+   "id": "sportclub-edison",
+   "name": "Edison",
+   "fullName": "SportClub Edison",
+   "zone": "norte",
+   "barrio": "Martínez",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Avenida Santa Fe 2444, Martínez, San Isidro",
+   "lat": -34.4932873,
+   "lng": -58.4982784,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/ct1A41ZsYH4LeqQG9"
+  },
+  {
+   "id": "norcenter",
+   "name": "Norcenter",
+   "fullName": "SportClub Norcenter",
+   "zone": "norte",
+   "barrio": "Munro",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Esteban Echeverria 3750 - Shopping Norcenter",
+   "lat": -34.5144549804827,
+   "lng": -58.5243986849433,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/SportClubNorcenter?share"
+  },
+  {
+   "id": "maipu",
+   "name": "Maipu",
+   "fullName": "SportClub Maipu",
+   "zone": "norte",
+   "barrio": "Olivos",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Maipú 2742",
+   "lat": -34.5103713,
+   "lng": -58.4913035,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/z61KtQtkSvceGZMTA"
+  },
+  {
+   "id": "olivos",
+   "name": "Olivos",
+   "fullName": "SportClub Olivos",
+   "zone": "norte",
+   "barrio": "Olivos",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Libertador 3011",
+   "lat": -34.5022544,
+   "lng": -58.4817997,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/CVud4RmVaU6pFK13A"
+  },
+  {
+   "id": "sportccub-san-fernando-",
+   "name": "San Fernando",
+   "fullName": "SportClub San Fernando",
+   "zone": "norte",
+   "barrio": "San Fernando",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Intersección Sarmiento y Escalada, San Fernando",
+   "lat": -34.4365945,
+   "lng": -58.554341799999996,
+   "horario": {
+    "lav": "7:00 a 22:00 hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://www.google.com/maps/place/Sarmiento+%26+Escalada,+San+Fernando,+Provincia+de+Buenos+Aires/@-34.4365945,-58.5543418,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcaf87f7d2942d:0x9e5fdf651e70ab9c!8m2!3d-34.4365945!4d-58.5543418"
+  },
+  {
+   "id": "club-acassuso",
+   "name": "Club Acassuso",
+   "fullName": "SportClub Club Acassuso",
+   "zone": "norte",
+   "barrio": "San Isidro",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Alsina 428",
+   "lat": -34.4748112,
+   "lng": -58.5206934,
+   "horario": {
+    "lav": "7:00 a 22 hs",
+    "sab": "8 a 20 hs",
+    "dom": "9 a 13 hs"
+   },
+   "maps": "https://goo.gl/maps/5xNqCv5oN56Wrj1PA"
+  },
+  {
+   "id": "thames",
+   "name": "Thames",
+   "fullName": "SportClub Thames",
+   "zone": "norte",
+   "barrio": "San Isidro",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Fondo de la Legua 590",
+   "lat": -34.4975935,
+   "lng": -58.5442796,
+   "horario": {
+    "lav": "7 a 22 hs.",
+    "sab": "9:30 a 13 hs.",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/xTE6SjkqFy8bPXz79"
+  },
+  {
+   "id": "buenos-aires-rowing",
+   "name": "Buenos Aires Rowing",
+   "fullName": "SportClub Buenos Aires Rowing",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Montes de Oca 201",
+   "lat": -34.4209944,
+   "lng": -58.5774854,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 17hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/14brHbBAeDcrtz9v7"
+  },
+  {
+   "id": "sportclub-nordelta",
+   "name": "Nordelta",
+   "fullName": "SportClub Nordelta",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Agustin M. Garcia 8554, Local 43 ,Benavidez",
+   "lat": -34.3990185,
+   "lng": -58.656239,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/aCKiF7i63wU7qfiP8"
+  },
+  {
+   "id": "punto-tigre",
+   "name": "Punto Tigre",
+   "fullName": "SportClub Punto Tigre",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av Liniers 2073/2085",
+   "lat": -34.4292326,
+   "lng": -58.5922842,
+   "horario": {
+    "lav": "7:30 a 22 hs",
+    "sab": "8 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/tC3rC39sgpf34enp9"
+  },
+  {
+   "id": "sportclub-remeros-beach",
+   "name": "Remeros Beach",
+   "fullName": "SportClub Remeros Beach",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Elite",
+   "direccion": "Camino de los Remeros 1585",
+   "lat": -34.4142288,
+   "lng": -58.624016,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 19hs",
+    "dom": "Domingos de 9 a 15hs. Feriados: 9 a 15hs"
+   },
+   "maps": "https://maps.app.goo.gl/dAqyxXJT6Kzb98o5A"
+  },
+  {
+   "id": "remeros-plaza",
+   "name": "Remeros Plaza",
+   "fullName": "SportClub Remeros Plaza",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Ruta 27 y Camino de los Remeros Rincón de Milberg",
+   "lat": -34.40828839211762,
+   "lng": -58.62166461047264,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19 hs",
+    "dom": "Domingos: cerrado - Feriados: 9 a 15 hs"
+   },
+   "maps": "https://g.page/sportclubremeros?share"
+  },
+  {
+   "id": "sportclub-san-andres-",
+   "name": "San Andres",
+   "fullName": "SportClub San Andres",
+   "zone": "norte",
+   "barrio": "Tigre",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Tupungato 5614",
+   "lat": -34.382561,
+   "lng": -58.689684,
+   "horario": {
+    "lav": "7:30hs a 22:00hs",
+    "sab": "8:00hs a 14:00hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+San+Andres/@-34.382561,-58.689684,15z/data=!4m6!3m5!1s0x95bca1afc996e427:0x6ffd39e996704843!8m2!3d-34.382561!4d-58.689684!16s%2Fg%2F11j4j_r2n3"
+  },
+  {
+   "id": "sportclub-banco-de-la-nacion-argentina",
+   "name": "Banco Nación",
+   "fullName": "SportClub Banco Nación",
+   "zone": "norte",
+   "barrio": "Vicente López",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Juan Zufritegui 1251 Vicente López",
+   "lat": -34.5365469,
+   "lng": -58.4718351,
+   "horario": {
+    "lav": "7 a 22hs.",
+    "sab": "9 a 18hs.",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/88AuXDRRuajwZSmb9"
+  },
+  {
+   "id": "sportclub-platense",
+   "name": "Platense",
+   "fullName": "SportClub Platense",
+   "zone": "norte",
+   "barrio": "Vicente López",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Juan Zufriategui 2021 CABA",
+   "lat": -34.5402293,
+   "lng": -58.4816407,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Fk1inq7DkrSE8An4A"
+  },
+  {
+   "id": "vicente-lopez",
+   "name": "Vicente López",
+   "fullName": "SportClub Vicente López",
+   "zone": "norte",
+   "barrio": "Vicente López",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Libertad 1650",
+   "lat": -34.5233586,
+   "lng": -58.4870816,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/A4U8zsTkrH1iTCNE7"
+  },
+  {
+   "id": "sportclub-bliss",
+   "name": "Bliss",
+   "fullName": "SportClub Bliss",
+   "zone": "norte",
+   "barrio": "Victoria",
+   "provincia": "Buenos Aires",
+   "categoria": "Elite",
+   "direccion": "Av. Uruguay 3751",
+   "lat": -34.468953759244975,
+   "lng": -58.56379514605765,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": "9 a 13hs"
+   },
+   "maps": "https://maps.app.goo.gl/LiohuWtJs91ZCAc79"
+  },
+  {
+   "id": "villa-ballester",
+   "name": "Villa Ballester",
+   "fullName": "SportClub Villa Ballester",
+   "zone": "norte",
+   "barrio": "Villa Ballester",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Boulevard Ballester 5558",
+   "lat": -34.5432643,
+   "lng": -58.5585151,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/cMkxs6CCEmMsoRm47"
+  },
+  {
+   "id": "sportclub-aera",
+   "name": "AERA",
+   "fullName": "SportClub AERA",
+   "zone": "norte",
+   "barrio": "Villa Lynch, San Martín",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "25 de Mayo 1212",
+   "lat": -34.5811727,
+   "lng": -58.5238798,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/s8eC4Js4tY88rZTo9"
+  },
+  {
+   "id": "sportclub-escobar",
+   "name": "Escobar",
+   "fullName": "SportClub Escobar",
+   "zone": "pilar",
+   "barrio": "Belen De Escobar",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Intendente Oscar Larghi 1390",
+   "lat": -34.3565628,
+   "lng": -58.7969714,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place//@-34.356563,-58.7991602,17z/data=!4m8!1m2!2m1!1sintendente+oscar+larghi+1390++ramal+escobar!3m4!1s0x95bb61c784fe0f15:0x4347ad264ff909b0!8m2!3d-34.3565628!4d-58.7969714?hl=es-419"
+  },
+  {
+   "id": "sportclub-villanueva",
+   "name": "Villanueva",
+   "fullName": "SportClub Villanueva",
+   "zone": "pilar",
+   "barrio": "Dique Luján",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av.italia 4440",
+   "lat": -34.3849525,
+   "lng": -58.6807755,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/2V5owMgzQe7L5a1d9"
+  },
+  {
+   "id": "sportclub-puertos",
+   "name": "BM Puertos",
+   "fullName": "SportClub BM Puertos",
+   "zone": "pilar",
+   "barrio": "Escobar",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Falucho y Libertad",
+   "lat": -34.3367378,
+   "lng": -58.7567004,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 20hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/bw9oZRG3M3dPp7C66"
+  },
+  {
+   "id": "sportclub-maschwitz",
+   "name": "Maschwitz",
+   "fullName": "SportClub Maschwitz",
+   "zone": "pilar",
+   "barrio": "Ingeniero Maschwitz",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "RP26 1299",
+   "lat": -34.389306000000005,
+   "lng": -58.765099000000006,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/f2t5BNwedkJDjEjK8"
+  },
+  {
+   "id": "sportclub-lujan",
+   "name": "Lujan",
+   "fullName": "SportClub Lujan",
+   "zone": "pilar",
+   "barrio": "Lujan",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "San Martin 1262",
+   "lat": -34.56871,
+   "lng": -59.104413,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 16 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/iTWULQeWgbMSE2JHA"
+  },
+  {
+   "id": "caamano",
+   "name": "Caamaño",
+   "fullName": "SportClub Caamaño",
+   "zone": "pilar",
+   "barrio": "Pilar",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Caamaño 662 y Verdi. KM 46 Ramal Pilar (500 mts. de Panamericana)",
+   "lat": -34.43054450398117,
+   "lng": -58.83348141802063,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/6cNWspLxaxAi7rKu9"
+  },
+  {
+   "id": "las-palmas-de-pilar",
+   "name": "Las Palmas de Pilar",
+   "fullName": "SportClub Las Palmas de Pilar",
+   "zone": "pilar",
+   "barrio": "Pilar",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Shopping Las Palmas del Pilar - Panamericana Km 50",
+   "lat": -34.4462808,
+   "lng": -58.8686709,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "9 a 20hs"
+   },
+   "maps": "https://goo.gl/maps/qKwaaUiZk8YuBvKQ8"
+  },
+  {
+   "id": "mujer",
+   "name": "Mujer Pilar",
+   "fullName": "SportClub Mujer Pilar",
+   "zone": "pilar",
+   "barrio": "Pilar",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Au. Panamericana Km 54,5 ramal Pilar - Shopping Paseo Champagnat 1er piso",
+   "lat": -34.4495113,
+   "lng": -58.9156222,
+   "horario": {
+    "lav": "8 a 21 hs",
+    "sab": "9 a 13 hs",
+    "dom": ""
+   },
+   "maps": "https://goo.gl/maps/CfG3Zm8WpL5FCDMY8"
+  },
+  {
+   "id": "tortugas",
+   "name": "Tortugas",
+   "fullName": "SportClub Tortugas",
+   "zone": "pilar",
+   "barrio": "Pilar",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Panamericana km 365 ramal",
+   "lat": -34.4530324,
+   "lng": -58.7293911,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 21 hs",
+    "dom": "9 a 15 hs"
+   },
+   "maps": "https://goo.gl/maps/am45foTNuT16EKL76"
+  },
+  {
+   "id": "sportclub-zarate",
+   "name": "Zárate",
+   "fullName": "Sportclub Zárate",
+   "zone": "pilar",
+   "barrio": "Zarate",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Costanera Luis Rocha 1900 - Lote 35H",
+   "lat": -34.1044418,
+   "lng": -59.0055667,
+   "horario": {
+    "lav": "7 a 22 hs.",
+    "sab": "9 a 20 hs.",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Costanera+Luis+Rocha+1900+Lote+35H,+Z%C3%A1rate,+Provincia+de+Buenos+Aires/@-34.1044418,-59.0055667,17z/data=!3m1!4b1!4m5!3m4!1s0x95bb0caf52c44b9b:0x98084a82270baed3!8m2!3d-34.1044418!4d-59.0055667?entry=ttu"
+  },
+  {
+   "id": "bella-vista",
+   "name": "Bella Vista",
+   "fullName": "SportClub Bella Vista",
+   "zone": "oeste",
+   "barrio": "Bella Vista",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Pardo 1609 y Richieri",
+   "lat": -34.5543532,
+   "lng": -58.6977328,
+   "horario": {
+    "lav": "7 a 21:30 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/zGDeJYFB8KaVLrwS9"
+  },
+  {
+   "id": "sportclub-los-berros",
+   "name": "Los Berros",
+   "fullName": "SportClub Los Berros",
+   "zone": "oeste",
+   "barrio": "Bella Vista",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Mayor Irusta 3000/45, Bella Vista",
+   "lat": -34.5779497,
+   "lng": -58.6971684,
+   "horario": {
+    "lav": "7 a 21:30 Hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/1rAKCnwbLu1Ai1ZC7"
+  },
+  {
+   "id": "caseros",
+   "name": "Caseros",
+   "fullName": "SportClub Caseros",
+   "zone": "oeste",
+   "barrio": "Caseros",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Gral Manuel Belgrano 4905",
+   "lat": -34.606619,
+   "lng": -58.565893,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/vwwsaGGVjjfLvQvo6"
+  },
+  {
+   "id": "castelar-2",
+   "name": "Castelar",
+   "fullName": "SportClub Castelar",
+   "zone": "oeste",
+   "barrio": "Castelar",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Gaona 6050",
+   "lat": -34.6320237,
+   "lng": -58.6477918,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 19hs",
+    "dom": "Domingos cerrado, feriados de 10 a 18hs"
+   },
+   "maps": "https://goo.gl/maps/i2vk1n4Mhf2UA48t9"
+  },
+  {
+   "id": "general-rodriguez",
+   "name": "General Rodriguez",
+   "fullName": "SportClub General Rodriguez",
+   "zone": "oeste",
+   "barrio": "General Rodriguez",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Asturias y Los Aromos",
+   "lat": -34.596998,
+   "lng": -58.9398508,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 12 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/JHPSH6t3Di4H2LJx8"
+  },
+  {
+   "id": "sportclub-pampa-rodriguez-",
+   "name": "Pampa Rodriguez",
+   "fullName": "SportClub Pampa Rodriguez",
+   "zone": "oeste",
+   "barrio": "General Rodriguez",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Ruta 28, Km 0,5",
+   "lat": -34.587721699999996,
+   "lng": -58.94579710000001,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/ct1gsiK9baKSQLqL7"
+  },
+  {
+   "id": "sportclub-catan-shopping",
+   "name": "Catan Shopping",
+   "fullName": "SportClub Catan Shopping",
+   "zone": "oeste",
+   "barrio": "González Catán",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Juan Manuel de Rosas 14457",
+   "lat": -34.7640676,
+   "lng": -58.6179302,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "10 a 19hs",
+    "dom": "10 a 14hs"
+   },
+   "maps": "https://maps.app.goo.gl/NJVQB3hN9Y3vzM3U7"
+  },
+  {
+   "id": "sportclub-leloir",
+   "name": "Leloir",
+   "fullName": "SportClub Leloir",
+   "zone": "oeste",
+   "barrio": "Ituzaingó",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av Pte Peron 8387",
+   "lat": -34.6286405,
+   "lng": -58.6873457,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18 hs",
+    "dom": "Cerrado."
+   },
+   "maps": "https://goo.gl/maps/U94JQ3WyC5qHdCyq8"
+  },
+  {
+   "id": "sportclub-la-tablada",
+   "name": "La Tablada",
+   "fullName": "SportClub La Tablada",
+   "zone": "oeste",
+   "barrio": "La Tablada",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Monseñor Bufano 6050",
+   "lat": -34.7000505,
+   "lng": -58.5348928,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": "12 a 16hs"
+   },
+   "maps": "https://maps.app.goo.gl/SPePRbNBzVLFqKqy6"
+  },
+  {
+   "id": "moreno",
+   "name": "Giocco Alvarez",
+   "fullName": "SportClub Giocco Alvarez",
+   "zone": "oeste",
+   "barrio": "Moreno",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Luis de camoens 2017",
+   "lat": -34.615883499999995,
+   "lng": -58.83490349999999,
+   "horario": {
+    "lav": "07 a 21 hs",
+    "sab": "09 a 19 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Zw6Dg31owhhPgi3C9"
+  },
+  {
+   "id": "sport-club-moron",
+   "name": "Morón",
+   "fullName": "SportClub Morón",
+   "zone": "oeste",
+   "barrio": "Moron",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "San Martin 243 1er Piso",
+   "lat": -34.6509847,
+   "lng": -58.6228042,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://goo.gl/maps/gbu2uKJWVNDuvz6G9"
+  },
+  {
+   "id": "sportclub-moron-nivel-uno",
+   "name": "Moron Nivel Uno",
+   "fullName": "SportClub Moron Nivel Uno",
+   "zone": "oeste",
+   "barrio": "Morón",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Int. Abel Costa 768",
+   "lat": -34.6564822,
+   "lng": -58.6138635,
+   "horario": {
+    "lav": "Próximamente",
+    "sab": "Próximamente",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/XsqwvJWbw7vBjPy86"
+  },
+  {
+   "id": "sport-club-muniz",
+   "name": "Muñiz",
+   "fullName": "SportClub Muñiz",
+   "zone": "oeste",
+   "barrio": "Muñiz",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "San Jose 701",
+   "lat": -34.5443765,
+   "lng": -58.6992588,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/NXCHQ2oiDaEtuhCt5"
+  },
+  {
+   "id": "ramos",
+   "name": "Ramos",
+   "fullName": "SportClub Ramos",
+   "zone": "oeste",
+   "barrio": "Ramos Mejia",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. De Mayo 342",
+   "lat": -34.6438921,
+   "lng": -58.5648844,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/V1ds5ud4FEXuQndH6"
+  },
+  {
+   "id": "sportclub-bomberitos-",
+   "name": "Bomberitos",
+   "fullName": "SportClub Bomberitos",
+   "zone": "oeste",
+   "barrio": "Ramos Mejía",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Pueyrredón",
+   "lat": -34.6521084,
+   "lng": -58.5511221,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/qTW9Voyw8ByciPB48"
+  },
+  {
+   "id": "club-almirante-brown",
+   "name": "Almirante Brown",
+   "fullName": "SportClub Almirante Brown",
+   "zone": "oeste",
+   "barrio": "San Justo",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Almafuerte 3260",
+   "lat": -34.6789182,
+   "lng": -58.558189,
+   "horario": {
+    "lav": "7.30 a 21:30hs",
+    "sab": "8 a 16 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Sportclub+almirante+brown/@-34.6789179,-58.5603824,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc7c941ec8013:0x828877217838c704!8m2!3d-34.6789182!4d-58.558189"
+  },
+  {
+   "id": "sportclub-thays-",
+   "name": "Thays",
+   "fullName": "SportClub Thays",
+   "zone": "oeste",
+   "barrio": "Villa Udaondo",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Martín Fierro 3361- Parque Leloir - Subsuelo",
+   "lat": -34.6251125,
+   "lng": -58.6946176,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/YX1E1gttzy6rrdZm6"
+  },
+  {
+   "id": "sportclub-avellaneda",
+   "name": "Avellaneda",
+   "fullName": "SportClub Avellaneda",
+   "zone": "sur",
+   "barrio": "Avellaneda",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Adolfo Alsina 1058",
+   "lat": -34.6710759,
+   "lng": -58.374750799999994,
+   "horario": {
+    "lav": "7am - 22pm",
+    "sab": "9am - 17pm",
+    "dom": "Cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/kPb5eRYUjFPRwBpg6"
+  },
+  {
+   "id": "sportclub-independiente-",
+   "name": "Independiente",
+   "fullName": "SportClub Independiente",
+   "zone": "sur",
+   "barrio": "Avellaneda",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Avenida Mitre 470",
+   "lat": -34.6599171,
+   "lng": -58.3679968,
+   "horario": {
+    "lav": "7 a 22 hs.",
+    "sab": "9 a 17 hs.",
+    "dom": "-"
+   },
+   "maps": "https://maps.app.goo.gl/ZpiafSP7LKAP2vKk6"
+  },
+  {
+   "id": "banfield",
+   "name": "Banfield",
+   "fullName": "SportClub Banfield",
+   "zone": "sur",
+   "barrio": "Banfield",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Valentín Vergara 1635",
+   "lat": -34.741447,
+   "lng": -58.3944213,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 15 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/2AMPDbVzc1gBimHL9"
+  },
+  {
+   "id": "bernal",
+   "name": "Bernal",
+   "fullName": "SportClub Bernal",
+   "zone": "sur",
+   "barrio": "Bernal",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "9 de julio 252",
+   "lat": -34.7133194,
+   "lng": -58.2848224,
+   "horario": {
+    "lav": "7 a 21 hs",
+    "sab": "8 a 13 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/NrRWusNVF29GwhKn7"
+  },
+  {
+   "id": "sport-club-san-albano",
+   "name": "San Albano",
+   "fullName": "SportClub San Albano",
+   "zone": "sur",
+   "barrio": "Burzaco",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Avda. Espora 4920, Burzaco, Pcia. de Buenos Aires",
+   "lat": -34.8409264,
+   "lng": -58.38582039999999,
+   "horario": {
+    "lav": "9 a 21 hs",
+    "sab": "9 a 21 hs",
+    "dom": "9 a 21 hs"
+   },
+   "maps": "https://www.google.com/maps/place/Av.+Espora+4920,+Burzaco,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcd4c658c53615:0x7aef656bdd971b15?sa=X&ved=2ahUKEwiwgrX4x_n6AhUPlZUCHaVGDfgQ8gF6BAgJEAE"
+  },
+  {
+   "id": "canning",
+   "name": "Canning",
+   "fullName": "SportClub Canning",
+   "zone": "sur",
+   "barrio": "Canning",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Emilio Mitre 2415",
+   "lat": -34.8725335,
+   "lng": -58.5034685,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/jmGrzn11MqE59u5m9"
+  },
+  {
+   "id": "sportclub-canning-futbol",
+   "name": "Canning Futbol",
+   "fullName": "SportClub Canning Futbol",
+   "zone": "sur",
+   "barrio": "Canning",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Pedro Dreyer 4670",
+   "lat": -34.8538415,
+   "lng": -58.5017735,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 22 hs",
+    "dom": "14 a 22 hs"
+   },
+   "maps": "https://www.google.com/maps/place/Av.+Pedro+Dreyer+4670,+B1804+Canning,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcd6d39ed311a3:0x61170629307f24b6?sa=X&ved=2ahUKEwjJ4Jnkwoz5AhXrhJUCHWyiA74Q8gF6BAgCEAE"
+  },
+  {
+   "id": "sportclub-monte-grande",
+   "name": "Monte Grande",
+   "fullName": "SportClub Monte Grande",
+   "zone": "sur",
+   "barrio": "Esteban Echeverría",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Cardeza 248",
+   "lat": -34.8166009,
+   "lng": -58.4636314,
+   "horario": {
+    "lav": "7hs a 22 hs",
+    "sab": "8hs a 16hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/V34izEGDeeU4CQjw5"
+  },
+  {
+   "id": "sportclub-aeropuerto-ezeiza",
+   "name": "Aeropuerto Ezeiza",
+   "fullName": "SportClub Aeropuerto Ezeiza",
+   "zone": "sur",
+   "barrio": "Ezeiza",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Gral. Pablo Riccheri Km 33,5",
+   "lat": -34.8164701,
+   "lng": -58.5372424,
+   "horario": {
+    "lav": "5 a 00hs",
+    "sab": "9 a 17hs",
+    "dom": "9 a 17hs"
+   },
+   "maps": "https://maps.app.goo.gl/rkLaDfQ6mkND7u747"
+  },
+  {
+   "id": "sportclub-las-toscas-premium",
+   "name": "Las Toscas Premium",
+   "fullName": "SportClub Las Toscas Premium",
+   "zone": "sur",
+   "barrio": "Ezeiza",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Mariano Castex 835",
+   "lat": -34.8533959,
+   "lng": -58.5037056,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": ""
+   },
+   "maps": "https://www.google.com/maps/place/Mariano+Castex+835,+B1804+Ezeiza,+Provincia+de+Buenos+Aires/@-34.8571719,-58.5201044,13.69z/data=!4m6!3m5!1s0x95bcd6d4900b37f5:0x7fddfe1ec4d9ca79!8m2!3d-34.8533959!4d-58.5037056!16s%2Fg%2F11kq7_7dcb?entry=ttu"
+  },
+  {
+   "id": "sportclub-lanus",
+   "name": "Lanús",
+   "fullName": "SportClub Lanús",
+   "zone": "sur",
+   "barrio": "Lanús",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "9 de Julio 1558",
+   "lat": -34.7107703,
+   "lng": -58.385919,
+   "horario": {
+    "lav": "7hs a 22hs",
+    "sab": "9hs a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Yep5UwqYDnxpFPVCA"
+  },
+  {
+   "id": "sportclub-las-lomitas-street",
+   "name": "Las Lomitas Street",
+   "fullName": "SportClub Las Lomitas Street",
+   "zone": "sur",
+   "barrio": "Lomas De Zamora",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Italia 459 / LAS LOMITAS STREET PISO -1",
+   "lat": -34.765857,
+   "lng": -58.4021431,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "10 a 21 hs",
+    "dom": "10 a 21 hs"
+   },
+   "maps": "https://maps.app.goo.gl/8guhAgfjjxLTmqmw5"
+  },
+  {
+   "id": "sportclub-banfield-predio",
+   "name": "Banfield Predio",
+   "fullName": "SportClub Banfield Predio",
+   "zone": "sur",
+   "barrio": "Luis Guillon",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "RP4 1800, B1838 Luis Guillon, Provincia de Buenos Aires",
+   "lat": -34.7829261,
+   "lng": -58.4573644,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 15hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/7ZSuadCqZWeoZZcA6"
+  },
+  {
+   "id": "sportclub-aca-quilmes",
+   "name": "ACA Quilmes",
+   "fullName": "SportClub ACA Quilmes",
+   "zone": "sur",
+   "barrio": "Quilmes",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Hipólito Yrigoyen 279, Quilmes",
+   "lat": -34.7179123,
+   "lng": -58.2645885,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 20hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/KFMVcCb4Kpnmjpyi8"
+  },
+  {
+   "id": "sportclub-distrito-q",
+   "name": "Distrito Q",
+   "fullName": "SportClub Distrito Q",
+   "zone": "sur",
+   "barrio": "Quilmes",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Primera Junta 525, Quilmes",
+   "lat": -34.7293827,
+   "lng": -58.2433286,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/LMzxvEqVMgFwx4wR6"
+  },
+  {
+   "id": "sportclub-quilmes-oeste",
+   "name": "Quilmes Oeste",
+   "fullName": "SportClub Quilmes Oeste",
+   "zone": "sur",
+   "barrio": "Quilmes",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Calchaquí 700, Quilmes, Provincia de Buenos Aires",
+   "lat": -34.7331822,
+   "lng": -58.2957337,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 15hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/dfNDEBczhXpeU8Ur5"
+  },
+  {
+   "id": "sportclub-coto-temperley",
+   "name": "Coto Temperley",
+   "fullName": "SportClub Coto Temperley",
+   "zone": "sur",
+   "barrio": "Temperley",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Hipólito Yrigoyen 10699, Temperley",
+   "lat": -34.7828604,
+   "lng": -58.4062793,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 20hs",
+    "dom": "10 a 18hs"
+   },
+   "maps": "https://maps.app.goo.gl/jqZ1iPUuBdMwkviY6"
+  },
+  {
+   "id": "sportclub-temperley",
+   "name": "Temperley",
+   "fullName": "SportClub Temperley",
+   "zone": "sur",
+   "barrio": "Temperley",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. 9 de Julio 358",
+   "lat": -34.782509700000006,
+   "lng": -58.400902300000006,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 15 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/uw24zippM6NWyGCs9"
+  },
+  {
+   "id": "sportclub-berlin",
+   "name": "Berlin",
+   "fullName": "SportClub Berlin",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Calle 32 esquina 26",
+   "lat": -34.9180973,
+   "lng": -57.9890592,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 20 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/wyuXA9K4bKzabVpp8"
+  },
+  {
+   "id": "sportclub-estudiantes-de-la-plata",
+   "name": "Estudiantes De La Plata",
+   "fullName": "SportClub Estudiantes De La Plata",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Calle 54 entre 7 y 8",
+   "lat": -34.9170844,
+   "lng": -57.9476478,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 13 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://goo.gl/maps/Puu6ya669qtJjM8J8"
+  },
+  {
+   "id": "sportclub-olimpo",
+   "name": "Olimpo",
+   "fullName": "SportClub Olimpo",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Camino Centenario 2825, Manuel B. Gonnet, La Plata",
+   "lat": -34.8821251,
+   "lng": -58.0068898,
+   "horario": {
+    "lav": "7hs a 21:30hs",
+    "sab": "9hs a 21hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/gqXSozuJZKVznhRT8"
+  },
+  {
+   "id": "sportclub-puerto-nizuc",
+   "name": "Puerto Nizuc",
+   "fullName": "SportClub Puerto Nizuc",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Elite",
+   "direccion": "Autopista Buenos Aires - La Plata km 30 - Peaje Hudson",
+   "lat": -34.7743903,
+   "lng": -58.1592772,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "7 a 21 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+Puerto+Nizuc/@-34.7743903,-58.1592772,15z/data=!4m6!3m5!1s0x95a327221473923d:0x846911ac5c295164!8m2!3d-34.7743903!4d-58.1592772!16s%2Fg%2F11sjyny7sv?entry=ttu"
+  },
+  {
+   "id": "sportclub-uno",
+   "name": "UNO",
+   "fullName": "SportClub UNO",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "55 entre 1 y 115",
+   "lat": -34.9118413,
+   "lng": -57.9389719,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 13 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Estadio+UNO+Jorge+Luis+Hirschi/@-34.9118413,-57.9389719,15z/data=!4m5!3m4!1s0x0:0x32c529fe42daaa5d!8m2!3d-34.9118413!4d-57.9389719"
+  },
+  {
+   "id": "sportclub-universitario-la-plata",
+   "name": "Universitario La Plata",
+   "fullName": "SportClub Universitario La Plata",
+   "zone": "laplata",
+   "barrio": "La Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "C14 (Camino Parque Centenario) N° 3199, Manuel B. Gonnet, Provincia de Buenos Aires",
+   "lat": -34.8804111,
+   "lng": -58.0103027,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 21hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Zuq6hWdUnxsW1NDh8"
+  },
+  {
+   "id": "sportclub-mdq-centro",
+   "name": "MDQ Centro",
+   "fullName": "SportClub MDQ Centro",
+   "zone": "costa",
+   "barrio": "Mar Del Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Pedro Luro 3028",
+   "lat": -37.9966226,
+   "lng": -57.5506443,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 19hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://goo.gl/maps/Uvq2giABRqfWhuw57"
+  },
+  {
+   "id": "mar-del-plata",
+   "name": "Mar del Plata",
+   "fullName": "SportClub Mar del Plata",
+   "zone": "costa",
+   "barrio": "Mar Del Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Patricio Peralta Ramos 3155",
+   "lat": -38.012769079716904,
+   "lng": -57.533662284675465,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "8 a 19 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/SportClub/@-38.0079148,-57.5333582,15z/data=!4m2!3m1!1s0x0:0x8f73c15acee6b1c1?sa=X&ved=2ahUKEwjVreH24u76AhUwpJUCHV5XDVwQ_BJ6BAhqEAU"
+  },
+  {
+   "id": "sportclub-paseo-aldrey",
+   "name": "Paseo Aldrey",
+   "fullName": "Sportclub Paseo Aldrey",
+   "zone": "costa",
+   "barrio": "Mar Del Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Sarmiento 2685",
+   "lat": -38.012297,
+   "lng": -57.543921,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 19hs",
+    "dom": ""
+   },
+   "maps": "https://goo.gl/maps/Hc7GvqceNzJpFaebA"
+  },
+  {
+   "id": "sportclub-paseo-hermitage",
+   "name": "Paseo Hermitage",
+   "fullName": "SportClub Paseo Hermitage",
+   "zone": "costa",
+   "barrio": "Mar Del Plata",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Boulevard Marítimo Patricio Peralta Ramos 2700",
+   "lat": -38.007642,
+   "lng": -57.539413,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 19hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/6iYcs2dSw28xE49BA"
+  },
+  {
+   "id": "sportclub-pinamar",
+   "name": "Pinamar",
+   "fullName": "SportClub Pinamar",
+   "zone": "costa",
+   "barrio": "Pinamar",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Quintana 65",
+   "lat": -37.11446253950088,
+   "lng": -56.86068923157701,
+   "horario": {
+    "lav": "7 a 22",
+    "sab": "8 a 18",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/PQa1dogy1zb9eibJ7"
+  },
+  {
+   "id": "sportclub-pinamar-beach",
+   "name": "Pinamar Beach",
+   "fullName": "SportClub Pinamar Beach",
+   "zone": "costa",
+   "barrio": "Pinamar",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. del Mar 1102",
+   "lat": -37.106407979886534,
+   "lng": -56.84856278471336,
+   "horario": {
+    "lav": "7:30 a 21:30hs",
+    "sab": "7:30 a 21:30hs",
+    "dom": "7:30 a 21:30hs"
+   },
+   "maps": "https://g.page/PinamarBeachResort?share"
+  },
+  {
+   "id": "sportclub-pinamar-garden-suites",
+   "name": "Pinamar Garden Suites",
+   "fullName": "SportClub Pinamar Garden Suites",
+   "zone": "costa",
+   "barrio": "Pinamar",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Av. Arquitecto Jorge Bunge 1544, Pinamar, Provincia de Buenos Aires",
+   "lat": -37.1120349,
+   "lng": -56.8711667,
+   "horario": {
+    "lav": "",
+    "sab": "",
+    "dom": ""
+   },
+   "maps": "https://goo.gl/maps/VNQnKQQ3ZpVE6gMeA"
+  },
+  {
+   "id": "sportclub-bahia",
+   "name": "Bahia",
+   "fullName": "SportClub Bahia",
+   "zone": "interior-ba",
+   "barrio": "Bahia Blanca",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. cabrera N°4100 bahía blanca, Pcia Bs.As",
+   "lat": -38.684749,
+   "lng": -62.226883,
+   "horario": {
+    "lav": "6 a 22hs",
+    "sab": "9 a 15hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/32oYLjqq43kfbkAV7"
+  },
+  {
+   "id": "sportclub-club-social-huracan-carlos-casares",
+   "name": "Huracán De Carlos Casares",
+   "fullName": "SportClub Huracán De Carlos Casares",
+   "zone": "interior-ba",
+   "barrio": "Carlos Casares",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Av. Almirante Brown & Neuquen",
+   "lat": -35.6171986,
+   "lng": -61.3505185,
+   "horario": {
+    "lav": "7 a 21hs",
+    "sab": "8 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/BMuSBoPqKqcJqevh8"
+  },
+  {
+   "id": "sportclub-mercedes",
+   "name": "Mercedes",
+   "fullName": "SportClub Mercedes",
+   "zone": "interior-ba",
+   "barrio": "Mercedes",
+   "provincia": "Buenos Aires",
+   "categoria": "Plus",
+   "direccion": "Calle 31 N° 335",
+   "lat": -34.6540849,
+   "lng": -59.434223,
+   "horario": {
+    "lav": "6:30 a 22 hs",
+    "sab": "8 a 16 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/MpWb4SBvN5Kbf8Rq7"
+  },
+  {
+   "id": "sportclub-olavarria",
+   "name": "Olavarria",
+   "fullName": "SportClub Olavarria",
+   "zone": "interior-ba",
+   "barrio": "Olavarria",
+   "provincia": "Buenos Aires",
+   "categoria": "Flex",
+   "direccion": "Rivadavia 4770",
+   "lat": -36.8806699812881,
+   "lng": -60.30653362481095,
+   "horario": {
+    "lav": "Próximamente",
+    "sab": "Próximamente",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/BDRqtA6yNNZMqibU7"
+  },
+  {
+   "id": "sportclub-pergamino",
+   "name": "Pergamino",
+   "fullName": "SportClub Pergamino",
+   "zone": "interior-ba",
+   "barrio": "Pergamino",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "AV. HIPOLITO YRYGOYEN 415",
+   "lat": -33.8968177,
+   "lng": -60.5617593,
+   "horario": {
+    "lav": "7 hs a 22 hs",
+    "sab": "8 hs a 19 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/xgtoGAuRgPDkFeUh7"
+  },
+  {
+   "id": "sportclub-tandil",
+   "name": "Tandil",
+   "fullName": "SportClub Tandil",
+   "zone": "interior-ba",
+   "barrio": "Tandil",
+   "provincia": "Buenos Aires",
+   "categoria": "Total",
+   "direccion": "Av. Santamarina 322",
+   "lat": -37.3275575,
+   "lng": -59.1289013,
+   "horario": {
+    "lav": "6 a 21:30hs",
+    "sab": "7 a 15hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/9poi9wGtuT541vgH7"
+  },
+  {
+   "id": "sportclub-club-de-campo",
+   "name": "Club De Campo",
+   "fullName": "Sportclub Club De Campo",
+   "zone": "mendoza",
+   "barrio": "Guaymallén",
+   "provincia": "Mendoza",
+   "categoria": "Total",
+   "direccion": "Elpidio Gonzalez entre Tuyuti y Estrada",
+   "lat": -32.9206637,
+   "lng": -68.8071063,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Vg793j8iBDcsrFBy8"
+  },
+  {
+   "id": "sportclub-mendoza-plaza",
+   "name": "Mendoza Plaza",
+   "fullName": "SportClub Mendoza Plaza",
+   "zone": "mendoza",
+   "barrio": "Guaymallén",
+   "provincia": "Mendoza",
+   "categoria": "Plus",
+   "direccion": "Boulevard Perez Cuesta S/N",
+   "lat": -32.90195068093442,
+   "lng": -68.79965678567027,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Mendoza+Plaza+Shopping/@-32.9019507,-68.7974681,15z/data=!4m2!3m1!1s0x0:0x61932a53d62932c7?sa=X&ved=2ahUKEwiPyaKdu7H1AhUDqZUCHXysDn0Q_BJ6BAgfEAU"
+  },
+  {
+   "id": "sportclub-chacras-de-coria",
+   "name": "Chacras",
+   "fullName": "SportClub Chacras",
+   "zone": "mendoza",
+   "barrio": "Luján De Cuyo",
+   "provincia": "Mendoza",
+   "categoria": "Total",
+   "direccion": "Viamonte 3475, M5505 Luján de Cuyo, Mendoza",
+   "lat": -33.0049273,
+   "lng": -68.886782,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/2VQfnFd6847k6a5b9"
+  },
+  {
+   "id": "mendoza-palmares",
+   "name": "Mendoza Palmares",
+   "fullName": "SportClub Mendoza Palmares",
+   "zone": "mendoza",
+   "barrio": "Palmares",
+   "provincia": "Mendoza",
+   "categoria": "Total",
+   "direccion": "Shopping Palmares - Av. San Martín Sur 2875 M5501",
+   "lat": -32.9554013809185,
+   "lng": -68.86158328481324,
+   "horario": {
+    "lav": "7 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://g.page/PalmaresMall?share"
+  },
+  {
+   "id": "sportclub-vistalba",
+   "name": "Vistalba",
+   "fullName": "SportClub Vistalba",
+   "zone": "mendoza",
+   "barrio": "Vistalba",
+   "provincia": "Mendoza",
+   "categoria": "Total",
+   "direccion": "Guardia Vieja 1235",
+   "lat": -33.0203797,
+   "lng": -68.9090636,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/PiKR4cXjCXpM489z8"
+  },
+  {
+   "id": "sportclub-chango-mas-talleres-",
+   "name": "ChangoMas Talleres",
+   "fullName": "SportClub ChangoMas Talleres",
+   "zone": "cordoba",
+   "barrio": "",
+   "provincia": "Córdoba",
+   "categoria": "Flex",
+   "direccion": "Mauricio Yadarola 1699",
+   "lat": -31.3921905,
+   "lng": -64.1578099,
+   "horario": {
+    "lav": "7 a 22 hs.",
+    "sab": "9 a 14 hs.",
+    "dom": "domingo 17 a 21 hs"
+   },
+   "maps": "https://maps.app.goo.gl/cEymfjbb34yhXVNbA"
+  },
+  {
+   "id": "sportclub-rafael-nunez",
+   "name": "Rafael Nuñez",
+   "fullName": "SportClub Rafael Nuñez",
+   "zone": "cordoba",
+   "barrio": "Córdoba",
+   "provincia": "Córdoba",
+   "categoria": "Flex",
+   "direccion": "Rafael Nuñez 5675",
+   "lat": -31.3517935,
+   "lng": -64.247562,
+   "horario": {
+    "lav": "7 a 23hs",
+    "sab": "17 a 21hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/BHJppzwy6usk2XG8A"
+  },
+  {
+   "id": "sport-club-mendiolaza",
+   "name": "Mendiolaza",
+   "fullName": "SportClub Mendiolaza",
+   "zone": "cordoba",
+   "barrio": "Mendiolaza",
+   "provincia": "Córdoba",
+   "categoria": "Plus",
+   "direccion": "AV MARTIN TISSERA 597",
+   "lat": -31.2587175,
+   "lng": -64.2927421,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 13hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/83RSUFUWJt1ttdpY8"
+  },
+  {
+   "id": "sport-club-estrada",
+   "name": "Estrada",
+   "fullName": "SportClub Estrada",
+   "zone": "cordoba",
+   "barrio": "Nueva Cordoba",
+   "provincia": "Córdoba",
+   "categoria": "Plus",
+   "direccion": "Estrada 136",
+   "lat": -31.4280548,
+   "lng": -64.1869526,
+   "horario": {
+    "lav": "Lun 7hs a 24hs // Mar a  Jue 24hs // Viernes 7hs a 23hs",
+    "sab": "10hs a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/ArvTBeqjbH3sAPrX8"
+  },
+  {
+   "id": "sport-club-gauss",
+   "name": "Gauss",
+   "fullName": "Sportclub Gauss",
+   "zone": "cordoba",
+   "barrio": "Villa Belgrano",
+   "provincia": "Córdoba",
+   "categoria": "Plus",
+   "direccion": "Av. Carlos F. Gauss 5739",
+   "lat": -31.3559408,
+   "lng": -64.2508708,
+   "horario": {
+    "lav": "Lun 7hs a 24hs // Mar a  Jue 24hs // Viernes 7hs a 23hs",
+    "sab": "9 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/oHznDAYDQoAx3jvu5"
+  },
+  {
+   "id": "sportclub-catedral",
+   "name": "Catedral",
+   "fullName": "Sportclub Catedral",
+   "zone": "rionegro",
+   "barrio": "Bariloche",
+   "provincia": "Río Negro",
+   "categoria": "Total",
+   "direccion": "Del alto 636. Villa Cerro Catedral",
+   "lat": -41.1662096,
+   "lng": -71.4410711,
+   "horario": {
+    "lav": "8hs a 20hs",
+    "sab": "8hs a 20hs",
+    "dom": "16hs a 19.45 hs"
+   },
+   "maps": "https://maps.app.goo.gl/Hhk2CvsMH6w6fJQ1A"
+  },
+  {
+   "id": "sportclub-delturista-",
+   "name": "DelTurista",
+   "fullName": "SportClub DelTurista",
+   "zone": "rionegro",
+   "barrio": "Bariloche",
+   "provincia": "Río Negro",
+   "categoria": "Total",
+   "direccion": "Mitre 239",
+   "lat": -41.1340406,
+   "lng": -71.3062962,
+   "horario": {
+    "lav": "7:00 a 22:00",
+    "sab": "9:00 a 17:00",
+    "dom": "Domingo cerrado / Feriados 7:00 a 22:00"
+   },
+   "maps": "https://maps.app.goo.gl/1L9Qv1KeKagguJvbA"
+  },
+  {
+   "id": "sportclub-wellness-bariloche",
+   "name": "Wellness Bariloche",
+   "fullName": "SportClub Wellness Bariloche",
+   "zone": "rionegro",
+   "barrio": "Bariloche",
+   "provincia": "Río Negro",
+   "categoria": "Flex",
+   "direccion": "Mitre 139",
+   "lat": -41.1338383,
+   "lng": -71.3076147,
+   "horario": {
+    "lav": "08 a 21hs",
+    "sab": "09 a 13hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/fGohexKVsC2tMFyC7"
+  },
+  {
+   "id": "sportclub-pehuenes",
+   "name": "Pehuenes Bariloche",
+   "fullName": "SportClub Pehuenes Bariloche",
+   "zone": "rionegro",
+   "barrio": "San Carlos De Bariloche",
+   "provincia": "Río Negro",
+   "categoria": "Total",
+   "direccion": "Pintores Argentinos 250",
+   "lat": -41.126295,
+   "lng": -71.3979802,
+   "horario": {
+    "lav": "8 a 22 hs",
+    "sab": "9 a 17 hs",
+    "dom": "Domingos Cerrados - Feriados de 9 a 21hs"
+   },
+   "maps": "https://goo.gl/maps/P8MhMbFBqM49oE3X8"
+  },
+  {
+   "id": "sportclub-rivadavia",
+   "name": "Rivadavia",
+   "fullName": "SportClub Rivadavia",
+   "zone": "sanjuan",
+   "barrio": "San Juan",
+   "provincia": "San Juan",
+   "categoria": "Total",
+   "direccion": "Hipólito Yrigoyen Sur 764",
+   "lat": -31.5379732,
+   "lng": -68.5673757,
+   "horario": {
+    "lav": "7 a 23hs",
+    "sab": "9 a 19hs",
+    "dom": "9 a 13hs"
+   },
+   "maps": "https://maps.app.goo.gl/48bjKy53S6ZcoruSA"
+  },
+  {
+   "id": "sportclub-san-juan-libertad",
+   "name": "San Juan Libertad",
+   "fullName": "SportClub San Juan Libertad",
+   "zone": "sanjuan",
+   "barrio": "San Juan",
+   "provincia": "San Juan",
+   "categoria": "Total",
+   "direccion": "Av. Scalabrini Ortiz y Circunvalación (Paseo San Juan)",
+   "lat": -31.5215072,
+   "lng": -68.5409738,
+   "horario": {
+    "lav": "7 a 23 hs",
+    "sab": "9 a 13 hs",
+    "dom": ""
+   },
+   "maps": "https://www.google.com/maps/place/SportClub+San+Juan/@-31.5215072,-68.5409738,15z/data=!4m6!3m5!1s0x96814104e64f9413:0xdc5947b98dc15198!8m2!3d-31.5215072!4d-68.5409738!16s%2Fg%2F11rb_w3dx_?entry=ttu"
+  },
+  {
+   "id": "sportclub-rawson",
+   "name": "Barrio Rawson",
+   "fullName": "SportClub Barrio Rawson",
+   "zone": "sanjuan",
+   "barrio": "Villa Krause",
+   "provincia": "San Juan",
+   "categoria": "Total",
+   "direccion": "MENDOZA 4207 SUR",
+   "lat": -31.5836188,
+   "lng": -68.5350438,
+   "horario": {
+    "lav": "7 a 23 hs",
+    "sab": "09 a 19 hs",
+    "dom": "09 a 13 hs"
+   },
+   "maps": "https://maps.app.goo.gl/hDd67MZqjKfAtUTb7"
+  },
+  {
+   "id": "sportclub-boca-center",
+   "name": "Boca Center Corrientes",
+   "fullName": "SportClub Boca Center Corrientes",
+   "zone": "corrientes",
+   "barrio": "",
+   "provincia": "Corrientes",
+   "categoria": "Flex",
+   "direccion": "COSTANERA SUR Y LAMADRID",
+   "lat": -27.4805337,
+   "lng": -58.8560784,
+   "horario": {
+    "lav": "7 a 23 hs.",
+    "sab": "",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/QMstSsBuje8qKfSPA"
+  },
+  {
+   "id": "sportclub-san-jose-corrientes",
+   "name": "San Jose Corrientes",
+   "fullName": "SportClub San Jose Corrientes",
+   "zone": "corrientes",
+   "barrio": "Bella Vista",
+   "provincia": "Corrientes",
+   "categoria": "Flex",
+   "direccion": "Industria 1380",
+   "lat": -28.509371123858624,
+   "lng": -59.032965097121014,
+   "horario": {
+    "lav": "Próximamente",
+    "sab": "Próximamente",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/qDP11sSyGLGvS5CX6"
+  },
+  {
+   "id": "sportclub-corrientes",
+   "name": "Corrientes",
+   "fullName": "SportClub Corrientes",
+   "zone": "corrientes",
+   "barrio": "Corrientes",
+   "provincia": "Corrientes",
+   "categoria": "Total",
+   "direccion": "Buenos Aires 767",
+   "lat": -27.465797,
+   "lng": -58.8401899,
+   "horario": {
+    "lav": "6hs a 23 hs",
+    "sab": "9hs a 17hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/rEiJKq439aNyAANS6"
+  },
+  {
+   "id": "sportclub-concordia",
+   "name": "Concordia",
+   "fullName": "SportClub Concordia",
+   "zone": "entrerios",
+   "barrio": "Concordia",
+   "provincia": "Entre Ríos",
+   "categoria": "Flex",
+   "direccion": "Urdinarrain 60",
+   "lat": -31.3949046,
+   "lng": -58.0198275,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/B7YbhvfUPUxvK7u7A"
+  },
+  {
+   "id": "sportclub-juventud-unida",
+   "name": "Juventud Unida",
+   "fullName": "SportClub Juventud Unida",
+   "zone": "entrerios",
+   "barrio": "Gualeguaychú",
+   "provincia": "Entre Ríos",
+   "categoria": "Plus",
+   "direccion": "Alsina 60",
+   "lat": -33.0078755,
+   "lng": -58.5279752,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 13hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/aHyeBXtEq1HGqLBW6"
+  },
+  {
+   "id": "sportclub-cae-parana",
+   "name": "CAE Paraná",
+   "fullName": "SportClub CAE Paraná",
+   "zone": "entrerios",
+   "barrio": "Paraná",
+   "provincia": "Entre Ríos",
+   "categoria": "Total",
+   "direccion": "Los Vascos 729",
+   "lat": -31.7193115,
+   "lng": -60.5386676,
+   "horario": {
+    "lav": "6 a 22hs",
+    "sab": "8 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/Xc586zAiotccMVuG9"
+  },
+  {
+   "id": "sportclub-tucuman",
+   "name": "Tucumán",
+   "fullName": "SportClub Tucumán",
+   "zone": "tucuman",
+   "barrio": "San Miguel De Tucuman",
+   "provincia": "Tucumán",
+   "categoria": "Total",
+   "direccion": "24 de Septiembre 757  Paseo Comercial Vía 24",
+   "lat": -26.8297462,
+   "lng": -65.2086497,
+   "horario": {
+    "lav": "6 a 23 hs",
+    "sab": "9 a 15 hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://www.google.com/maps/place/Sport+Club/@-26.8297551,-65.2108416,17z/data=!3m1!4b1!4m5!3m4!1s0x94225dcd2ac417ff:0x32e2f22efb38c54a!8m2!3d-26.8297462!4d-65.2086497"
+  },
+  {
+   "id": "sportclub-barrio-norte",
+   "name": "Tucumán Barrio Norte",
+   "fullName": "SportClub Tucumán Barrio Norte",
+   "zone": "tucuman",
+   "barrio": "San Miguel De Tucumán",
+   "provincia": "Tucumán",
+   "categoria": "Total",
+   "direccion": "Laprida 851",
+   "lat": -26.8198715,
+   "lng": -65.200358,
+   "horario": {
+    "lav": "6 a 23hs",
+    "sab": "9 a 18hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/oFAvENHyX7V1CXRU6"
+  },
+  {
+   "id": "sportclub-funes",
+   "name": "Funes",
+   "fullName": "SportClub Funes",
+   "zone": "santafe",
+   "barrio": "Funes",
+   "provincia": "Santa Fe",
+   "categoria": "Total",
+   "direccion": "500mts al Sur, Miguel Galindo, S2132 Funes, Santa Fe",
+   "lat": -32.94575840650648,
+   "lng": -60.823557868568344,
+   "horario": {
+    "lav": "6 a 22hs",
+    "sab": "9 a 13hs",
+    "dom": "Feriados 9 a 13hs"
+   },
+   "maps": "https://www.google.com/search?tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=APwXEdewLitmYMIkQm2vHror191qwDFCkA:1687542714075&q=sportclub+funes+damfield&rflfq=1&num=10&rldimm=6287794324666517946&ved=2ahUKEwi75I_A-tn_AhVvr5UCHQXwBAwQu9QIegQIDhAK#rlfi=hd:;si:;mv:[[-32.94820733642649,-60.81667526075951],[-32.951218868058824,-60.820720031953954]]"
+  },
+  {
+   "id": "sportclub-barrio-martin",
+   "name": "Barrio Martín",
+   "fullName": "SportClub Barrio Martín",
+   "zone": "santafe",
+   "barrio": "Rosario",
+   "provincia": "Santa Fe",
+   "categoria": "Total",
+   "direccion": "Buenos Aires 1480",
+   "lat": -32.9557626,
+   "lng": -60.6351092,
+   "horario": {
+    "lav": "6 a 22hs",
+    "sab": "9 a 15hs",
+    "dom": "Cerrado"
+   },
+   "maps": "https://maps.app.goo.gl/Ub2xmVC2JkYksKf86"
+  },
+  {
+   "id": "sportclub-complejo-la-barda",
+   "name": "La Barda Vaca Muerta",
+   "fullName": "SportClub La Barda Vaca Muerta",
+   "zone": "neuquen",
+   "barrio": "Añelo",
+   "provincia": "Neuquén",
+   "categoria": "Total",
+   "direccion": "Ruta 17 Km 157.3",
+   "lat": -38.3525905,
+   "lng": -68.8256919,
+   "horario": {
+    "lav": "8hs a 00hs",
+    "sab": "8hs a 00hs",
+    "dom": "8hs a 00hs"
+   },
+   "maps": "https://maps.app.goo.gl/fT9jtSomiUqzVwPGA"
+  },
+  {
+   "id": "sportclub-santa-rosa",
+   "name": "Santa Rosa",
+   "fullName": "SportClub Santa Rosa",
+   "zone": "lapampa",
+   "barrio": "Santa Rosa",
+   "provincia": "La Pampa",
+   "categoria": "Flex",
+   "direccion": "Av. Spinetto 1370",
+   "lat": -36.6024377,
+   "lng": -64.2808697,
+   "horario": {
+    "lav": "6 a 22hs",
+    "sab": "8 a 16hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/2zzxhcdx2pBQT8eTA"
+  },
+  {
+   "id": "sportclub-aca-san-luis",
+   "name": "ACA San Luis",
+   "fullName": "Sportclub ACA San Luis",
+   "zone": "sanluis",
+   "barrio": "San Luis",
+   "provincia": "San Luis",
+   "categoria": "Total",
+   "direccion": "Constitución 931, D5700HZS, Av. Illia 401, D5700AXT San Luis",
+   "lat": -33.300210899999996,
+   "lng": -66.3445819,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "9 a 20hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/LzcFgyb1LpQXpnyL8"
+  },
+  {
+   "id": "sportclub-gye-jujuy",
+   "name": "GyE Jujuy",
+   "fullName": "SportClub GyE Jujuy",
+   "zone": "jujuy",
+   "barrio": "Humahuaca",
+   "provincia": "Jujuy",
+   "categoria": "Plus",
+   "direccion": "Humahuaca, Y4600 San Salvador de Jujuy, Jujuy",
+   "lat": -24.1989044,
+   "lng": -65.2915994,
+   "horario": {
+    "lav": "7 a 22hs",
+    "sab": "8 a 14hs",
+    "dom": ""
+   },
+   "maps": "https://maps.app.goo.gl/7zZykjbRni1PDYiy6"
+  }
+ ]
+}

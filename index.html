@@ -786,6 +786,7 @@ html{font-synthesis:none}
 #v-reg .group{gap:6px}#v-reg .step{gap:12px}
 .gym-search{gap:6px!important}.gym-row{padding:8px 10px!important}.gym-peaks .chip{padding:5px 9px}
 #r-sedes .chips{max-height:170px;overflow-y:auto}
+.gym-city{color:#c4b5fd!important;font-weight:700}
 /* ===== Modo app: pantalla completa en el celular ===== */
 html,body{height:100%}
 html{background:#07070d;-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -824,7 +825,7 @@ input,select,textarea{font-size:16px!important}
   #share-pdf{position:fixed;left:0;top:0;width:100%;background:#fff;color:#000}
   .phone,.screen{position:static!important;overflow:visible!important;background:#fff!important}
 }
-</style>
+.gym-row.res>span:first-child{min-width:0;flex:1}.gym-row.res .zs-plus{flex-shrink:0;white-space:nowrap}</style>
 
 <div class="wrap">
   <header>
@@ -2439,22 +2440,92 @@ function applyChain(ch,quiet){
 const chainHtml=()=>`<div class="gym-ch" role="group" aria-label="Tu gimnasio">${CHAINS.map(([id,n,d])=>`<button type="button" class="gym-c" data-chain="${id}" aria-pressed="${state.chain===id}"><b>${id==="otro"?"Otro":n}</b><small>${id==="otro"?((state.customGyms||[]).length?`${state.customGyms.length} guardado${state.customGyms.length>1?"s":""}`:"Buscalo"):d}</small></button>`).join("")}</div>
   ${state.chain==="otro"?`<div class="gym-search"><div class="search"><input id="gym-q" type="search" placeholder="Nombre del gimnasio y barrio, ej.: Gym Coliseo Palermo" autocomplete="off" enterkeyhint="search"></div><button type="button" class="btn sec" id="gym-go">Buscar en el mapa</button><div id="gym-res"></div>
     ${(state.customGyms||[]).length?`<span class="glabel">Tus gimnasios</span>${state.customGyms.map(g=>`<div class="gym-row"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small></span><button type="button" class="link" data-gdel="${g.id}">Quitar</button></div>
-      <div class="gym-peaks"><small>¿Cuándo se llena? <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(g.name+" "+g.dir)}" target="_blank" rel="noopener">Miralo en Google Maps</a></small><div class="chips">${SLOTS.map(sl=>`<button type="button" class="chip" data-gpk="${g.id}|${sl.id}" aria-pressed="${(g.peaks||[]).includes(sl.id)}">${sl.name}</button>`).join("")}</div></div>`).join("")}`:""}</div>`:""}`;
+      <div class="gym-peaks"><small>¿Cuándo se llena? <a href="${g.gurl||`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(g.name+" "+g.dir)}`}" target="_blank" rel="noopener">Miralo en Google Maps</a></small><div class="chips">${SLOTS.map(sl=>`<button type="button" class="chip" data-gpk="${g.id}|${sl.id}" aria-pressed="${(g.peaks||[]).includes(sl.id)}">${sl.name}</button>`).join("")}</div></div>`).join("")}`:""}</div>`:""}`;
 async function gymSearch(){
   const q=($("gym-q")||{}).value||"";if(q.trim().length<3){toast("Escribí el nombre del gimnasio.");return}
   const res=$("gym-res");res.innerHTML=`<p class="dim">Buscando…</p>`;
+  const ref0=sedeById(state.main)||SEDES_ALL.sportclub.find(s=>state.zones.has(s.zone))||{lat:-34.6,lng:-58.45};
+  if(TT_KEY){try{GS.list=await ttSearch(q,ref0);GS.src="tomtom";
+    res.innerHTML=GS.list.length?GS.list.map((g,k)=>`<button type="button" class="gym-row res" data-gadd="${k}"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small><small class="gym-city">${esc(g.city)} · a ${String(g.km).replace(".",",")} km${g.hoursKnown?" · con horarios":""}</small></span><span class="zs-plus">+ Elegir</span></button>`).join("")+`<p class="ap-tip">¿No es ninguno? Probá con otro nombre o</p><button type="button" class="link" id="gym-manual">cargalo a mano</button>`
+      :`<p class="dim">No lo encontramos.</p><button type="button" class="link" id="gym-manual">Cargarlo a mano</button>`;return}catch(_){GS.src="osm"}}
+  if(GMAPS_KEY){try{const km=(a)=>Math.round(Math.hypot((a.lat-ref0.lat)*111,(a.lng-ref0.lng)*91));GS.list=(await gSearch(q,ref0)).map(g=>({...g,km:km(g)})).sort((a,b)=>a.km-b.km);GS.src="google";
+    res.innerHTML=GS.list.length?GS.list.map((g,k)=>`<button type="button" class="gym-row res" data-gadd="${k}"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small><small class="gym-city">a ${g.km} km${g.hoursKnown?" · con horarios":""}</small></span><span class="zs-plus">+ Elegir</span></button>`).join("")+`<p class="ap-tip">Resultados de Google Maps.</p>`
+      :`<p class="dim">No lo encontramos.</p><button type="button" class="link" id="gym-manual">Cargarlo a mano</button>`;return}catch(_){GS.src="osm"}}
   try{
-    const u=`https://nominatim.openstreetmap.org/search?format=jsonv2&countrycodes=ar&limit=8&accept-language=es&q=${encodeURIComponent(q)}`;
+    const ref=sedeById(state.main)||SEDES_ALL.sportclub.find(s=>state.zones.has(s.zone))||{lat:-34.6,lng:-58.45};
+    const u=`https://nominatim.openstreetmap.org/search?format=jsonv2&countrycodes=ar&limit=10&addressdetails=1&accept-language=es&viewbox=${ref.lng-.6},${ref.lat+.6},${ref.lng+.6},${ref.lat-.6}&q=${encodeURIComponent(q)}`;
     const r=await fetch(u,{headers:{"Accept":"application/json"}});const d=await r.json();
-    GS.list=d.map(x=>({id:"cg-"+x.osm_type[0]+x.osm_id,name:(x.name||q).trim(),dir:x.display_name.split(",").slice(0,3).join(",").trim(),lat:+x.lat,lng:+x.lon}));
-    res.innerHTML=GS.list.length?GS.list.map((g,k)=>`<button type="button" class="gym-row res" data-gadd="${k}"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small></span><span class="zs-plus">+ Elegir</span></button>`).join("")+`<button type="button" class="link" id="gym-manual">No está: cargarlo a mano</button>`
+    const km=(a,b)=>Math.round(Math.hypot((a.lat-ref.lat)*111,(a.lng-ref.lng)*91));
+    GS.list=d.map(x=>{const a=x.address||{},city=a.city||a.town||a.village||a.suburb||a.county||"",prov=a.state||"";const g={id:"cg-"+x.osm_type[0]+x.osm_id,name:(x.name||q).trim(),dir:[a.road?(a.road+(a.house_number?" "+a.house_number:"")):"",a.suburb||"",city].filter(Boolean).filter((v,i,l)=>l.indexOf(v)===i).join(", ")||x.display_name.split(",").slice(0,3).join(","),city:[city,prov].filter(Boolean).join(", "),lat:+x.lat,lng:+x.lon};g.km=km(g);return g}).sort((a,b)=>a.km-b.km);
+    res.innerHTML=GS.list.length?GS.list.map((g,k)=>`<button type="button" class="gym-row res" data-gadd="${k}"><span><b>${esc(g.name)}</b><small>${esc(g.dir)}</small><small class="gym-city">${esc(g.city)} · a ${g.km} km</small></span><span class="zs-plus">+ Elegir</span></button>`).join("")+`<p class="ap-tip">¿No es ninguno? Cargalo a mano con su dirección y queda en el lugar exacto.</p>`+`<button type="button" class="link" id="gym-manual">No está: cargarlo a mano</button>`
       :`<p class="dim">No lo encontramos en el mapa.</p><button type="button" class="link" id="gym-manual">Cargarlo a mano</button>`;
   }catch(_){res.innerHTML=`<p class="dim">Sin conexión para buscar.</p><button type="button" class="link" id="gym-manual">Cargarlo a mano</button>`}
 }
+
+
+/* ---------- TomTom Search ---------- */
+const TT_KEY="gxR1nQWtpERJDx568aRUIFncWn9DZwxH";
+function ttHours(oh){
+  const tr=(oh&&oh.timeRanges)||[];if(!tr.length)return null;
+  const by={},tx={},hm=t=>t.hour+(t.minute?":"+String(t.minute).padStart(2,"0"):"");
+  tr.forEach(r=>{const d=new Date(r.startTime.date+"T12:00:00").getDay();if(by[d])return;
+    const o=r.startTime.hour;let c=r.endTime.hour+(r.endTime.minute?1:0);if(r.endTime.date!==r.startTime.date||c===0)c=24;
+    by[d]=c>o?[o,c]:null;tx[d]=`${hm(r.startTime)} a ${r.endTime.date!==r.startTime.date&&!r.endTime.hour?"0":hm(r.endTime)} hs`});
+  const lv=[1,2,3,4,5].find(d=>by[d]),h=[by[0]||null,lv?by[lv]:null,by[6]||null],t=d=>d!=null&&by[d]?tx[d]:"Cerrado";
+  return {h,ht:[t(lv),t(6),t(0)]};
+}
+async function ttSearch(q,ref){
+  const u=`https://api.tomtom.com/search/2/search/${encodeURIComponent(q)}.json?key=${TT_KEY}&countrySet=AR&lat=${ref.lat}&lon=${ref.lng}&limit=10&language=es-419&idxSet=POI&openingHours=nextSevenDays`;
+  const r=await fetch(u);if(!r.ok)throw new Error("tomtom "+r.status);const d=await r.json();
+  return (d.results||[]).filter(x=>x.poi).map(x=>{const a=x.address||{},hh=ttHours(x.poi.openingHours);
+    const g={id:"cg-t"+x.id,name:x.poi.name,dir:[a.streetName&&(a.streetName+(a.streetNumber?" "+a.streetNumber:"")),a.municipalitySubdivision||a.municipality].filter(Boolean).join(", ")||a.freeformAddress||"",
+      city:(a.municipality==="Buenos Aires"?"CABA":a.municipality)||a.countrySubdivision||"",lat:x.position.lat,lng:x.position.lon,km:Math.round((x.dist||0)/100)/10,
+      cat:(x.poi.classifications&&x.poi.classifications[0]&&x.poi.classifications[0].code==="SPORTS_CENTER")?"Gimnasio":"Lugar"};
+    if(hh){g.h=hh.h;g.ht=hh.ht;g.hoursKnown=true}return g});
+}
+
+/* ---------- Google Places ---------- */
+const GMAPS_KEY="";
+let _gLoad=null;
+function gLoad(){
+  if(!GMAPS_KEY)return Promise.reject(new Error("sin clave"));
+  if(window.google&&google.maps&&google.maps.importLibrary)return Promise.resolve();
+  if(_gLoad)return _gLoad;
+  _gLoad=new Promise((ok,ko)=>{window.__gmok=ok;const sc=document.createElement("script");
+    sc.src=`https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GMAPS_KEY)}&v=weekly&language=es&region=AR&loading=async&callback=__gmok`;
+    sc.async=true;sc.onerror=()=>{_gLoad=null;ko(new Error("no cargó"))};document.head.append(sc);setTimeout(()=>ko(new Error("tiempo")),12000)});
+  return _gLoad;
+}
+function gHours(p){
+  const per=(p.regularOpeningHours&&p.regularOpeningHours.periods)||[];
+  const range=day=>{const x=per.find(q=>q.open&&q.open.day===day);if(!x)return null;
+    const o=x.open.hour+(x.open.minute>=30?1:0),c=x.close?(x.close.hour===0?24:x.close.hour)+(x.close.minute>=30?1:0):24;return c>o?[o,c]:[o,24]};
+  const txt=r=>r?`${r[0]} a ${r[1]===24?"0":r[1]} hs`:"Cerrado";
+  if(!per.length)return {h:[null,[7,23],[9,20]],ht:["7 a 23 hs","9 a 20 hs","Cerrado"],known:false};
+  const h=[range(0),range(1),range(6)];return {h,ht:[txt(h[1]),txt(h[2]),txt(h[0])],known:true};
+}
+async function gSearch(q,ref){
+  await gLoad();const {Place}=await google.maps.importLibrary("places");
+  const {places}=await Place.searchByText({textQuery:q,fields:["id","displayName","formattedAddress","location","regularOpeningHours","googleMapsURI"],
+    locationBias:{lat:ref.lat,lng:ref.lng},region:"ar",language:"es",maxResultCount:8});
+  return (places||[]).map(p=>{const hh=gHours(p),loc=p.location;return {id:"cg-g"+p.id,name:p.displayName||q,dir:(p.formattedAddress||"").replace(/, Argentina$/,""),
+    city:(p.formattedAddress||"").split(",").slice(-3,-1).join(",").trim(),lat:loc.lat(),lng:loc.lng(),h:hh.h,ht:hh.ht,hoursKnown:hh.known,gurl:p.googleMapsURI}});
+}
+
 const GS={list:[]};
+async function manualGym(){
+  const name=prompt("Nombre del gimnasio (ej.: Apolo Gym)",($("gym-q")||{}).value||"");if(!name)return;
+  const dir=prompt("Dirección (calle y número, y barrio o ciudad)\nEj.: Av. Rivadavia 5200, Caballito");if(!dir)return;
+  toast("Buscando la dirección…");let lat=null,lng=null,found="";
+  if(TT_KEY){try{const r=await fetch(`https://api.tomtom.com/search/2/geocode/${encodeURIComponent(dir)}.json?key=${TT_KEY}&countrySet=AR&limit=1&language=es-419`);const d=await r.json();const x=d.results&&d.results[0];if(x){lat=x.position.lat;lng=x.position.lon;found=x.address.freeformAddress}}catch(_){}}
+  if(lat===null)try{const r=await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&countrycodes=ar&limit=1&accept-language=es&q=${encodeURIComponent(dir)}`);const d=await r.json();if(d[0]){lat=+d[0].lat;lng=+d[0].lon;found=d[0].display_name}}catch(_){}
+  if(lat===null){const c=sedeById(state.main)||SEDES_ALL.sportclub[0];lat=c.lat;lng=c.lng}
+  addGym({id:"cg-m"+Date.now(),name:name.trim(),dir:dir.trim(),lat,lng});rerenderGym();
+  toast(found?`Guardado en ${found.split(",").slice(0,3).join(",")}.`:"Guardado. No encontramos la dirección: la ubicación es aproximada.");
+}
 function addGym(g){
-  const n={...g,chain:"otro",zone:"mio",barrio:g.dir.split(",")[1]?g.dir.split(",")[1].trim():"",cat:"Tu gimnasio",
-    h:[null,[7,23],[9,20]],ht:["7 a 23 hs","9 a 20 hs","Cerrado"],peaks:["n"]};
+  const n={chain:"otro",zone:"mio",barrio:g.dir.split(",")[1]?g.dir.split(",")[1].trim():"",cat:"Tu gimnasio",
+    h:[null,[7,23],[9,20]],ht:["7 a 23 hs","9 a 20 hs","Cerrado"],peaks:["n"],...g};delete n.km;delete n.city;
   state.customGyms=(state.customGyms||[]).filter(x=>x.id!==n.id).concat(n);
   applyChain("otro");setMain(n.id);toast(`Listo: ${n.name}. Ajustá cuándo se llena para mejorar la estimación.`);
 }
@@ -2463,8 +2534,7 @@ document.addEventListener("click",e=>{const t=e.target;let b;
   if(b=t.closest("[data-chain]")){applyChain(b.dataset.chain);rerenderGym();if(b.dataset.chain==="otro")setTimeout(()=>$("gym-q")&&$("gym-q").focus(),50);return}
   if(t.closest("#gym-go")){gymSearch();return}
   if(b=t.closest("[data-gadd]")){addGym(GS.list[+b.dataset.gadd]);rerenderGym();return}
-  if(t.closest("#gym-manual")){const name=prompt("Nombre del gimnasio");if(!name)return;const dir=prompt("Dirección (calle y número, barrio)")||"";
-    const c=SEDES_ALL.sportclub.find(s=>s.zone==="caba-norte")||SEDES_ALL.sportclub[0];addGym({id:"cg-m"+Date.now(),name,dir,lat:c.lat,lng:c.lng});rerenderGym();toast("Guardado. La ubicación en el mapa es aproximada.");return}
+  if(t.closest("#gym-manual")){manualGym();return}
   if(b=t.closest("[data-gdel]")){state.customGyms=state.customGyms.filter(g=>g.id!==b.dataset.gdel);state.main=null;applyChain(state.customGyms.length?"otro":"sportclub");rerenderGym();return}
   if(b=t.closest("[data-gpk]")){const [id,sl]=b.dataset.gpk.split("|"),g=state.customGyms.find(x=>x.id===id);g.peaks=g.peaks||[];g.peaks.includes(sl)?g.peaks.splice(g.peaks.indexOf(sl),1):g.peaks.push(sl);computeNow();rerenderGym();return}
 });

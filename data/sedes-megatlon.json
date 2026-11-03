@@ -1,0 +1,437 @@
+[
+ {
+  "id": "mg-alcorta",
+  "name": "Alcorta",
+  "prov": "caba",
+  "memb": "Black+",
+  "dir": "J. Salguero 3172",
+  "lat": -34.5740089,
+  "lng": -58.4035034,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 20 hs."
+  ],
+  "zone": "palermo"
+ },
+ {
+  "id": "mg-almagro",
+  "name": "Almagro",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Humahuaca 3850",
+  "lat": -34.6022365,
+  "lng": -58.4186039,
+  "ht": [
+   "7 a 23 hs.",
+   "8 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-oeste"
+ },
+ {
+  "id": "mg-ateneo-de-la-juventud",
+  "name": "Ateneo De La Juventud",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Riobamba 165",
+  "lat": -34.6074185,
+  "lng": -58.3934266,
+  "ht": [
+   "7 a 22 hs.",
+   "8 a 19 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-centro"
+ },
+ {
+  "id": "mg-barracas",
+  "name": "Barracas",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Iriarte 2056",
+  "lat": -34.6490929,
+  "lng": -58.3763823,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-sur"
+ },
+ {
+  "id": "mg-barrio-norte",
+  "name": "Barrio Norte",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Rodríguez Peña 1062",
+  "lat": -34.5963816,
+  "lng": -58.3920423,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 18 hs."
+  ],
+  "zone": "palermo"
+ },
+ {
+  "id": "mg-belgrano",
+  "name": "Belgrano",
+  "prov": "caba",
+  "memb": "Black",
+  "dir": "Vuelta de Obligado 2250",
+  "lat": -34.5601815,
+  "lng": -58.4569256,
+  "ht": [
+   "6:30 a 23 hs.",
+   "8 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-norte"
+ },
+ {
+  "id": "mg-caballito",
+  "name": "Caballito",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Yerbal 854",
+  "lat": -34.619682,
+  "lng": -58.442612,
+  "ht": [
+   "7 a 23 hs.",
+   "8:30 a 20 hs.",
+   "10 a 18 hs."
+  ],
+  "zone": "caba-oeste"
+ },
+ {
+  "id": "mg-center",
+  "name": "Center",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Reconquista 335",
+  "lat": -34.603933,
+  "lng": -58.3723264,
+  "ht": [
+   "6:30 a 21 hs.",
+   "",
+   "Cerrado"
+  ],
+  "zone": "caba-centro"
+ },
+ {
+  "id": "mg-devoto",
+  "name": "Devoto",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Av. Fco. Beiró 5175",
+  "lat": -34.6125861,
+  "lng": -58.5231436,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 14 hs."
+  ],
+  "zone": "caba-oeste"
+ },
+ {
+  "id": "mg-distrito-arcos",
+  "name": "Distrito Arcos",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Godoy Cruz 2626",
+  "lat": -34.5793847,
+  "lng": -58.4260745,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 20 hs."
+  ],
+  "zone": "palermo"
+ },
+ {
+  "id": "mg-distrito-tecnologico",
+  "name": "Distrito Tecnológico",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Av. Caseros 3039",
+  "lat": -34.6369274,
+  "lng": -58.4064729,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-sur"
+ },
+ {
+  "id": "mg-floresta",
+  "name": "Floresta",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Av. Jonte 4180",
+  "lat": -34.6161981,
+  "lng": -58.4986558,
+  "ht": [
+   "6:30 a 22 hs.",
+   "8:30 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-oeste"
+ },
+ {
+  "id": "mg-la-imprenta",
+  "name": "La Imprenta",
+  "prov": "caba",
+  "memb": "Black+",
+  "dir": "Migueletes 1023",
+  "lat": -34.5648666,
+  "lng": -58.4365903,
+  "ht": [
+   "6:30 a 23 hs.",
+   "8 a 20 hs.",
+   "10 a 18 hs."
+  ],
+  "zone": "caba-norte"
+ },
+ {
+  "id": "mg-nunez",
+  "name": "Núñez",
+  "prov": "caba",
+  "memb": "Black",
+  "dir": "Av. Libertador 8000",
+  "lat": -34.5414845,
+  "lng": -58.4627624,
+  "ht": [
+   "6:30 a 23 hs.",
+   "8 a 20 hs.",
+   "10 a 18 hs."
+  ],
+  "zone": "caba-norte"
+ },
+ {
+  "id": "mg-puerto-madero",
+  "name": "Puerto Madero",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Alicia Moreau de Justo 1600",
+  "lat": -34.6169125,
+  "lng": -58.3651867,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "caba-centro"
+ },
+ {
+  "id": "mg-recoleta",
+  "name": "Recoleta",
+  "prov": "caba",
+  "memb": "Platino",
+  "dir": "Arenales 1930",
+  "lat": -34.5947475,
+  "lng": -58.3949191,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "palermo"
+ },
+ {
+  "id": "mg-villa-crespo",
+  "name": "Villa Crespo",
+  "prov": "caba",
+  "memb": "Classic",
+  "dir": "Juan B. Justo 2650",
+  "lat": -34.5954257,
+  "lng": -58.4448927,
+  "ht": [
+   "7 a 23 hs.",
+   "8 a 20 hs.",
+   "10 a 18 hs."
+  ],
+  "zone": "palermo"
+ },
+ {
+  "id": "mg-gonnet",
+  "name": "Gonnet",
+  "prov": "buenos-aires",
+  "memb": "Black",
+  "dir": "Camino Parque Centenario 4000, La Plata",
+  "lat": -34.8742211,
+  "lng": -58.0253685,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 14 hs."
+  ],
+  "zone": "laplata"
+ },
+ {
+  "id": "mg-martinez",
+  "name": "Martínez",
+  "prov": "buenos-aires",
+  "memb": "Black",
+  "dir": "Alvear 1136, Martínez",
+  "lat": -34.483637,
+  "lng": -58.4890578,
+  "ht": [
+   "6:30 a 22 hs.",
+   "8 a 20 hs.",
+   "10 a 14 hs."
+  ],
+  "zone": "norte"
+ },
+ {
+  "id": "mg-martinez-2",
+  "name": "Martínez Ii",
+  "prov": "buenos-aires",
+  "memb": "Black",
+  "dir": "Arenales 1815, Martínez",
+  "lat": -34.487205,
+  "lng": -58.4994399,
+  "ht": [
+   "7 a 22 hs.",
+   "8 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "norte"
+ },
+ {
+  "id": "mg-olivos",
+  "name": "Olivos",
+  "prov": "buenos-aires",
+  "memb": "Black",
+  "dir": "Av. Libertador 2421, Olivos",
+  "lat": -34.5076575,
+  "lng": -58.4788406,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "norte"
+ },
+ {
+  "id": "mg-pilar",
+  "name": "Pilar",
+  "prov": "buenos-aires",
+  "memb": "Black",
+  "dir": "Panamericana Km 49,5",
+  "lat": -34.4436316,
+  "lng": -58.8628943,
+  "ht": [
+   "7 a 22 hs.",
+   "8 a 20 hs.",
+   "9 a 14hs."
+  ],
+  "zone": "pilar"
+ },
+ {
+  "id": "mg-racing-club",
+  "name": "Racing Club",
+  "prov": "buenos-aires",
+  "memb": "Classic",
+  "dir": "Av. Mitre 934, Avellaneda",
+  "lat": -34.6636639,
+  "lng": -58.36322,
+  "ht": [
+   "6:30 a 22 hs.",
+   "9 a 20 hs.",
+   "10 a 14 hs."
+  ],
+  "zone": "sur"
+ },
+ {
+  "id": "mg-barrio-jardin",
+  "name": "Barrio Jardín",
+  "prov": "cordoba",
+  "memb": "Classic",
+  "dir": "Av. Elías Yofre 800",
+  "lat": -31.4509604,
+  "lng": -64.1856391,
+  "ht": [
+   "7 a 23 hs.",
+   "9 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "cordoba"
+ },
+ {
+  "id": "mg-centro",
+  "name": "Centro",
+  "prov": "cordoba",
+  "memb": "Classic",
+  "dir": "Av. Gral. Paz 195, Córdoba",
+  "lat": -31.4129631,
+  "lng": -64.1860754,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 14 hs.",
+   "Cerrado"
+  ],
+  "zone": "cordoba"
+ },
+ {
+  "id": "mg-cerro",
+  "name": "Cerro",
+  "prov": "cordoba",
+  "memb": "Classic",
+  "dir": "José Otero 1430, Córdoba",
+  "lat": -31.3827523,
+  "lng": -64.230823,
+  "ht": [
+   "7 a 22 hs.",
+   "9 a 16 hs.",
+   "Cerrado"
+  ],
+  "zone": "cordoba"
+ },
+ {
+  "id": "mg-anelo",
+  "name": "Añelo",
+  "prov": "neuquen",
+  "memb": "Black+",
+  "dir": "Complejo Hally, Añelo.",
+  "lat": -38.3436356,
+  "lng": -68.7989655,
+  "ht": [
+   "",
+   "6 a 12 hs y",
+   "Cerrado"
+  ],
+  "zone": "neuquen"
+ },
+ {
+  "id": "mg-alto-rosario",
+  "name": "Alto Rosario",
+  "prov": "santa-fe",
+  "memb": "Platino",
+  "dir": "Junín 501",
+  "lat": -32.9280378,
+  "lng": -60.6677963,
+  "ht": [
+   "7 a 23 hs.",
+   "9 a 21 hs.",
+   "10 a 20 hs."
+  ],
+  "zone": "santafe"
+ },
+ {
+  "id": "mg-rosario",
+  "name": "Rosario",
+  "prov": "santa-fe",
+  "memb": "Platino",
+  "dir": "Tucumán 1239",
+  "lat": -32.9415565,
+  "lng": -60.6390097,
+  "ht": [
+   "6:30 a 22 hs.",
+   "8 a 20 hs.",
+   "Cerrado"
+  ],
+  "zone": "santafe"
+ }
+]
