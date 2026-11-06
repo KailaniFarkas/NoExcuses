@@ -852,7 +852,59 @@ input,select,textarea{font-size:16px!important}
 .ts-type{display:flex;align-items:center;justify-content:center;gap:10px;margin:2px 0 8px;font-size:.8rem;color:var(--app-dim)}
 .ts-type input{width:96px;text-align:center;font-size:1.1rem;font-weight:700;padding:8px;border-radius:10px;border:1.5px solid var(--app-line);background:var(--app-bg);color:var(--app-ink)}
 .ts-type input.bad{border-color:#ef4444}
-.map{z-index:0}#zsheet .zs-list{max-height:50dvh;overflow-y:auto}</style>
+.map{z-index:0}#zsheet .zs-list{max-height:50dvh;overflow-y:auto}
+.fin{position:absolute;inset:0;z-index:9;background:var(--app-bg);display:flex;flex-direction:column;align-items:stretch;padding-top:max(14px,env(safe-area-inset-top,0px))}
+.fin[hidden]{display:none}
+.fin-top{display:flex;justify-content:space-between;align-items:center;padding:8px 16px 6px}.fin-top small{color:var(--app-dim);font-size:.82rem}
+.fin-prog{display:flex;gap:6px;padding:0 16px 14px}.fin-prog i{flex:1;height:5px;border-radius:9px;background:var(--app-line)}.fin-prog i.on{background:linear-gradient(100deg,var(--blue),var(--violet))}
+.fin-body{flex:1;overflow-y:auto;padding:0 16px 10px;display:flex;flex-direction:column;gap:10px}
+.fin-sub{font-size:.82rem;color:var(--app-dim);font-weight:700}
+.fin-h{margin:0 0 6px;font-family:var(--display);font-size:2.35rem;line-height:1.02;text-transform:uppercase}
+.fin-opts{display:flex;flex-direction:column;gap:8px}
+.fin-o{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:13px 16px;border-radius:18px;border:1.5px solid var(--app-line);background:var(--app-surf);color:var(--app-ink)}
+.fin-o[aria-pressed="true"]{border:2px solid var(--c);background:var(--app-surf2)}
+.fin-o>span:not(.fin-emo){display:flex;flex-direction:column;gap:2px;flex:1}.fin-o b{font-size:1.08rem}.fin-o small{font-size:.8rem;color:var(--app-dim)}
+.fin-o em{font-style:normal;font-weight:800;color:var(--c);font-size:1.1rem}
+.fin-dot{width:16px;height:16px;border-radius:50%;background:var(--c);flex-shrink:0}.fin-emo{font-size:1.6rem;width:30px;text-align:center}
+.fin-tip{margin:2px 0 0;font-size:.82rem;color:var(--app-dim);line-height:1.4}
+.fin-times{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fin-times label{display:flex;flex-direction:column;gap:4px;background:var(--app-surf);border-radius:16px;padding:12px 14px}
+.fin-times small{font-size:.78rem;color:var(--app-dim);font-weight:700}
+.fin-times input{background:none;border:0;padding:0;color:var(--app-ink);font-family:var(--display);font-size:2.4rem;width:100%;font-variant-numeric:tabular-nums}
+.fin-times input:focus{outline:none}.fin-times label:focus-within{box-shadow:0 0 0 2px var(--violet)}.fin-times input.bad{color:#ef4444}
+#fin-note{width:100%;box-sizing:border-box;border-radius:14px;border:1.5px solid var(--app-line);background:var(--app-surf);color:var(--app-ink);padding:12px;font:inherit;font-size:.9rem;resize:none}
+.fin-card{background:var(--app-surf);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.fin-rt{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.fin-rt b{font-size:1.05rem}.fin-rt small{color:var(--app-dim);font-size:.8rem}
+.fin-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.fin-grid span{background:var(--app-bg);border-radius:12px;padding:8px 10px}
+.fin-grid small{display:block;font-size:.72rem;color:var(--app-dim)}.fin-grid b{font-size:1.1rem}
+.fin-pr{margin:0;font-size:.86rem;font-weight:700;color:#c4b5fd}
+.fin-ex{display:flex;flex-direction:column;gap:4px}.fin-ex span{display:flex;gap:8px;align-items:center;font-size:.84rem}.fin-ex span.no{color:var(--app-dim)}
+.fin-ex i{font-style:normal;width:18px;color:#4ade80;font-weight:800}.fin-ex .no i{color:var(--app-dim)}.fin-ex b{margin-left:auto;font-size:.82rem}
+.fin-card .link{background:none;border:0;color:#c4b5fd;font-weight:700;font-size:.84rem;padding:4px 0;text-align:left}
+.fin-sum{display:flex;flex-wrap:wrap;gap:6px}.fin-sum span{background:var(--app-surf);border-radius:10px;padding:7px 10px;font-size:.82rem}
+.fin-cta{padding:10px 16px max(18px,calc(env(safe-area-inset-bottom,0px) + 12px));display:flex;flex-direction:column;gap:6px}
+.fin-cta .link{background:none;border:0;color:var(--app-dim);font-weight:700;font-size:.86rem;padding:8px}
+.fin-cta .err{margin:0}
+
+.f-free{display:flex;align-items:center;gap:8px;margin:6px 0 0;font-size:.84rem;color:#d6d3ee}
+.f-free i{width:14px;height:14px;border-radius:4px;background:rgba(139,92,246,.35);flex:none}
+.f-free.off{color:var(--app-dim)}.f-free .link{background:none;border:0;color:#c4b5fd;font-weight:700;padding:0;font-size:.84rem}
+#h-next{display:flex;flex-direction:column;gap:8px}#h-next:empty{display:none}
+.nextfree{display:flex;flex-direction:column;gap:3px;text-align:left;width:100%;padding:14px 16px;border-radius:16px;border:1.5px solid rgba(139,92,246,.55);background:linear-gradient(120deg,rgba(61,107,255,.16),rgba(139,92,246,.2));color:var(--app-ink)}
+.nextfree small{font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#c4b5fd}
+.nextfree b{font-size:1.15rem}.nextfree span{display:flex;align-items:center;gap:6px;font-size:.9rem;color:#d6d3ee}.nextfree .chev{margin-left:auto}
+.nextfree.off,.nextfree.plan{border-style:dashed;background:var(--app-surf)}
+#v-home .guest-cta{display:none}
+#v-home.guest .guest-cta{display:flex;flex-direction:column;gap:8px;background:var(--app-surf);border-radius:16px;padding:16px}
+.guest-cta b{font-size:1.05rem}.guest-cta span{font-size:.9rem;color:#d6d3ee;line-height:1.4}.guest-cta .link{background:none;border:0;color:#c4b5fd;font-weight:700;padding:6px}
+#v-home.guest #map,#v-home.guest #chips,#v-home.guest .star,#v-home.guest .lhead,#v-home.guest #tip,#v-home.guest .ctas{display:none!important}
+.gate-s{font-size:.82rem;color:var(--app-dim);text-align:center}
+.prog i[hidden]{display:none}
+/* letra más legible */
+:root{--app-dim:#B8B5D6}
+.row .sub,.sp-row small,.gym-row small,.zs-row small,.wrow small,.cu-note,.ap-tip,.dim,.note,.tip,.hint,.sinfo,.fin-tip,.ms-grid small{font-size:.84rem}
+.row .sub{font-size:.84rem}.sinfo span{font-size:.86rem}
+</style>
 
 <div class="wrap">
   <header>
@@ -879,16 +931,18 @@ input,select,textarea{font-size:16px!important}
       <div class="view" id="v-home">
         <div class="top"><div class="wordmark">No excuses<span>.</span></div><button class="login" data-go="login">Ingresar</button></div>
         <div class="body">
-          <div class="gate" id="home-gate"><h2>Sabé cuándo ir al gym.</h2><p>Creá tu cuenta, elegí tu gimnasio y tu sede, y te mostramos cuánta gente hay a cada hora.</p>
+          <div class="gate" id="home-gate"><h2>Sabé cuándo ir al gym.</h2><p>Elegí tu gimnasio, tu sede y tus horarios, y te decimos a qué hora te conviene ir.</p>
             <ul><li>Ocupación de tu sede, ahora y en la semana</li><li>Tu rutina y tus pesos, siempre a mano</li><li>Avisos para ir cuando está tranquilo</li></ul>
-            <button class="btn pri" data-go="reg">Crear cuenta</button><button class="btn sec" data-go="login">Ya tengo cuenta</button></div>
+            <button class="btn pri" data-go="reg">Empezar</button><button class="btn sec" data-go="login">Ya tengo cuenta</button><small class="gate-s">No te pedimos el mail hasta que veas tu sede.</small></div>
           <div class="head"><h2>¿Cuánta gente hay?</h2><button class="helpbtn" data-help aria-label="Cómo se calcula la ocupación">Estimado <svg width="13" height="13" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5.5" fill="none" stroke="currentColor"/><path d="M6 5v4M6 3v.5" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
           <div class="map" id="map"><div id="lmap" aria-label="Mapa de sedes"></div>
             <span class="maphint" id="maphint">Tocá un punto gris para sumar esa zona</span>
             <div class="offmap" id="offmap" hidden></div>
           </div>
           <div class="chips" id="chips"><span class="lbl">Mis zonas:</span></div>
+          <div id="h-next"></div>
           <div class="list" id="list"></div>
+          <div class="guest-cta" id="h-guest"><b>Esto es lo básico.</b><span>Creá tu cuenta gratis y desbloqueá la ocupación de toda la semana, los avisos cuando se llena, tu rutina y otras sedes cerca.</span><button class="btn pri" data-go="reg">Crear cuenta</button><button class="link" data-go="login">Ya tengo cuenta</button></div>
           <p class="tip" id="tip"></p>
           <div class="note"><svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5.5" fill="none" stroke="currentColor"/><path d="M6 5v4M6 3v.5" stroke="currentColor" stroke-width="1.3"/></svg><span>Estimación según el histórico de entradas.</span></div>
         </div>
@@ -927,7 +981,7 @@ input,select,textarea{font-size:16px!important}
         </div>
         <div class="ctas one">
           <button class="btn pri alert" id="f-alert">
-            <span class="al-txt"><b><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z M10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Avisame</b><small id="f-alert-when"></small></span>
+            <span class="al-txt"><b><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z M10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Voy a esta hora</b><small id="f-alert-when"></small></span>
           </button>
         </div>
       </div>
@@ -956,6 +1010,8 @@ input,select,textarea{font-size:16px!important}
         <div class="body">
           <section class="step" data-step="1">
             <h2 class="auth-h">Creá tu cuenta</h2>
+            <p class="lockmsg" id="r-lock" hidden></p>
+            <p class="cu-note">Así guardamos tu sede y tus horarios, y desbloqueás la semana, los avisos y tu rutina.</p>
             <div class="form">
               <div class="field"><label for="r-id">Mail</label><input id="r-id" type="email" inputmode="email" autocomplete="email" placeholder="nombre@mail.com"></div>
               <div class="field"><label for="r-pass">Contraseña</label><input id="r-pass" type="password" autocomplete="new-password"><small class="hint">Mínimo 6 caracteres.</small></div>
@@ -968,6 +1024,7 @@ input,select,textarea{font-size:16px!important}
           </section>
           <section class="step" data-step="3" hidden>
             <h2 class="auth-h">Tu semana</h2>
+            <p class="cu-note">Con esto te decimos a qué hora te conviene ir, dentro de tus horarios.</p>
             <div id="r-goal"></div>
             <span class="glabel">¿Cuándo podés entrenar?</span>
             <p class="cu-note">Poné tus ratos libres, con la hora exacta. Podés cargar varios por día.</p>
@@ -1006,7 +1063,7 @@ input,select,textarea{font-size:16px!important}
       <div class="view" id="v-log" hidden>
         <div class="top"><button class="back" data-go="rutina"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Mi rutina</button></div>
         <div class="body" id="log-body"></div>
-        <div class="ctas one"><button class="btn pri" id="log-save">Guardar entrenamiento</button></div>
+        <div class="ctas one"><button class="btn pri" id="log-save">Terminé</button></div>
       </div>
 
       <!-- ===== Pantalla: Compartir ===== -->
@@ -1195,8 +1252,8 @@ const NOTE_OF={dia:"rutina",rut:"rutina",log:"rutina",share:"rutina",cuenta:"log
 const TAB_OF={home:"home",futuro:"futuro",rutina:"rutina",rut:"rutina",alertas:"alertas",login:"cuenta",cuenta:"cuenta"};
 function go(v){
   if(v==="home"&&state.user&&!state.gymPicked)v="reg";
-  if(!state.user&&LOCKED.includes(v)){state.after=v;state.lockFor=LOCK_NAME[v]||"seguir";v="login"}
-  else if(v!=="login")state.lockFor=null;
+  if(!state.user&&LOCKED.includes(v)){state.after=v;state.lockFor=LOCK_NAME[v]||"seguir";v=state.gymPicked?"reg":"login"}
+  else if(v!=="login"&&v!=="reg")state.lockFor=null;
   const outside=v==="panel"||v==="check";
   $("stage").hidden=outside;$("panel").hidden=v!=="panel";$("check").hidden=v!=="check";
   if(outside){
@@ -1209,7 +1266,7 @@ function go(v){
   VIEWS.forEach(k=>$("v-"+k).hidden=k!==v);
   document.querySelectorAll(".notes").forEach(n=>n.hidden=n.id!=="notes-"+(NOTE_OF[v]||v));
   document.querySelectorAll("header .tabs button").forEach(b=>b.setAttribute("aria-current",b.dataset.go===(NOTE_OF[v]||v)));
-  if(v==="futuro"){state.day=0;state.hour=null;renderF()}
+  if(v==="futuro"){state.day=0;state.hour=null;if(state.fJump){state.day=state.fJump.di;state.hour=state.fJump.h;state.fJump=null}renderF()}
   else if(v==="reg")startReg();
   else if(v==="rutina")renderRutina();
   else if(v==="dia"){initDia();renderDia()}
@@ -1231,6 +1288,8 @@ function go(v){
   try{history.replaceState(null,"",v==="home"?location.pathname:"#"+v)}catch(e){}
 }
 document.addEventListener("click",e=>{
+  const g2=e.target.closest("[data-golink2]");if(g2){go(g2.dataset.golink2);return}
+  const nf=e.target.closest("[data-nextfree]");if(nf){const [di,h]=nf.dataset.nextfree.split("|").map(Number);state.fJump={di,h};go("futuro");return}
   const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
   const b=e.target.closest("[data-t]");if(!b||!app.contains(b))return;
   toast("Próxima pantalla: "+b.dataset.t);
@@ -1293,14 +1352,21 @@ function renderMap(){
   setTimeout(()=>LMAP.invalidateSize(),50);
 }
 function renderHome(){
-  const gated=!state.user||!state.gymPicked;$("v-home").classList.toggle("gated",gated);if(gated)return;
+  const gated=!state.gymPicked;$("v-home").classList.toggle("gated",gated);$("v-home").classList.toggle("guest",!state.user);if(gated)return;
+  {const S=sedeById(state.main),nf=S?nextFree(S.id):null;let h="";
+   if(nf){const l=LV[lvl(nf.v)],dl=nf.di===0?"Hoy":nf.di===1?"Mañana":dayFull(DAYS[nf.di].getDay());
+     h=`<button type="button" class="nextfree" data-nextfree="${nf.di}|${nf.h}"><small>Tu próximo rato libre</small><b>${dl} de ${nf.f.replace(/:00$/,"")} a ${nf.t.replace(/:00$/,"")}</b><span><i class="dot" style="background:${l.c}"></i>Andá a las ${nf.h}: ${l.name.toLowerCase()} (${nf.v} %) ${CHEV}</span></button>`}
+   else if(S)h=`<button type="button" class="nextfree off" data-go="${state.user?"cuenta":"reg"}"><small>Tu próximo rato libre</small><b>Cargá cuándo podés entrenar</b><span>Y te decimos a qué hora ir ${CHEV}</span></button>`;
+   if(state.user&&!Object.keys(R.plan).length)h+=`<button type="button" class="nextfree plan" data-golink2="rutina"><small>Falta un paso</small><b>Armá tu semana de entreno</b><span>Elegí qué días vas y qué rutina hacés ${CHEV}</span></button>`;
+   $("h-next").innerHTML=h;}
   $("chips").innerHTML=`<span class="lbl">Mis zonas:</span>`+state.zoneList.map(id=>`<button class="chip" data-z="${id}" aria-pressed="${state.zones.has(id)}">${zoneName(id)}</button>`).join("")+addZoneChip();
-  renderMap();
+  if(state.user)renderMap();
 
   const list=$("list");list.innerHTML="";
   const ord=(a,b)=>(a.closed||a.soon)-(b.closed||b.soon)||a.pct-b.pct;
   const favs=SEDES.filter(s=>state.favs.has(s.id)).sort((a,b)=>(b.id===state.main)-(a.id===state.main)||ord(a,b));
   const rest=SEDES.filter(s=>state.zones.has(s.zone)&&!state.favs.has(s.id)).sort((a,b)=>(b.id===state.sede)-(a.id===state.sede)||nearMain(a)-nearMain(b));
+  if(!state.user){const m=favs.filter(s=>s.id===state.main);favs.length=0;favs.push(...m);rest.length=0}
   const mine=favs.concat(rest);
   if(!mine.length)list.innerHTML=`<div class="empty">Elegí al menos una zona para ver la ocupación.</div>`;
   const restShown=state.listAll?rest:rest.slice(0,Math.max(3,6-favs.length));
@@ -1358,7 +1424,7 @@ const isoD=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${St
 const DAYS=[...Array(7)].map((_,i)=>addD(_T0,i));
 const clamp=v=>Math.max(5,Math.min(97,Math.round(v)));
 
-function hist(sede,dow,h){
+function hist0(sede,dow,h){
   const s=sedeById(sede);if(!s)return null;
   const r=s.h[dow===0?0:dow===6?2:1];
   if(!r||h<r[0]||h>=r[1])return null;
@@ -1372,6 +1438,11 @@ function hist(sede,dow,h){
 SEDES.forEach(s=>{const v=NOW_IN?hist(s.id,_T0.getDay(),NOW_H):null;s.closed=v===null;
   if(v!==null){s.pct=v;return}
   let best=null;for(const h of HOURS){const x=hist(s.id,_T0.getDay(),h);if(x!==null){best=x;break}}s.pct=best===null?0:best});
+let _cm=null,_cmN=-1;
+function crowdAvg(sede,dow,h){const L=state.crowd||[];if(!L.length)return null;
+  if(_cmN!==L.length){_cm={};L.forEach(c=>{const k=c.s+"|"+c.g+"|"+c.h;(_cm[k]=_cm[k]||[]).push(c.v)});_cmN=L.length}
+  const a=_cm[sede+"|"+(dow===0?0:dow===6?6:1)+"|"+h];return a?a.reduce((x,y)=>x+y,0)/a.length:null}
+function hist(sede,dow,h){const v=hist0(sede,dow,h);if(v===null)return v;const a=crowdAvg(sede,dow,h);return a===null?v:clamp(v*.4+a*.6)}
 function noise(a,b,c){const x=Math.sin(a*12.9898+b*78.233+c*37.719)*43758.5453;return x-Math.floor(x)-.5}
 function pred(sede,di,h){
   const dow=DAYS[di].getDay(),base=hist(sede,dow,h);
@@ -1413,8 +1484,8 @@ function renderF(){
   });
 
   // Mejor franja
-  const best=bestWindow(sede,di);
-  if(state.hour===null)state.hour=di===0?NOW_H:(best?best.h:19);
+  const best=bestWindow(sede,di),fb=freeBest(sede,di),hasFree=freeOf(dow).length>0;
+  if(state.hour===null)state.hour=fb?fb.h:di===0?NOW_H:(best?best.h:19);
 
   // Título
   const dname=di===0?"Hoy":`${DOW_N[dow][0].toUpperCase()+DOW_N[dow].slice(1)} ${DAYS[di].getDate()}`;
@@ -1434,7 +1505,7 @@ function renderF(){
     flushClosed();
     const past=di===0&&h<NOW_H,sel=h===state.hour,c=LV[lvl(v)].c;
     s+=`<g class="bar" data-h="${h}" tabindex="0" role="button" aria-label="${h} a ${h+1} hs, ${v}%">
-      <rect x="${x0+slot*i}" y="${yT}" width="${slot}" height="${yB-yT}" fill="transparent"/>
+      ${inFree(dow,h)?`<rect x="${x0+slot*i+.5}" y="${yT-3}" width="${slot-1}" height="${yB-yT+3}" rx="4" fill="rgba(139,92,246,.2)"/>`:""}<rect x="${x0+slot*i}" y="${yT}" width="${slot}" height="${yB-yT}" fill="transparent"/>
       <rect x="${cx-bw/2}" y="${y(v)}" width="${bw}" height="${yB-y(v)}" rx="3" fill="${c}" opacity="${past?.2:sel?1:.7}"/>
       ${sel?`<rect x="${cx-bw/2}" y="${yB+3}" width="${bw}" height="2" rx="1" fill="#fff"/>`:""}</g>`;
   });
@@ -1443,6 +1514,7 @@ function renderF(){
   if(di===0&&NOW_IN){const nx=x0+slot*(NOW_H-7+NOW_M/60);s+=`<line x1="${nx}" x2="${nx}" y1="${yT-4}" y2="${yB}" stroke="#fff" stroke-width="1"/><text x="${nx}" y="${yT-5}" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">Ahora</text>`}
   [7,10,13,16,19,22].forEach(h=>{s+=`<text x="${x0+slot*(h-7)+slot/2}" y="${yB+12}" text-anchor="middle" font-size="7.5" fill="#9c98bd">${h}h</text>`});
   s+=`</svg>`;
+  s+=hasFree?`<p class="f-free"><i></i>Tus ratos libres: ${esc(freeTxt(dow))}</p>`:`<p class="f-free off">No cargaste ratos libres para este día. <button type="button" class="link" data-golink2="cuenta">Cargarlos</button></p>`;
   $("f-chart").innerHTML=s;
   $("f-chart").querySelectorAll(".bar").forEach(g=>{
     const pick=()=>{state.hour=+g.dataset.h;renderF()};
@@ -1457,14 +1529,18 @@ function renderF(){
     const cmp=Math.abs(diff)<4?"igual que":diff>0?`${diff} puntos más que`:`${-diff} puntos menos que`;
     const isNow=di===0&&NOW_IN&&state.hour===NOW_H,past=di===0&&state.hour<NOW_H;
     $("f-detail").innerHTML=`<span class="big" style="color:${l.c}">${hv}%</span>
-      <span class="l1">${state.hour} a ${state.hour+1} hs · ${l.name}${isNow?" · ahora":past?" · ya pasó":""}</span>`;
+      <span class="l1">${state.hour} a ${state.hour+1} hs · ${l.name}${isNow?" · ahora":past?" · ya pasó":""}${inFree(dow,state.hour)?" · en tu rato libre":""}</span>`;
   }else $("f-detail").innerHTML=`<span class="l1">${state.hour} a ${state.hour+1} hs · Cerrado</span>`;
 
-  // Mejor franja
-  const bb=$("f-best");
-  if(best){
+  // Mejor franja: primero dentro de tus ratos libres
+  const bb=$("f-best"),dn=di===0?"hoy":"el "+DOW_N[dow];
+  if(fb){
+    const l=LV[lvl(fb.v)];
+    bb.innerHTML=`<small>Tu mejor horario ${dn}</small><b>${fb.h} a ${fb.h+1} hs</b><span><i class="dot" style="background:${l.c}"></i>${l.name} · dentro de tu rato libre de ${fb.f.replace(/:00$/,"")} a ${fb.t.replace(/:00$/,"")}</span>`;
+    bb.onclick=()=>{state.hour=fb.h;renderF()};bb.hidden=false;
+  }else if(best){
     const l=LV[lvl(best.avg)];
-    bb.innerHTML=`<small>${di===0?"Mejor franja que queda hoy":"Mejor franja del día"}</small>
+    bb.innerHTML=`<small>${hasFree?(di===0?"Ya pasaron tus ratos libres de hoy":"Tu rato libre cae con la sede cerrada"):(di===0?"Mejor franja que queda hoy":"Mejor franja del día")}</small>
       <b>${best.h} a ${best.h+2} hs</b><span><i class="dot" style="background:${l.c}"></i>${l.name}</span>`;
     bb.onclick=()=>{state.hour=best.h;renderF()};bb.hidden=false;
   }else bb.hidden=true;
@@ -1473,10 +1549,17 @@ function renderF(){
   renderWeek(sede,dow);
 
   const d=DAYS[di];
-  $("f-alert-when").textContent=`${di===0?"Hoy":DOW_S[dow]+" "+d.getDate()+"/"+(d.getMonth()+1)} · ${state.hour} a ${state.hour+1} h`;
+  $("f-alert-when").textContent=`${di===0?"Hoy":DOW_S[dow]+" "+d.getDate()+"/"+(d.getMonth()+1)} · ${state.hour} a ${state.hour+1} h · te avisamos si se llena`;
 }
 
 $("f-info").addEventListener("click",e=>{if(e.target.closest("[data-fstar]")){toggleFav(state.sede);renderF()}else if(e.target.closest("[data-fmain]")){setMain(state.sede);renderF()}});
+/* ---------- Tus ratos libres conectados con la ocupación ---------- */
+const freeOf=dow=>((state.avail&&state.avail.r&&state.avail.r[dow])||[]).filter(r=>toMin(r[1])>toMin(r[0]));
+const inFree=(dow,h)=>freeOf(dow).some(([f,t])=>h*60+60>toMin(f)&&h*60<toMin(t));
+function bestIn(sede,di,f,t){let b=null;for(let h=Math.floor(toMin(f)/60);h*60<toMin(t)&&h<=22;h++){if(di===0&&h<NOW_H)continue;const v=pred(sede,di,h);if(v!==null&&(!b||v<b.v))b={h,v,f,t}}return b}
+function freeBest(sede,di){let b=null;freeOf(DAYS[di].getDay()).forEach(([f,t])=>{const x=bestIn(sede,di,f,t);if(x&&(!b||x.v<b.v))b=x});return b}
+function nextFree(sede){for(let di=0;di<7;di++){const L=freeOf(DAYS[di].getDay()).slice().sort((a,b)=>toMin(a[0])-toMin(b[0]));for(const [f,t] of L){if(di===0&&toMin(t)<=NOW_H*60+NOW_M)continue;const b=bestIn(sede,di,f,t);if(b)return {...b,di}}}return null}
+const freeTxt=dow=>freeOf(dow).map(([f,t])=>`${f.replace(/:00$/,"")} a ${t.replace(/:00$/,"")}`).join(" y ");
 /* ---------- Semana típica (histórico): Aprovechá y evitá ---------- */
 const ORDER=[1,2,3,4,5,6,0];
 function windows(sede){const out=[];ORDER.forEach(w=>{for(let x=7;x<=20;x++){const a=hist(sede,w,x),b=hist(sede,w,x+1);if(a!==null&&b!==null)out.push({w,h:x,v:(a+b)/2})}});return out}
@@ -1490,10 +1573,10 @@ function pickWeek(w,h){
   renderF();
 }
 function renderWeek(sede){
-  const all=windows(sede);
-  const q=distinctDays([...all].sort((a,b)=>a.v-b.v),3),b=distinctDays([...all].sort((a,b)=>b.v-a.v),3);
+  const all0=windows(sede),fr=all0.filter(o=>inFree(o.w,o.h)&&inFree(o.w,o.h+1)),useF=fr.length>=2,all=useF?fr:all0;
+  const q=distinctDays([...all].sort((a,b)=>a.v-b.v),3),b=distinctDays([...all0].filter(o=>!q.some(x=>x.w===o.w&&x.h===o.h)).sort((a,b)=>b.v-a.v),3);
   const item=o=>`<button data-w="${o.w}" data-h="${o.h}"><i class="dot" style="background:${LV[lvl(o.v)].c}"></i>${DOW_S[o.w]} ${o.h}–${o.h+2} h</button>`;
-  $("f-wtitle").innerHTML=`Aprovechá y evitá <span>Histórico</span>`;
+  $("f-wtitle").innerHTML=`Aprovechá y evitá <span>${useF?"En tus ratos libres":"Histórico"}</span>`;
   const el=$("f-week");
   el.innerHTML=`<div class="wk-f"><div><small>Aprovechá</small>${q.map(item).join("")}</div><div><small>Evitá</small>${b.map(item).join("")}</div></div>`;
   el.querySelectorAll("[data-w]").forEach(x=>x.addEventListener("click",()=>pickWeek(+x.dataset.w,+x.dataset.h)));
@@ -1623,58 +1706,58 @@ function bindAvail(el,get,rerender){
     l.sort((a,b)=>toMin(a[0])-toMin(b[0]));rerender()});
 }
 
-const reg={step:1};
+const reg={step:2,seq:[2,3],i:0};
+// Pasos: 2 = gimnasio y sede, 3 = tu semana, 1 = mail y contraseña.
 function startReg(){
-  Object.assign(reg,{step:state.user?2:1,onb:!!state.user,chain:state.user&&state.gymPicked?state.chain:null,goal:state.goal||null,zones:new Set(state.zones),sede:state.user&&state.gymPicked?state.main:null,avail:avClone(state.avail&&state.avail.r||avDefault())});AV.copy=null;
-  renderReg();
+  const guest=!state.user&&state.gymPicked;
+  Object.assign(reg,{seq:guest?[1]:[2,3],i:0,mode:state.user?"onb":guest?"acct":"start",chain:state.gymPicked?state.chain:null,goal:state.goal||null,zones:new Set(state.zones),sede:state.gymPicked?state.main:null,avail:avClone(state.avail&&state.avail.r||avDefault())});
+  reg.step=reg.seq[0];AV.copy=null;renderReg();
 }
 function renderReg(){
-  const n=reg.step;
+  const n=reg.step,last=reg.i===reg.seq.length-1;
   document.querySelectorAll("#v-reg .step").forEach(s=>s.hidden=+s.dataset.step!==n);
-  $("r-steps").textContent=reg.onb?`Paso ${n-1} de 2`:`Paso ${n} de 3`;
-  $("r-prog").classList.toggle("onb",!!reg.onb);
-  $("r-prog").querySelectorAll("i").forEach((i,k)=>i.classList.toggle("on",k<n));
-  $("r-backtxt").textContent=n===1?"Inicio":reg.onb&&n===2?"Salir":"Atrás";
-  $("r-next").textContent=n===3?(reg.onb?"Listo":"Crear cuenta"):"Seguir";
+  $("r-steps").textContent=reg.mode==="acct"?"Último paso":`Paso ${reg.i+1} de ${reg.seq.length}`;
+  const bars=$("r-prog").querySelectorAll("i");bars.forEach((x,k)=>{x.hidden=k>=reg.seq.length;x.classList.toggle("on",k<=reg.i)});
+  $("r-backtxt").textContent=reg.i>0?"Atrás":reg.mode==="onb"?"Salir":"Inicio";
+  $("r-next").textContent=n===1?"Crear cuenta":last?(reg.mode==="onb"?"Listo":"Ver mi sede"):"Seguir";
   $("r-err").hidden=true;
-
-  // Paso 2: zonas y sede
+  {const lm=$("r-lock");lm.hidden=!(n===1&&state.lockFor);if(state.lockFor)lm.textContent=`Creá tu cuenta para ${state.lockFor}.`}
   $("r-chain").innerHTML=chainHtml(reg.chain);
   if(reg.sede&&!sedeById(reg.sede))reg.sede=null;
   $("r-sedes").innerHTML=reg.chain&&reg.chain!=="otro"?sedePickHtml(reg.sede,`Tu sede de ${CHAIN_N[reg.chain]}`):"";
   $("r-goal").innerHTML=goalHtml(reg.goal);
-
-  // Paso 3: días y horarios
   $("r-days").innerHTML=avWeekHtml(reg.avail)+availHtml(reg.avail);
 }
 $("v-reg").addEventListener("click",e=>{
-  const z=e.target.closest("[data-z]"),s=e.target.closest("[data-s]"),d=e.target.closest("[data-d]"),sl=e.target.closest("[data-sl]");
-  const flip=(set,v)=>set.has(v)?set.delete(v):set.add(v);
-  if(z){flip(reg.zones,z.dataset.z);renderReg()}
+  const z=e.target.closest("[data-z]"),s=e.target.closest("[data-s]");
+  if(z){reg.zones.has(z.dataset.z)?reg.zones.delete(z.dataset.z):reg.zones.add(z.dataset.z);renderReg()}
   else if(s){reg.sede=s.dataset.s;renderReg()}
-  else if(d){flip(reg.days,+d.dataset.d);renderReg()}
-  else if(sl){flip(reg.slots,sl.dataset.sl);renderReg()}
 });
 bindAvail($("r-days"),()=>reg.avail,renderReg);
-$("r-back").addEventListener("click",()=>{if(reg.step===1)go("home");else if(reg.onb&&reg.step===2){state.lastUser=state.user;state.user=null;go("login")}else{reg.step--;renderReg();app.querySelector("#v-reg .body").scrollTop=0}});
+$("r-back").addEventListener("click",()=>{
+  if(reg.i>0){reg.i--;reg.step=reg.seq[reg.i];renderReg();app.querySelector("#v-reg .body").scrollTop=0;return}
+  if(reg.mode==="onb"){state.lastUser=state.user;state.user=null;go("login");return}
+  go("home");
+});
 $("r-next").addEventListener("click",()=>{
   const err=$("r-err");let msg="";
-  if(reg.step===1){
-    msg=checkVia("r");
-    if(!msg&&$("r-pass").value.length<6)msg="La contraseña necesita al menos 6 caracteres.";
-  }else if(reg.step===2){
+  if(reg.step===1){msg=checkVia("r");if(!msg&&$("r-pass").value.length<6)msg="La contraseña necesita al menos 6 caracteres."}
+  else if(reg.step===2){
     if(!reg.chain)msg="Elegí a qué gimnasio vas.";
     else if(!reg.sede)msg=reg.chain==="otro"?"Buscá tu gimnasio y tocá “Elegir”.":"Escribí y elegí tu sede.";
   }else if(!reg.goal)msg="Elegí cuántas veces por semana pensás ir.";
   else if(!avCount(reg.avail))msg="Agregá al menos un horario libre.";
   else if(AV_ORDER.some(w=>reg.avail[w].some(([f,t])=>toMin(t)<=toMin(f))))msg="Revisá los horarios: la hora de fin tiene que ser después de la de inicio.";
   if(msg){err.textContent=msg;err.hidden=false;return}
-  if(reg.step<3){reg.step++;renderReg();app.querySelector("#v-reg .body").scrollTop=0;return}
-  {const z=sedeById(reg.sede).zone;state.zones=new Set([z]);state.zoneList=[z]}
-  state.sede=reg.sede;state.main=reg.sede;state.favs=new Set([reg.sede]);state.avail={r:avClone(reg.avail)};state.goal=reg.goal;state.gymPicked=true;_fitKey="";
-  const onb=reg.onb;if(!onb)state.user={name:nameFromMail($("r-id").value.trim()),contact:$("r-id").value.trim()};
-  busy($("r-next"),onb?"Guardando…":"Creando cuenta…",()=>{const to=state.after||"home";state.after=null;
-  go(to);toast(`${onb?"Listo":"Cuenta creada"}. Tu sede: ${sedeById(state.sede).name}.`)});
+  if(reg.i<reg.seq.length-1){reg.i++;reg.step=reg.seq[reg.i];renderReg();app.querySelector("#v-reg .body").scrollTop=0;return}
+  if(reg.mode!=="acct"){
+    {const z=sedeById(reg.sede).zone;state.zones=new Set([z]);state.zoneList=[z]}
+    state.sede=reg.sede;state.main=reg.sede;state.favs=new Set([reg.sede]);state.avail={r:avClone(reg.avail)};state.goal=reg.goal;state.gymPicked=true;_fitKey="";
+  }
+  if(reg.mode==="start"){go("home");toast(`Listo. Esta es ${sedeById(state.sede).name} con tus horarios.`);return}
+  const onb=reg.mode==="onb";_fitKey="";if(!onb)state.user={name:nameFromMail($("r-id").value.trim()),contact:$("r-id").value.trim()};
+  busy($("r-next"),onb?"Guardando…":"Creando cuenta…",()=>{const to=state.after||"home";state.after=null;state.lockFor=null;
+    go(to);toast(onb?`Listo. Tu sede: ${sedeById(state.sede).name}.`:`Cuenta creada. Ya ves todo, ${state.user.name}.`)});
 });
 
 /* ---------- Mi rutina ---------- */
@@ -1751,7 +1834,7 @@ function renderRutina(){
       else if(o&&o.movedFrom!==undefined)pill=`<span class="wp dim">Del ${DOW_S[WEEK[o.movedFrom].getDay()].toLowerCase()}</span>`;
       else if(i<TODAY_I)pill=`<span class="wp dim">Sin registrar</span>`;
       return `<button class="wrow ${cls}" data-i="${i}"><span class="wd"><small>${DOW_S[w]}</small><b>${d.getDate()}</b></span>
-        <span class="wm"><b>${esc(RUT[s.rid]?RUT[s.rid].name:"Rutina")}</b><small>${dot}${timeTxt(s)}${s.sede&&sedeById(s.sede)?" · "+esc(sedeById(s.sede).name):""}</small></span>${pill}</button>`;
+        <span class="wm"><b>${esc(RUT[s.rid]?RUT[s.rid].name:"Rutina")}</b><small>${(()=>{const ln=R.done.has(i)&&R.logNote&&R.logNote[isoD(d)];return ln&&ln.from?`${ln.from} a ${ln.to}${ln.crowd?" · "+crowdName(ln.crowd):""}${ln.s?" · "+feelEmo(ln.s):""}`:dot+timeTxt(s)+(s.sede&&sedeById(s.sede)?" · "+esc(sedeById(s.sede).name):"")})()}</small></span>${pill}</button>`;
     }).join("");
     el.innerHTML=`<p class="rt-sum"><span>Semana del ${dmy(WEEK[0])} al ${dmy(WEEK[6])}</span>${state.goal?`<span>Fuiste <b>${weekDone()} de ${state.goal}</b> días</span>`:`<span><b>${done} de ${total}</b> hechas</span>`}</p><div class="wk-list">${rows}</div><button type="button" class="btn ${Object.keys(R.plan).length?"sec":"pri"} full ap-open" id="rt-auto">Armame la semana</button><p class="ap-sub">Te sugerimos día, hora y sede según tus ratos libres y la ocupación.</p><button type="button" class="btn sec full" id="rt-shareweek">Compartir mi semana en historias</button>`;
     const t=sessionOf(TODAY_I),showCta=t&&!R.done.has(TODAY_I)&&!(R.ovr[TODAY_I]&&R.ovr[TODAY_I].moved!==undefined);
@@ -1977,7 +2060,7 @@ $("rut-body").addEventListener("change",e=>{if(e.target.dataset.f||e.target.id==
 $("rut-share").addEventListener("click",()=>{R.share=R.rsel;R.shareFrom="rut";go("share")});
 
 /* Registrar entrenamiento */
-function initLog(){keepAwake(true);R.lsede=state.main||state.sede;R.lfeel="bien";R.lnote="";const s=sessionOf(R.sel);R.log=RUT[s.rid].ex.map(e=>({kg:e.kg,ok:true}))}
+function initLog(){keepAwake(true);R.lsede=state.main||state.sede;R.lfeel="";R.lnote="";{const n=new Date();R.lstart=String(n.getHours()).padStart(2,"0")+":"+String(n.getMinutes()).padStart(2,"0")}const s=sessionOf(R.sel);R.log=RUT[s.rid].ex.map(e=>({kg:e.kg,ok:true}))}
 function logCard(e,k,inCirc){
   const L=R.log[k],rec=recOf(e);
   const prevH=e.hist.filter(h=>h.d!==dmy(WEEK[R.sel])).slice(-1)[0];
@@ -1996,9 +2079,7 @@ function renderLog(){
     const v=b.items[0].e.sets;
     h+=`<div class="circ"><div class="circ-h"><span><b>Circuito ${b.n}</b><small>${v} vuelta${v>1?"s":""}</small></span><button class="link sm" data-lungroup="${b.g}">No lo hice en circuito</button></div><div class="circ-items">${b.items.map(({e,k})=>logCard(e,k,true)).join("")}</div></div>`;
   });
-  {const ids=[...new Set([state.main,...state.favs,R.lsede].filter(id=>id&&sedeById(id)))],others=SEDES.filter(x=>state.zones.has(x.zone)&&!ids.includes(x.id));
-   h+=`</div><section class="lg-sede"><h3>¿Cómo te sentiste?</h3><div class="chips">${FEEL.map(([k,n])=>`<button type="button" class="chip" data-lfeel="${k}" aria-pressed="${k===R.lfeel}">${n}</button>`).join("")}</div><textarea id="lg-note" rows="2" placeholder="Notas (opcional): me costó, subí en hip thrust…">${esc(R.lnote||"")}</textarea></section><section class="lg-sede"><h3>¿En qué sede entrenaste?</h3><div class="chips">${ids.map(id=>`<button type="button" class="chip" data-lsede="${id}" aria-pressed="${id===R.lsede}">${id===state.main?"★ ":""}${esc(sedeById(id).name)}</button>`).join("")}</div>
-     ${others.length?`<label class="lg-other"><span>Otra:</span><select id="lg-other"><option value="">Elegí otra sede de tus zonas</option>${others.map(x=>`<option value="${x.id}">${esc(x.name)}</option>`).join("")}</select></label>`:""}</section><div>`;}
+  h+=`</div><div>`;
   $("log-body").innerHTML=h+`</div>`;
   $("log-body").insertAdjacentHTML("afterbegin",`<div class="restbar"><span>Descanso</span>${[60,90,120].map(x=>`<button data-rest="${x}">${x<120?x+" s":"2 min"}</button>`).join("")}<b id="rest-v"></b><button class="link" id="rest-stop" hidden>Parar</button></div>`);paintRest();
 }
@@ -2023,7 +2104,85 @@ $("log-body").addEventListener("input",e=>{if(e.target.id==="lg-note"){R.lnote=e
 $("log-body").addEventListener("change",e=>{if(e.target.id==="lg-other"&&e.target.value){R.lsede=e.target.value;renderLog()}});
 $("log-body").addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.dataset.kg!==undefined)e.target.blur()});
 /* Temporizador de descanso */
-const FEEL=[["bien","Muy bien"],["normal","Normal"],["mal","Me costó"]];
+const FEEL=[["fatal","Me mató","😫"],["mal","Me costó","😕"],["normal","Normal","😐"],["bien","Bien","🙂"],["fuego","Re bien","🔥"]];
+const feelEmo=k=>(FEEL.find(f=>f[0]===k)||[])[2]||"";
+
+
+/* ---------- Registro B: ¿Cómo te fue? de a una pregunta ---------- */
+const F={step:0};
+const CROWD=[["vacio","Vacío","Casi sola","var(--low)"],["tranqui","Tranqui","Todo libre al toque","var(--low)"],["normal","Normal","Esperé un poco alguna máquina","var(--mid)"],["lleno","Lleno","Tuve que cambiar el orden","var(--high)"],["explotado","Explotado","No se podía entrenar","var(--high)"]];
+const CROWD_V={vacio:8,tranqui:25,normal:50,lleno:78,explotado:95};
+const crowdName=k=>(CROWD.find(c=>c[0]===k)||[])[1]||"";
+const FEEL_D={fatal:"No me daba el cuerpo",mal:"Lo terminé, pero costó",normal:"Un día más",bien:"Salió bien",fuego:"Me sentí imparable"};
+function openFin(){
+  const i=R.sel,s=sessionOf(i),n=new Date(),now=p2(n.getHours())+":"+p2(n.getMinutes()),today=i===TODAY_I;
+  let from=today&&R.lstart?R.lstart:(s.from||"19:00"),to=today?now:(s.to||hhmm(toMin(from)+75));
+  if(toMin(to)<=toMin(from))to=hhmm(Math.min(23*60+59,toMin(from)+60));
+  Object.assign(F,{step:0,from,to,crowd:null,feel:null,note:R.lnote||"",sede:R.lsede||state.main,plan:s.from,err:""});
+  if(!$("fin"))app.insertAdjacentHTML("beforeend",`<div class="fin sheet-bg" id="fin" hidden><div class="fin-top"><button type="button" class="back" id="fin-back"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg><span id="fin-bt">Atrás</span></button><small id="fin-n"></small></div><div class="fin-prog" id="fin-prog"><i></i><i></i><i></i><i></i></div><div class="fin-body" id="fin-body"></div><div class="fin-cta"><p class="err" id="fin-err" hidden></p><button type="button" class="btn pri" id="fin-next">Seguir</button><button type="button" class="link" id="fin-skip">Saltear</button></div></div>`);
+  finPaint();$("fin").hidden=false;
+}
+function finStats(){
+  const r=RUT[sessionOf(R.sel).rid];let ok=0,sets=0,vol=0;const prs=[];
+  r.ex.forEach((e,k)=>{const l=R.log[k];if(!l.ok)return;ok++;sets+=e.sets||3;vol+=(l.kg||0)*(parseFloat(String(e.reps))||10)*(e.sets||3);const b=bestOf(e.name);if(l.kg>0&&(!b||l.kg>b.kg))prs.push({name:e.name,kg:l.kg})});
+  return {r,ok,sets,vol:Math.round(vol),prs};
+}
+function finPaint(){
+  const st=F.step,S=sedeById(F.sede),i=R.sel,dl=i===TODAY_I?"hoy":`${dayFull(WEEK[i].getDay()).toLowerCase()} ${dmy(WEEK[i])}`;
+  $("fin-n").textContent=`${st+1} de 4`;$("fin-bt").textContent=st===0?"Volver":"Atrás";
+  $("fin-prog").querySelectorAll("i").forEach((x,k)=>x.classList.toggle("on",k<=st));
+  $("fin-next").textContent=st===3?"Guardar entreno":"Seguir";$("fin-skip").hidden=st===0||st===3;
+  $("fin-err").hidden=!F.err;$("fin-err").textContent=F.err||"";
+  const sub=`<span class="fin-sub">${S?esc(S.name)+" · ":""}${dl}${st>0?" "+F.from:""}</span>`;
+  let h="";
+  if(st===0){
+    const ids=[...new Set([state.main,...state.favs,F.sede].filter(id=>id&&sedeById(id)))],others=SEDES.filter(x=>state.zones.has(x.zone)&&!ids.includes(x.id)).sort((a,b)=>a.name.localeCompare(b.name,"es"));
+    h=`${sub}<h2 class="fin-h">¿A qué hora fuiste?</h2>
+      <div class="fin-times"><label><small>Llegué</small><input id="fin-from" inputmode="numeric" maxlength="5" value="${F.from}" autocomplete="off" aria-label="Hora de llegada"></label><label><small>Me fui</small><input id="fin-to" inputmode="numeric" maxlength="5" value="${F.to}" autocomplete="off" aria-label="Hora de salida"></label></div>
+      ${F.plan&&F.plan!==F.from?`<button type="button" class="chip" data-finplan>Como lo planeé: ${F.plan}</button>`:""}
+      <p class="fin-tip">Escribí la hora con el teclado, por ejemplo 1910.</p>
+      <span class="glabel">¿En qué sede?</span><div class="chips">${ids.map(id=>`<button type="button" class="chip" data-finsede="${id}" aria-pressed="${id===F.sede}">${id===state.main?"★ ":""}${esc(sedeById(id).name)}</button>`).join("")}</div>
+      ${others.length?`<label class="lg-other"><span>Otra:</span><select id="fin-other"><option value="">Elegí otra sede</option>${others.map(x=>`<option value="${x.id}">${esc(x.name)}</option>`).join("")}</select></label>`:""}`;
+  }else if(st===1){
+    const est=S?hist(S.id,WEEK[i].getDay(),+F.from.split(":")[0]):null;
+    h=`${sub}<h2 class="fin-h">¿Cómo estaba de lleno?</h2><div class="fin-opts">${CROWD.map(([k,n,d,c])=>`<button type="button" class="fin-o" data-fincrowd="${k}" aria-pressed="${F.crowd===k}" style="--c:${c}"><i class="fin-dot"></i><span><b>${n}</b><small>${d}</small></span><em>${F.crowd===k?"✓":""}</em></button>`).join("")}</div>
+      ${est!==null?`<p class="fin-tip">La app estimaba <b style="color:${LV[lvl(est)].c}">${est} % · ${LV[lvl(est)].name}</b>. Con tu respuesta mejoramos la estimación de ${S?esc(S.name):"tu sede"}.</p>`:""}`;
+  }else if(st===2){
+    h=`${sub}<h2 class="fin-h">¿Cómo te sentiste?</h2><div class="fin-opts">${FEEL.slice().reverse().map(([k,n,e])=>`<button type="button" class="fin-o" data-finfeel="${k}" aria-pressed="${F.feel===k}" style="--c:var(--violet)"><span class="fin-emo">${e}</span><span><b>${n}</b><small>${FEEL_D[k]}</small></span><em>${F.feel===k?"✓":""}</em></button>`).join("")}</div>
+      <textarea id="fin-note" rows="2" placeholder="Nota (opcional): las máquinas estaban ocupadas, subí en hip thrust…">${esc(F.note||"")}</textarea>`;
+  }else{
+    const t=finStats(),volTxt=t.vol>=1000?`${fmtKg(Math.round(t.vol/100)/10)} t`:`${t.vol} kg`,mins=toMin(F.to)-toMin(F.from);
+    h=`${sub}<h2 class="fin-h">¿Qué hiciste?</h2>
+      <div class="fin-card"><div class="fin-rt"><b>${esc(t.r.name)}</b><small>${F.from} a ${F.to} · ${mins>=60?Math.floor(mins/60)+" h "+(mins%60?mins%60+" min":""):mins+" min"}</small></div>
+      <div class="fin-grid"><span><small>Ejercicios</small><b>${t.ok} de ${t.r.ex.length}</b></span><span><small>Series</small><b>${t.sets}</b></span><span><small>Kilos</small><b>${t.vol?volTxt:"–"}</b></span></div>
+      ${t.prs.length?`<p class="fin-pr">🏆 ${t.prs.length>1?t.prs.length+" récords":"Récord"} · ${t.prs.slice(0,2).map(p=>`${esc(p.name)} ${fmtKg(p.kg)} kg`).join(" · ")}</p>`:""}
+      <div class="fin-ex">${t.r.ex.map((e,k)=>`<span class="${R.log[k].ok?"":"no"}"><i>${R.log[k].ok?"✓":"–"}</i>${esc(e.name)}<b>${R.log[k].ok&&R.log[k].kg?fmtKg(R.log[k].kg)+" kg":R.log[k].ok?"":"no lo hice"}</b></span>`).join("")}</div>
+      <button type="button" class="link" id="fin-fix">Corregir pesos o ejercicios</button></div>
+      <div class="fin-sum">${[F.crowd?`<span>Estaba <b>${crowdName(F.crowd).toLowerCase()}</b></span>`:"",F.feel?`<span>${feelEmo(F.feel)} <b>${(FEEL.find(x=>x[0]===F.feel)||[])[1]}</b></span>`:"",S?`<span>${esc(S.name)}</span>`:""].filter(Boolean).join("")}</div>`;
+  }
+  $("fin-body").innerHTML=h;$("fin-body").scrollTop=0;
+}
+function finTime(el){const v=el.value.replace(/\D/g,"").slice(0,4);if(v.length>=3)el.value=`${v.slice(0,v.length-2)}:${v.slice(-2)}`;else el.value=v;
+  let hh,mm;if(v.length>=3){hh=+v.slice(0,v.length-2);mm=+v.slice(-2)}else if(v.length){hh=+v;mm=0}else return null;
+  return hh<=23&&mm<=59?p2(hh)+":"+p2(mm):null}
+document.addEventListener("input",e=>{const t=e.target;
+  if(t.id==="fin-from"||t.id==="fin-to"){const v=finTime(t);t.classList.toggle("bad",!v);if(v)F[t.id==="fin-from"?"from":"to"]=v}
+  else if(t.id==="fin-note")F.note=t.value});
+document.addEventListener("change",e=>{if(e.target.id==="fin-other"&&e.target.value){F.sede=e.target.value;finPaint()}});
+document.addEventListener("click",e=>{const t=e.target;if(!t.closest("#fin"))return;let b;
+  if(b=t.closest("[data-finsede]")){F.sede=b.dataset.finsede;finPaint();return}
+  if(t.closest("[data-finplan]")){F.from=F.plan;if(toMin(F.to)<=toMin(F.from))F.to=hhmm(toMin(F.from)+75);finPaint();return}
+  if(b=t.closest("[data-fincrowd]")){F.crowd=b.dataset.fincrowd;finPaint();setTimeout(()=>{if(F.step===1){F.step=2;finPaint()}},280);return}
+  if(b=t.closest("[data-finfeel]")){F.feel=b.dataset.finfeel;finPaint();return}
+  if(t.closest("#fin-fix")){$("fin").hidden=true;return}
+  if(t.closest("#fin-back")){F.err="";if(F.step===0)$("fin").hidden=true;else{F.step--;finPaint()}return}
+  if(t.closest("#fin-skip")){F.err="";if(F.step===1)F.crowd=null;if(F.step===2)F.feel=null;F.step++;finPaint();return}
+  if(t.closest("#fin-next")){F.err="";
+    if(F.step===0){if(!HHMM.test(F.from)||!HHMM.test(F.to)){F.err="Revisá las horas: tienen que ser como 19:10.";finPaint();return}
+      if(toMin(F.to)<=toMin(F.from)){F.err="La hora en que te fuiste tiene que ser después de la de llegada.";finPaint();return}}
+    if(F.step<3){F.step++;finPaint();return}
+    R.lsede=F.sede;R.lfeel=F.feel;R.lnote=F.note;$("fin").hidden=true;busy($("log-save"),"Guardando…",saveLog)}
+});
 
 /* ---------- ¿Cuánto pongo? Calculadora de discos ---------- */
 const PLATES=[25,20,15,10,5,2.5,1.25];
@@ -2173,7 +2332,7 @@ function monthStats(y,m){
 function monthHtml(){
   if(MS.m===null){MS.m=TODAY.getMonth();MS.y=YEAR}
   const s=monthStats(MS.y,MS.m),opts=[0,1,2].map(k=>{const d=new Date(YEAR,TODAY.getMonth()-k,1);return {y:d.getFullYear(),m:d.getMonth()}});
-  const feelTxt={bien:"Muy bien",normal:"Normal",mal:"Te costó"}[s.feel]||"—";
+  const feelTxt=(()=>{const f=FEEL.find(x=>x[0]===s.feel);return f?f[2]+" "+f[1]:"—"})();
   const volTxt=s.vol>=1000?`${fmtKg(Math.round(s.vol/100)/10)} t`:`${s.vol} kg`;
   return `<section class="card ms"><h3>Resumen de ${s.name.toLowerCase()} <span>${s.isCur?"hasta hoy":""}</span></h3>
     <div class="chips">${opts.map(o=>`<button type="button" class="chip" data-msm="${o.y}-${o.m}" aria-pressed="${o.y===MS.y&&o.m===MS.m}">${MES_FULL[o.m]}</button>`).join("")}</div>
@@ -2252,13 +2411,14 @@ function beep(){try{const a=new (window.AudioContext||window.webkitAudioContext)
 function paintRest(){const v=$("rest-v"),st=$("rest-stop");if(v)v.textContent=REST.t?restTxt():"";if(st)st.hidden=!REST.t}
 function startRest(sec){stopRest();try{if("Notification" in window&&Notification.permission==="default"&&standalone)Notification.requestPermission()}catch(_){}REST.end=Date.now()+sec*1000;REST.t=setInterval(()=>{if(Date.now()>=REST.end){stopRest();beep();try{navigator.vibrate&&navigator.vibrate([250,120,250])}catch(_){}toast("¡Terminó el descanso! Siguiente serie.");restNotify();return}paintRest()},250);paintRest()}
 function stopRest(){clearInterval(REST.t);REST.t=null;paintRest()}
-$("log-save").addEventListener("click",()=>busy($("log-save"),"Guardando…",saveLog));
+$("log-save").addEventListener("click",()=>openFin());
 function saveLog(){
   keepAwake(false);
   const i=R.sel,r=RUT[sessionOf(i).rid];
   const prs=[];r.ex.forEach((e,k)=>{const kg=R.log[k].kg,b=bestOf(e.name);if(kg>0&&R.log[k].ok&&(!b||kg>b.kg))prs.push({name:e.name,kg,prev:b?b.kg:0,iso:isoD(WEEK[i]),dm:dmy(WEEK[i])})});
   r.ex.forEach((e,k)=>{e.hist.push({d:dmy(WEEK[i]),kg:R.log[k].kg,ok:R.log[k].ok});e.kg=R.log[k].kg});
-  R.done.add(i);R.logDays[isoD(WEEK[i])]=sessionOf(i).rid;R.logSede=R.logSede||{};if(R.lsede)R.logSede[isoD(WEEK[i])]=R.lsede;R.logNote=R.logNote||{};R.logNote[isoD(WEEK[i])]={s:R.lfeel||"bien",n:(R.lnote||"").trim()};state.routineSaved=true;R.tab="sem";
+  R.done.add(i);R.logDays[isoD(WEEK[i])]=sessionOf(i).rid;R.logSede=R.logSede||{};if(R.lsede)R.logSede[isoD(WEEK[i])]=R.lsede;R.logNote=R.logNote||{};R.logNote[isoD(WEEK[i])]={s:F.feel||"",n:(F.note||"").trim(),from:F.from,to:F.to,crowd:F.crowd||""};
+  if(F.crowd&&R.lsede){const g=WEEK[i].getDay(),gg=g===0?0:g===6?6:1,h0=+F.from.split(":")[0],h1=Math.max(h0+1,Math.ceil(toMin(F.to)/60));state.crowd=(state.crowd||[]);for(let h=h0;h<h1&&h<24;h++)state.crowd.push({s:R.lsede,g:gg,h,v:CROWD_V[F.crowd]});state.crowd=state.crowd.slice(-400);computeNow()}state.routineSaved=true;R.tab="sem";
   const ups=r.ex.filter(recOf).length;
   const sn=R.lsede&&sedeById(R.lsede)?` en ${sedeById(R.lsede).name}`:"";R.prLog=(R.prLog||[]).concat(prs);go("rutina");if(prs.length)setTimeout(()=>showPRs(prs.sort((a,b)=>(b.kg-b.prev)-(a.kg-a.prev))),350);toast(ups?`Guardado${sn}. Podés subir peso en ${ups} ejercicio${ups>1?"s":""}.`:`Entrenamiento guardado${sn}. Sin excusas.`);
 }
@@ -2823,7 +2983,7 @@ $("f-alert").addEventListener("click",()=>{
   const A=state.alerts,c={di:state.day,h:state.hour,sede:state.sede};
   if(!A.custom.some(x=>x.di===c.di&&x.h===c.h&&x.sede===c.sede))A.custom.push(c);
   A.custom.sort((a,b)=>a.di-b.di||a.h-b.h);
-  go("alertas");toast(`Te avisamos: ${dayLbl(c.di)}, ${c.h} a ${c.h+1} h.`);
+  toast(`Anotado: ${dayLbl(c.di)}, ${c.h} a ${c.h+1} h. Si se llena, te avisamos. Lo ves en Alertas.`);
 });
 
 /* ---------- Panel web del gimnasio ---------- */
@@ -3069,7 +3229,7 @@ const fromJ=t=>JSON.parse(t,(k,v)=>v&&typeof v==="object"&&Array.isArray(v.__set
 function snapshot(){
   const al=Object.assign({},state.alerts,{form:null});
   return {v:1,week:isoD(WEEK[0]),
-    state:{zones:state.zones,sede:state.sede,zoneList:state.zoneList,user:state.user,lastUser:state.lastUser||null,avail:state.avail,alerts:al,routineSaved:state.routineSaved,demo:state.demo,chain:state.chain||"sportclub",customGyms:state.customGyms||[],main:state.main,favs:state.favs,bars:state.bars||{},plateColors:state.plateColors||{}},TH,
+    state:{zones:state.zones,sede:state.sede,zoneList:state.zoneList,user:state.user,lastUser:state.lastUser||null,avail:state.avail,alerts:al,routineSaved:state.routineSaved,demo:state.demo,chain:state.chain||"sportclub",customGyms:state.customGyms||[],main:state.main,favs:state.favs,bars:state.bars||{},plateColors:state.plateColors||{},crowd:state.crowd||[]},TH,
     R:{plan:R.plan,ovr:R.ovr,done:R.done,logDays:R.logDays,logSede:R.logSede||{},logNote:R.logNote||{},prLog:R.prLog||[]},RUT,RCOLOR};
 }
 let _saveT,NOSAVE=false;

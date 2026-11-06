@@ -1,5 +1,5 @@
 // No Excuses · service worker: funciona sin conexión y se actualiza solo
-const CACHE = "ne-v17";
+const CACHE = "ne-v19";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
